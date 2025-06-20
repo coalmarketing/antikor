@@ -21,9 +21,9 @@ const HeroBanner = () => {
                 className="h-6 w-auto object-cover"
                 alt=""
               />
-              <h2 className="text-lg font-semibold text-steel uppercase tracking-widest">
+              <p className="text-lg font-semibold text-steel uppercase tracking-widest">
                 ANTIKOR
-              </h2>
+              </p>
             </div>
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight text-balance uppercase font-heading">

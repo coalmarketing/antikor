@@ -1,19 +1,24 @@
 @import "tailwindcss";
 
+/* ========================= VARS ========================= */
+
 :root {
   --light: #e5e5e5;
   --dark: #1e1e1e;
+  --steel: #00aadd;
 }
 
+/* ======================= TAILWIND ======================= */
+
 @theme inline {
-  --color-steel: #00aadd;
+  --color-steel: var(--steel);
   --color-steel-50: #f0fbff;
   --color-steel-100: #e0f5fe;
   --color-steel-200: #b9eefe;
   --color-steel-300: #7ce1fd;
   --color-steel-400: #36d3fa;
   --color-steel-500: #0cbeeb;
-  --color-steel-600: #00aadd;
+  --color-steel-600: var(--steel);
   --color-steel-700: #017ba3;
   --color-steel-800: #066786;
   --color-steel-900: #0b556f;
@@ -26,12 +31,95 @@
   --font-paragraph: var(--font-saira);
 }
 
+/* ======================= GENERALS ======================= */
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Saira", Arial, Helvetica, sans-serif;
 }
 
+/* ===================== HERO BANNER ===================== */
+
 .hero-polygon {
   clip-path: polygon(100% 0%, 100% 100%, 30% 100%);
+}
+
+/* ===================== CARD STYLES ===================== */
+
+.card {
+  position: relative;
+  background-color: #222;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+
+  padding: 1px;
+  overflow: hidden;
+}
+
+.card:before {
+  background-image: linear-gradient(transparent, var(--steel), transparent);
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  animation: spin 10s linear infinite;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: "";
+
+  position: absolute;
+  background-color: var(--dark);
+  border-radius: 1.5rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background-color: #1a1a1a;
+
+  background-position: 50% 50%;
+  background-size: 1.1rem 1.1rem;
+
+  padding: 4rem;
+  border-radius: inherit;
+
+  overflow: hidden;
+  z-index: 10;
+}
+
+.card-tip {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
 }

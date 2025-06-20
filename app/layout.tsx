@@ -7,6 +7,7 @@ import "./globals.css";
 
 import NavbarDesktop from "@/components/navbar";
 import { navigationItems } from "@/data/navbarItems";
+import Footer from "@/components/footer";
 
 const saira = Saira({
   variable: "--font-saira",
@@ -36,6 +37,7 @@ export default function RootLayout({
       >
         <NavbarDesktop items={navigationItems} />
         {children}
+        <Footer />
       </body>
     </html>
   );

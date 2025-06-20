@@ -3,7 +3,7 @@ import Divider from "./divider";
 const HeroBanner = () => {
   return (
     <>
-      <div className="bg-dark/80 text-light h-screen max-w-screen overflow-hidden ">
+      <div className="relative bg-dark/80 text-light h-screen max-w-screen overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/img/Manticore.svg"
@@ -62,9 +62,12 @@ const HeroBanner = () => {
           <source src="/video/ANTIKOR hero video.webm" type="video/webm" />
           <source src="/video/ANTIKOR hero video.mp4" type="video/mp4" />
         </video>
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/img/ANTIKOR hero thumb.png"
           className="absolute top-0 left-0 w-full h-full object-cover"
+          alt=""
         />
       </div>
     </>

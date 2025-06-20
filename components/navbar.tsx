@@ -11,6 +11,9 @@ interface NavbarProps {
 }
 
 const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
+  const buttonHref = "#";
+  const buttonText = "Get started";
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -26,8 +29,8 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=steel&shade=600"
-              className="h-8 w-auto"
+              src="/img/logo-long-mono-light.png"
+              className="h-16 w-auto"
             />
           </a>
         </div>
@@ -54,10 +57,10 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="#"
+            href={buttonHref}
             className="rounded-md bg-steel-700 px-3.5 py-2.5 text-sm font-semibold text-light shadow-xs hover:bg-steel-800 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel-600"
           >
-            Get started &#x2964;
+            {buttonText} &#x2964;
           </a>
         </div>
       </nav>
@@ -105,10 +108,10 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href={buttonHref}
                   className="rounded-md bg-steel-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-steel-800 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel-600"
                 >
-                  Kup ocel &#x2964;
+                  {buttonText} &#x2964;
                 </a>
               </div>
             </div>

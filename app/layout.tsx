@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${saira.variable} ${specialGothicExtendedBold.variable} antialiased`}
+        className={`${saira.variable} ${specialGothicExtendedBold.variable} antialiased overflow-x-hidden`}
       >
         <NavbarDesktop items={navigationItems} />
         {children}

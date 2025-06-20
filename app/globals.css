@@ -31,3 +31,7 @@ body {
   color: var(--foreground);
   font-family: "Saira", Arial, Helvetica, sans-serif;
 }
+
+.hero-polygon {
+  clip-path: polygon(100% 0%, 100% 100%, 30% 100%);
+}

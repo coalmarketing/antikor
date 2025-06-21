@@ -4,6 +4,14 @@ import HeroBanner from "@/components/heroBanner";
 import Section from "@/components/section";
 import Balancer from "react-wrap-balancer";
 
+const HomePageInfoCardWrapper = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  return <div className="w-full text-left p-12 pt-8 pr-20">{children}</div>;
+};
+
 const HomePage = () => {
   return (
     <>
@@ -26,8 +34,8 @@ const HomePage = () => {
           precziznost stroje
         </h2>
         <Divider />
-        <div className="grid grid-cols-8 w-full gap-10 mb-10">
-          <div className="col-span-4">
+        <div className="grid grid-cols-8 w-full gap-5 md:gap-10 mb-10">
+          <div className="col-span-8 md:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
                 {" "}
@@ -38,7 +46,7 @@ const HomePage = () => {
                   className="w-full h-full object-cover mix-blend-luminosity opacity-50"
                 />
               </div>
-              <div className="w-full text-left p-12 pt-8 pr-20">
+              <HomePageInfoCardWrapper>
                 <p className="text-3xl font-bold">CNC výroba</p>
                 <p className="my-4 text-md font-normal text-pretty text-light/80">
                   <Balancer>
@@ -55,10 +63,10 @@ const HomePage = () => {
                     Dozvědět se více <span aria-hidden="true">&#8594;</span>
                   </p>
                 </a>
-              </div>
+              </HomePageInfoCardWrapper>
             </Card>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-8 md:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -68,7 +76,7 @@ const HomePage = () => {
                   className="w-full h-full object-cover mix-blend-luminosity opacity-50"
                 />
               </div>
-              <div className="w-full text-left p-12 pt-8 pr-20">
+              <HomePageInfoCardWrapper>
                 <p className="text-3xl font-bold">Klempířská výroba</p>
                 <p className="my-4 text-md font-normal text-pretty text-light/80">
                   <Balancer>
@@ -85,13 +93,13 @@ const HomePage = () => {
                     Dozvědět se více <span aria-hidden="true">&#8594;</span>
                   </p>
                 </a>
-              </div>
+              </HomePageInfoCardWrapper>
             </Card>
           </div>
 
-          <div className="col-span-6">
+          <div className="col-span-8 sm:col-span-5 md:col-span-6">
             <Card tip>
-              <div className="w-full text-left p-12 pr-[22%]">
+              <div className="w-full text-left p-[10%] pr-[22%] z-10">
                 <p className="text-3xl font-bold">
                   Proč <span className="uppercase text-steel">mantikora</span>?
                 </p>
@@ -115,14 +123,13 @@ const HomePage = () => {
             </Card>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-8 sm:col-span-3 md:col-span-2">
             <Card tip theme="steel">
-              <div className="w-full text-left p-12 pr-20">
-                <p className="text-3xl font-bold leading-1">
-                  Kontaktujte nás!{" "}
-                  <span className="text-6xl align-sub">&#8594;</span>
+              <div className="w-full text-left p-[10%] pr-20">
+                <p className="lg:text-2xl xl:text-3xl font-bold">
+                  Kontaktujte nás! <br />
+                  <span className="text-6xl leading-6">&#8594;</span>
                 </p>
-                <Divider color="light" marginBottom={0} marginTop={8} />
               </div>
             </Card>
           </div>

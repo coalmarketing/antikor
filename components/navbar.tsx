@@ -29,7 +29,7 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt=""
-              src="/img/logo-long-mono-light.png"
+              src="/img/logos/logo-long-mono-light.png"
               className="h-16 w-auto"
             />
           </a>

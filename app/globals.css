@@ -1,28 +1,41 @@
 @import "tailwindcss";
 
-/* ========================= VARS ========================= */
+/* ================================ VARS ================================ */
 
 :root {
   --light: #e5e5e5;
   --dark: #1e1e1e;
   --steel: #00aadd;
+
+  /* Steel color palette */
+  --steel-50: #f0fbff;
+  --steel-100: #e0f5fe;
+  --steel-200: #b9eefe;
+  --steel-300: #7ce1fd;
+  --steel-400: #36d3fa;
+  --steel-500: #0cbeeb;
+  --steel-600: var(--steel);
+  --steel-700: #017ba3;
+  --steel-800: #066786;
+  --steel-900: #0b556f;
+  --steel-950: #07364a;
 }
 
-/* ======================= TAILWIND ======================= */
+/* ================================ TAILWIND ================================ */
 
 @theme inline {
   --color-steel: var(--steel);
-  --color-steel-50: #f0fbff;
-  --color-steel-100: #e0f5fe;
-  --color-steel-200: #b9eefe;
-  --color-steel-300: #7ce1fd;
-  --color-steel-400: #36d3fa;
-  --color-steel-500: #0cbeeb;
-  --color-steel-600: var(--steel);
-  --color-steel-700: #017ba3;
-  --color-steel-800: #066786;
-  --color-steel-900: #0b556f;
-  --color-steel-950: #07364a;
+  --color-steel-50: var(--steel-50);
+  --color-steel-100: var(--steel-100);
+  --color-steel-200: var(--steel-200);
+  --color-steel-300: var(--steel-300);
+  --color-steel-400: var(--steel-400);
+  --color-steel-500: var(--steel-500);
+  --color-steel-600: var(--steel-600);
+  --color-steel-700: var(--steel-700);
+  --color-steel-800: var(--steel-800);
+  --color-steel-900: var(--steel-900);
+  --color-steel-950: var(--steel-950);
 
   --color-light: var(--light);
   --color-dark: var(--dark);
@@ -45,11 +58,19 @@ body {
   clip-path: polygon(100% 0%, 100% 100%, 30% 100%);
 }
 
+.hero-polygon-2 {
+  clip-path: polygon(0% 100%, 100% 70%, 100% 100%);
+}
+
+.hero-polygon-3 {
+  clip-path: polygon(0% 100%, 0% 80%, 100% 100%);
+}
+
 /* ===================== CARD STYLES ===================== */
 
 .card {
   position: relative;
-  background-color: #222;
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -61,8 +82,40 @@ body {
   overflow: hidden;
 }
 
-.card:before {
+.card-dark {
+  background-color: #333;
+}
+.card-dark::before {
   background-image: linear-gradient(transparent, var(--steel), transparent);
+}
+
+.card-dark::after {
+  background-color: var(--dark);
+}
+
+.card-dark .card-content {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.card-steel {
+  background-color: var(--steel-900);
+}
+
+.card-steel::before {
+  background-image: linear-gradient(transparent, var(--light), transparent);
+}
+
+.card-steel::after {
+  background-color: var(--steel);
+}
+
+.card-steel .card-content {
+  background-color: var(--steel-700);
+  color: var(--light);
+}
+
+.card:before {
   content: "";
   position: absolute;
   width: 140%;
@@ -105,12 +158,9 @@ body {
   height: 100%;
   position: relative;
 
-  background-color: #1a1a1a;
-
   background-position: 50% 50%;
   background-size: 1.1rem 1.1rem;
 
-  padding: 4rem;
   border-radius: inherit;
 
   overflow: hidden;

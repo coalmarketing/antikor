@@ -12,7 +12,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={anchor ?? ""}
-      className={`w-screen min-h-screen relative overflow-hidden flex flex-col items-center justify-center px-40 py-20 
+      className={`w-screen min-h-screen relative overflow-hidden flex flex-col items-center justify-center px-20 xl:px-40 py-20 
         ${theme === "dark" ? "bg-dark text-light" : "bg-light text-dark"}`}
     >
       {children}

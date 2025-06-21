@@ -7,17 +7,19 @@ const HeroBanner = () => {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/img/Manticore.svg"
-          className="absolute -bottom-20 -right-20 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] object-cover z-10 -scale-x-100"
+          className="absolute -bottom-0 lg:bottom-20 xl:-bottom-20 -right-20 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] object-cover z-10 -scale-x-100"
           alt=""
         />
         <div className="bg-dark/80 w-screen h-screen absolute top-0 left-0 hero-polygon"></div>
+        <div className="bg-steel-900 w-screen h-screen absolute top-0 left-0 hero-polygon-2 z-20"></div>
+        <div className="bg-dark w-screen h-screen absolute top-0 left-0 hero-polygon-3 z-30"></div>
 
         <div className="relative isolate px-6 pt-16 lg:px-20 w-3/4 md:w-1/2 lg:w-2/3 text-left z-20">
           <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
             <div className="flex items-center gap-1 mb-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/img/head-blue.svg"
+                src="/img/logos/head-blue.svg"
                 className="h-6 w-auto object-cover"
                 alt=""
               />
@@ -65,7 +67,7 @@ const HeroBanner = () => {
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/img/ANTIKOR hero thumb.png"
+          src="/img/products/ANTIKOR hero thumb.png"
           className="absolute top-0 left-0 w-full h-full object-cover"
           alt=""
         />

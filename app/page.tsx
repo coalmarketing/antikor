@@ -9,55 +9,123 @@ const HomePage = () => {
     <>
       <HeroBanner />
       <Section>
-        <div className="flex items-center gap-1 mb-2">
+        <div className="flex items-center gap-1 mb-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/head-blue.svg"
+            src="/img/logos/head-blue.svg"
             className="h-6 w-auto object-cover"
             alt=""
           />
           <p className="text-lg font-semibold text-steel uppercase tracking-widest">
-            Co nabízíme?
+            Naše služby
           </p>
         </div>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-tight text-balance uppercase font-heading">
-          Síla mýtu, precziznost stroje
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance uppercase font-heading text-center">
+          Síla mýtu,
+          <br />
+          precziznost stroje
         </h2>
         <Divider />
-        <div className="grid grid-cols-2 w-full gap-10">
-          <Card>
-            <div className="w-full text-left pr-20">
-              <p className="text-3xl font-bold">
-                Proč <span className="uppercase text-steel">mantikora</span>?
-              </p>
-              <p className="mt-4 text-md font-normal text-pretty text-light/80">
-                <Balancer>
-                  <span className="text-steel-700">Mantikora</span> je bájná
-                  bytost s lidskou tváří, tělem lva a štířím ocasem. Představuje
-                  spojení síly a rozumu, stejně jako naše práce spojuje robustní
-                  výkon s přesností a promyšleností při obrábění oceli.
-                </Balancer>
-              </p>
-            </div>
-          </Card>
-        </div>
-        <div className="grid grid-cols-2 w-full gap-10">
-          <div></div>
-          <Card tip>
-            <div className="w-full text-left pr-20">
-              <p className="text-3xl font-bold">
-                Proč <span className="uppercase text-steel">mantikora</span>?
-              </p>
-              <p className="mt-4 text-md font-normal text-pretty text-light/80">
-                <Balancer>
-                  <span className="text-steel-700">Mantikora</span> je bájná
-                  bytost s lidskou tváří, tělem lva a štířím ocasem. Představuje
-                  spojení síly a rozumu, stejně jako naše práce spojuje robustní
-                  výkon s přesností a promyšleností při obrábění oceli.
-                </Balancer>
-              </p>
-            </div>
-          </Card>
+        <div className="grid grid-cols-8 w-full gap-10 mb-10">
+          <div className="col-span-4">
+            <Card>
+              <div className="w-full h-40 bg-steel-700">
+                {" "}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/img/products/cnc.jpg"
+                  alt="CNC výroba"
+                  className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+                />
+              </div>
+              <div className="w-full text-left p-12 pt-8 pr-20">
+                <p className="text-3xl font-bold">CNC výroba</p>
+                <p className="my-4 text-md font-normal text-pretty text-light/80">
+                  <Balancer>
+                    <span className="text-steel-700">Mantikora</span> je bájná
+                    bytost s lidskou tváří, tělem lva a štířím ocasem.
+                    Představuje spojení síly a rozumu, stejně jako naše práce
+                    spojuje robustní výkon s přesností a promyšleností při
+                    obrábění oceli.
+                  </Balancer>
+                </p>
+
+                <a href="#" className="text-md/6 font-semibold text-steel">
+                  <p>
+                    Dozvědět se více <span aria-hidden="true">&#8594;</span>
+                  </p>
+                </a>
+              </div>
+            </Card>
+          </div>
+          <div className="col-span-4">
+            <Card>
+              <div className="w-full h-40 bg-steel-700">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/img/products/klempir.jpg"
+                  alt="Klempířská výroba"
+                  className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+                />
+              </div>
+              <div className="w-full text-left p-12 pt-8 pr-20">
+                <p className="text-3xl font-bold">Klempířská výroba</p>
+                <p className="my-4 text-md font-normal text-pretty text-light/80">
+                  <Balancer>
+                    <span className="text-steel-700">Mantikora</span> je bájná
+                    bytost s lidskou tváří, tělem lva a štířím ocasem.
+                    Představuje spojení síly a rozumu, stejně jako naše práce
+                    spojuje robustní výkon s přesností a promyšleností při
+                    obrábění oceli.
+                  </Balancer>
+                </p>
+
+                <a href="#" className="text-md/6 font-semibold text-steel ">
+                  <p>
+                    Dozvědět se více <span aria-hidden="true">&#8594;</span>
+                  </p>
+                </a>
+              </div>
+            </Card>
+          </div>
+
+          <div className="col-span-6">
+            <Card tip>
+              <div className="w-full text-left p-12 pr-[22%]">
+                <p className="text-3xl font-bold">
+                  Proč <span className="uppercase text-steel">mantikora</span>?
+                </p>
+                <p className="mt-4 text-md font-normal text-pretty text-light/80">
+                  <Balancer>
+                    <span className="text-steel-700">Mantikora</span> je bájná
+                    bytost s lidskou tváří, tělem lva a štířím ocasem.
+                    Představuje spojení síly a rozumu, stejně jako naše práce
+                    spojuje při obrábění oceli robustní výkon se strojovou
+                    přesností a lidským intelektem .
+                  </Balancer>
+                </p>
+              </div>
+
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/img/manticore-drawing.jpg"
+                className="absolute right-0 top-[50%] translate-y-[-40%] w-1/4 rotate-15 -scale-x-100 mix-blend-luminosity"
+                alt="Mantikora"
+              />
+            </Card>
+          </div>
+
+          <div className="col-span-2">
+            <Card tip theme="steel">
+              <div className="w-full text-left p-12 pr-20">
+                <p className="text-3xl font-bold leading-1">
+                  Kontaktujte nás!{" "}
+                  <span className="text-6xl align-sub">&#8594;</span>
+                </p>
+                <Divider color="light" marginBottom={0} marginTop={8} />
+              </div>
+            </Card>
+          </div>
         </div>
       </Section>
     </>

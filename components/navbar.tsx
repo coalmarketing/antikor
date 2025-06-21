@@ -49,7 +49,7 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm/6 font-semibold text-light"
+              className="text-sm/6 font-semibold text-light menu-link hover:text-steel-600 transition duration-300"
             >
               {item.name}
             </a>

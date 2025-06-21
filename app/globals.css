@@ -52,6 +52,27 @@ body {
   font-family: "Saira", Arial, Helvetica, sans-serif;
 }
 
+/* ======================== NAVBAR ======================= */
+.menu-link {
+  position: relative;
+}
+
+.menu-link:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 8px;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--steel);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-link:hover:after {
+  width: 100%;
+}
+
 /* ===================== HERO BANNER ===================== */
 
 .hero-polygon {

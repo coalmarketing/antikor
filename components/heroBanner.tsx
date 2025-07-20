@@ -1,3 +1,4 @@
+import Button from "./button";
 import Divider from "./divider";
 
 const HeroBanner = () => {
@@ -46,6 +47,7 @@ const HeroBanner = () => {
                 <a href="#" className="text-md/6 font-semibold">
                   Hero banner button 2 <span aria-hidden="true">&#8594;</span>
                 </a>
+                <Button label="Hero banner button 3" />
               </div>
             </div>
           </div>

@@ -26,25 +26,25 @@ const ButtonInside = ({
 }) => {
   return (
     <div
-      className={`rounded-md px-3.5 py-2.5 text-md font-semibold shadow-xs transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel ${
+      className={`rounded-md text-md font-semibold shadow-xs transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel ${
         !transparent
           ? !inverted
             ? !monochrome
-              ? "bg-steel text-light hover:bg-steel-700"
-              : "bg-dark text-light hover:bg-dark/70"
+              ? "bg-steel text-light hover:bg-steel-700 px-3.5 py-2.5 "
+              : "bg-dark text-light hover:bg-dark/70 px-3.5 py-2.5 "
             : !monochrome
-            ? "bg-light text-steel hover:light/90"
-            : "bg-light text-dark hover:bg-light/90"
+            ? "bg-light text-steel hover:light/90 px-3.5 py-2.5 "
+            : "bg-light text-dark hover:bg-light/90 px-3.5 py-2.5 "
           : !inverted
           ? !monochrome
-            ? "bg-transparent text-steel hover:text-light"
-            : "bg-transparent text-light hover:text-dark"
+            ? "bg-transparent text-steel hover:text-light px-0"
+            : "bg-transparent text-light hover:text-dark px-0"
           : !monochrome
-          ? "bg-transparent text-steel hover:text-dark"
-          : "bg-transparent text-dark hover:text-light"
+          ? "bg-transparent text-steel hover:text-dark px-0"
+          : "bg-transparent text-dark hover:text-light px-0"
       } `}
     >
-      {label + webButtonArrow}
+      {label + " " + webButtonArrow}
     </div>
   );
 };

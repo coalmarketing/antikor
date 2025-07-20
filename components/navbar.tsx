@@ -5,6 +5,7 @@ import { NavigationItem } from "@/data/navbarItems";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, DialogPanel } from "@headlessui/react";
+import Button from "./button";
 
 interface NavbarProps {
   items: NavigationItem[];
@@ -12,7 +13,7 @@ interface NavbarProps {
 
 const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
   const buttonHref = "#";
-  const buttonText = "Get started";
+  const buttonText = "Napište nám";
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -56,12 +57,7 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href={buttonHref}
-            className="rounded-md bg-steel-700 px-3.5 py-2.5 text-sm font-semibold text-light shadow-xs hover:bg-steel-800 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel-600"
-          >
-            {buttonText} &#x2964;
-          </a>
+          <Button label={buttonText} href={buttonHref} />
         </div>
       </nav>
 
@@ -106,13 +102,8 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
                   </a>
                 ))}
               </div>
-              <div className="py-6">
-                <a
-                  href={buttonHref}
-                  className="rounded-md bg-steel-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-steel-800 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel-600"
-                >
-                  {buttonText} &#x2964;
-                </a>
+              <div className="py-6 ">
+                <Button label={buttonText} href={buttonHref} />
               </div>
             </div>
           </div>

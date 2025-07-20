@@ -1,3 +1,4 @@
+import Button from "@/components/button";
 import Card from "@/components/card";
 import Divider from "@/components/divider";
 import HeroBanner from "@/components/heroBanner";
@@ -58,11 +59,7 @@ const HomePage = () => {
                   </Balancer>
                 </p>
 
-                <a href="#" className="text-md/6 font-semibold text-steel">
-                  <p>
-                    Dozvědět se více <span aria-hidden="true">&#8594;</span>
-                  </p>
-                </a>
+                <Button label="Dozvědět se více" href="#" transparent />
               </HomePageInfoCardWrapper>
             </Card>
           </div>
@@ -88,11 +85,7 @@ const HomePage = () => {
                   </Balancer>
                 </p>
 
-                <a href="#" className="text-md/6 font-semibold text-steel ">
-                  <p>
-                    Dozvědět se více <span aria-hidden="true">&#8594;</span>
-                  </p>
-                </a>
+                <Button label="Dozvědět se více" href="#" transparent />
               </HomePageInfoCardWrapper>
             </Card>
           </div>

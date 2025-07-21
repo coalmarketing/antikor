@@ -3,6 +3,8 @@ import Card from "@/components/card";
 import Divider from "@/components/divider";
 import HeroBanner from "@/components/heroBanner";
 import Section from "@/components/section";
+import { UspSection } from "@/components/usp";
+import { uspPoints } from "@/data/uspPoints";
 import Balancer from "react-wrap-balancer";
 
 const HomePageInfoCardWrapper = ({
@@ -127,6 +129,25 @@ const HomePage = () => {
             </Card>
           </div>
         </div>
+      </Section>
+      <Section anchor="služby">
+        <div className="flex items-center gap-1 mb-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/img/logos/head-blue.svg"
+            className="h-6 w-auto object-cover"
+            alt=""
+          />
+          <p className="text-lg font-semibold text-steel uppercase tracking-widest">
+            Proč do toho jít s&nbsp;ANTIKOREM?
+          </p>
+        </div>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance uppercase font-heading text-center">
+          Nejsme pouhou pohádkou
+          <br />
+        </h2>
+        <Divider />
+        <UspSection uspPoints={uspPoints} columnCount={4} />
       </Section>
     </>
   );

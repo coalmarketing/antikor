@@ -76,8 +76,8 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=steel&shade=600"
-                className="h-8 w-auto"
+                src="/img/logos/head-blue.svg"
+                className="h-12 w-auto"
               />
             </a>
             <button

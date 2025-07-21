@@ -34,20 +34,17 @@ const HeroBanner = () => {
               </h1>
               <Divider />
               <p className="mt-8 text-lg font-normal text-pretty text-light/80 sm:text-xl/8">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+                Poctivé řemeslo, moderní technologie: zakázková výroba
+                nerezových a ocelových dílů
               </p>
               <div className="mt-10 flex flex-col md:flex-row items-start md:items-center justify-center md:justify-start gap-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-steel-600 px-3.5 py-2.5 text-md font-semibold shadow-xs hover:bg-steel-700 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel"
-                >
-                  Hero banner button 1
-                </a>
-                <a href="#" className="text-md/6 font-semibold">
-                  Hero banner button 2 <span aria-hidden="true">&#8594;</span>
-                </a>
-                <Button label="Hero banner button 3" />
+                <Button label="Začněme spolupracovat" href="/products" />
+                <Button
+                  label="Poznejte naše služby"
+                  href="#služby"
+                  transparent
+                  monochrome
+                />
               </div>
             </div>
           </div>

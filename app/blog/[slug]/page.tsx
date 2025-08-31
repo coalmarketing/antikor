@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import Card from "@/components/card";
+import Link from "next/link";
 
 interface BlogPostPageProps {
   params: { slug: string };
@@ -27,12 +28,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   return (
     <main className="max-w-screen overflow-x-hidden bg-dark pt-20">
       <section className="w-3/4 mx-auto px-[5%] py-12 pt-20 pb-54 mb-16 overflow-x-hidden flex flex-col items-center rounded-xl">
-        <a
+        <Link
           href="/blog"
           className="text-steel-600 text-base mt-12 mb-6 hover:underline"
         >
           ← Zpět na blog
-        </a>
+        </Link>
         {data.image && (
           <Card className="w-full max-h-20">
             {/* eslint-disable-next-line @next/next/no-img-element */}

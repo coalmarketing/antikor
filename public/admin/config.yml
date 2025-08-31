@@ -1,7 +1,14 @@
 backend:
   name: git-gateway
+local_backend: true
+
 media_folder: "public/uploads"
 public_folder: "/uploads"
+
+logo_url: "https://coalmarketing.cz/wp-content/uploads/2024/08/coalmarketing_logo_long_color-black-1024x239.png"
+locale: "cs"
+
+
 collections:
   - name: "blog"
     label: "Blog"

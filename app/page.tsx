@@ -33,7 +33,7 @@ const HomePage = () => {
       SERVICES SECTION
       ========================================================================
       */}
-      <Section>
+      <Section anchor="služby">
         <div className="flex items-center gap-1 mb-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -167,7 +167,7 @@ const HomePage = () => {
       USP SECTION
       ========================================================================
       */}
-      <Section anchor="služby">
+      <Section>
         <div className="flex items-center gap-1 mb-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -210,7 +210,7 @@ const HomePage = () => {
       BLOG SECTION
       ========================================================================
       */}
-      <Section anchor="blog">
+      <Section anchor="blog" adaptiveHeight>
         <div className="flex items-center gap-1 mb-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

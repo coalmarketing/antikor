@@ -12,6 +12,7 @@ import ContactForm from "@/components/contactForm";
 import Divider from "@/components/divider";
 import Section from "@/components/section";
 import Balancer from "react-wrap-balancer";
+import HiringNowBadge from "@/components/hiringNowBadge";
 
 const saira = Saira({
   variable: "--font-saira",
@@ -40,6 +41,7 @@ export default function RootLayout({
         className={`${saira.variable} ${specialGothicExtendedBold.variable} antialiased overflow-x-hidden`}
       >
         <NavbarDesktop items={navigationItems} />
+        <HiringNowBadge />
         {children}
         <Section anchor="kontakt">
           <div className="flex items-center gap-1 mb-4">

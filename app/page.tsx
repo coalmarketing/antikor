@@ -90,7 +90,11 @@ const HomePage = async () => {
                   </Balancer>
                 </p>
 
-                <Button label="Dozvědět se více" href="#" transparent />
+                <Button
+                  label="Dozvědět se více"
+                  href="/sluzby-a-technologie#cnc-vyroba"
+                  transparent
+                />
               </HomePageInfoCardWrapper>
             </Card>
           </div>
@@ -117,7 +121,11 @@ const HomePage = async () => {
                   </Balancer>
                 </p>
 
-                <Button label="Dozvědět se více" href="#" transparent />
+                <Button
+                  label="Dozvědět se více"
+                  href="/sluzby-a-technologie#klempirska-vyroba"
+                  transparent
+                />
               </HomePageInfoCardWrapper>
             </Card>
           </div>
@@ -202,7 +210,11 @@ const HomePage = async () => {
         <UspSection uspPoints={uspPoints} columnCount={4} />
         <div className="flex flex-row justify-center content-center gap-10 mt-8">
           <Button label="Poptat službu" href="#kontakt" />
-          <Button label="Zjistit více o nás" href="#onas" transparent />
+          <Button
+            label="Nahlédněte do výroby"
+            href="/o-nas#galerie"
+            transparent
+          />
         </div>
       </Section>
 

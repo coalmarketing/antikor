@@ -66,7 +66,10 @@ const AboutPage = async () => {
       </Section>
 
       <Section adaptiveHeight>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance font-heading mx-auto uppercase">
+        <h2
+          id="galerie"
+          className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance font-heading mx-auto uppercase"
+        >
           Galerie
         </h2>
         <Divider />

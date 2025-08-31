@@ -14,9 +14,11 @@ const SluzbyATechnologiePage = () => {
       />
       <Section adaptiveHeight>
         {/* CNC výroba */}
-        <div className="flex flex-col md:flex-row gap-10 mb-16 items-center">
+        <div
+          className="flex flex-col md:flex-row gap-10 mb-16 items-center"
+          id="cnc-vyroba"
+        >
           <div className="flex-1">
-            <a id="cnc-vyroba" />
             <h2 className="text-3xl font-bold mb-4">CNC výroba</h2>
             <p className="text-lg text-light/80 mb-4">
               <Balancer>
@@ -68,9 +70,11 @@ const SluzbyATechnologiePage = () => {
         </div>
         <Divider />
         {/* Klempířská výroba */}
-        <div className="flex flex-col md:flex-row gap-10 my-16 items-center">
+        <div
+          className="flex flex-col md:flex-row gap-10 my-16 items-center"
+          id="klempirska-vyroba"
+        >
           <div className="flex-1">
-            <a id="klempirska-vyroba" />
             <h2 className="text-3xl font-bold mb-4">Klempířská výroba</h2>
             <p className="text-lg text-light/80 mb-4">
               <Balancer>
@@ -122,9 +126,11 @@ const SluzbyATechnologiePage = () => {
         </div>
         <Divider />
         {/* Stohovač sudů */}
-        <div className="flex flex-col md:flex-row gap-10 mt-16 items-center">
+        <div
+          className="flex flex-col md:flex-row gap-10 mt-16 items-center"
+          id="stohovac-sudu"
+        >
           <div className="flex-1">
-            <a id="stohovac-sudu" />
             <h2 className="text-3xl font-bold mb-4">Stohovač sudů</h2>
             <p className="text-lg text-light/80 mb-4">
               <Balancer>

@@ -118,7 +118,7 @@ export default async function RootLayout({
                 <div className="rounded-lg overflow-hidden shadow-md border border-steel-100">
                   <iframe
                     title="Mapa ANTIKOR"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.978729807964!2d14.49612331571636!3d49.96903287941437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b8e1e2e1b1b1b%3A0x3e2a5e6e1e1e1e1e!2sU%20Pily%20948%2C%20252%2042%20Jesenice%2C%20%C4%8Cesko!5e0!3m2!1scs!2sus!4v1718030000000!5m2!1scs!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4405.275863447904!2d16.511194012894748!3d50.025138139401854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dfa58c23cd4f3%3A0x8bf34b850ebd66f0!2sZden%C4%9Bk%20Maixner%20-%20ANTIKOR%20s.%20r.%20o.!5e0!3m2!1scs!2scz!4v1756661103947!5m2!1scs!2scz"
                     width="100%"
                     height="220"
                     style={{ border: 0 }}

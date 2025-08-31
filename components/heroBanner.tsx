@@ -38,7 +38,7 @@ const HeroBanner = () => {
                 nerezových a ocelových dílů
               </p>
               <div className="mt-10 flex flex-col md:flex-row items-start md:items-center justify-center md:justify-start gap-6">
-                <Button label="Začněme spolupracovat" href="/products" />
+                <Button label="Začněme spolupracovat" href="#kontakt" />
                 <Button
                   label="Poznejte naše služby"
                   href="#služby"

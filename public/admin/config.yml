@@ -21,7 +21,7 @@ locale: "cs"
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "public/content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview: true
@@ -33,7 +33,7 @@ collections:
 
   - name: "positions"
     label: "Otevřené pozice"
-    folder: "content/positions"
+    folder: "public/content/positions"
     create: true
     slug: "{{slug}}"
     preview: true

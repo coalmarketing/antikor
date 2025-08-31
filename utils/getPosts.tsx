@@ -13,7 +13,7 @@ export type BlogPost = {
 };
 
 export async function getPosts(): Promise<BlogPost[]> {
-  const dir = path.join(process.cwd(), "content/blog");
+  const dir = path.join(process.cwd(), "public/content/blog");
   const files = fs.readdirSync(dir);
 
   return files

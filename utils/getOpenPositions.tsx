@@ -14,7 +14,7 @@ export type OpenPosition = {
 };
 
 export async function getOpenPositions(): Promise<OpenPosition[]> {
-  const dir = path.join(process.cwd(), "public/content/positions");
+  const dir = path.join(process.cwd(), "content/positions");
   const files = fs.readdirSync(dir);
 
   return files

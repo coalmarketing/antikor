@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: coalmarketing/antikor
   branch: main
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -8,8 +7,6 @@ backend:
     delete: 'Delete {{collection}} “{{slug}}”'
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
-
-local_backend: true
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
@@ -21,7 +18,7 @@ locale: "cs"
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "public/content/blog"
+    folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview: true
@@ -33,7 +30,7 @@ collections:
 
   - name: "positions"
     label: "Otevřené pozice"
-    folder: "public/content/positions"
+    folder: "content/positions"
     create: true
     slug: "{{slug}}"
     preview: true

@@ -1,7 +1,7 @@
 const FooterMenu = () => {
   return (
     <nav className="grid grid-cols-3 py-8 text-center container mx-auto">
-      <a href="#" className="-m-1.5 p-1.5">
+      <a href="#" className="-m-1.5 p-1.5 mx-auto">
         <span className="sr-only">ANTIKOR</span>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

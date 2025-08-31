@@ -33,7 +33,7 @@ export default function BlogSectionClient({
               <img
                 src={post.image ?? "/img/Manticore.png"}
                 alt={post.title}
-                className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+                className="w-full h-full object-cover"
               />
             </div>
             <BlogCardWrapper>

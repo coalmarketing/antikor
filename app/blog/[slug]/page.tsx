@@ -16,12 +16,15 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const filePath = path.join("content/blog", `${params.slug}.md`);
+  const { slug } = await params;
+
+  const filePath = path.join(process.cwd(), "content/blog", `${slug}.md`);
   if (!fs.existsSync(filePath)) {
     notFound();
   }
+
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);
 
@@ -34,19 +37,22 @@ export default async function BlogPostPage({
         >
           ← Zpět na blog
         </Link>
+
         {data.image && (
           <Card className="w-full max-h-20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={data.image}
-              alt={data.title}
+              alt={data.title ?? ""}
               className="w-full h-full object-cover"
             />
           </Card>
         )}
+
         <h1 className="text-light text-left text-4xl font-bold mt-12">
           {data.title}
         </h1>
+
         {data.date && (
           <p className="text-sm font-bold text-steel-500 my-8">
             {new Date(data.date).toLocaleDateString("cs-CZ")}

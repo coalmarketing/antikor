@@ -17,7 +17,6 @@ export async function getPosts(): Promise<BlogPost[]> {
   const files = fs.readdirSync(dir);
 
   return files
-    .filter((filename) => filename.endsWith(".md"))
     .map((filename): BlogPost => {
       const fileContent = fs.readFileSync(path.join(dir, filename), "utf-8");
       const { data, content } = matter(fileContent);

@@ -18,7 +18,6 @@ export async function getOpenPositions(): Promise<OpenPosition[]> {
   const files = fs.readdirSync(dir);
 
   return files
-    .filter((filename) => filename.endsWith(".md"))
     .map((filename): OpenPosition => {
       const fileContent = fs.readFileSync(path.join(dir, filename), "utf-8");
       const { data } = matter(fileContent);

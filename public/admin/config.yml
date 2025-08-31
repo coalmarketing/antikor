@@ -24,6 +24,7 @@ collections:
     folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview: true
     fields:
       - { label: "Nadpis", name: "title", widget: "string" }
       - { label: "Datum publikace", name: "date", widget: "datetime" }
@@ -35,6 +36,7 @@ collections:
     folder: "content/positions"
     create: true
     slug: "{{slug}}"
+    preview: true
     fields:
       - { label: "Název pozice", name: "title", widget: "string" }
       - { label: "Popis", name: "description", widget: "markdown" }

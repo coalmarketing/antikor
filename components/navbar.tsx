@@ -6,6 +6,7 @@ import { NavigationItem } from "@/data/navbarItems";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import Button from "./button";
+import Link from "next/link";
 
 interface NavbarProps {
   items: NavigationItem[];
@@ -25,7 +26,7 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
         className="flex items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">ANTIKOR</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -33,7 +34,7 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
               src="/img/logos/logo-long-mono-light.png"
               className="h-16 w-auto"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button

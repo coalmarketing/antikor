@@ -29,8 +29,8 @@ const BlogSection: React.FC = () => {
   if (!posts.length) return <p>Žádné příspěvky nebyly nalezeny.</p>;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-3/4 mx-auto">
-      {posts.map((post) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-3/4 mx-auto">
+      {posts.slice(0, 2).map((post) => (
         <Link href={`/blog/${post.slug}`} key={post.slug} className="block">
           <Card>
             <div className="w-full h-40 bg-steel-700">

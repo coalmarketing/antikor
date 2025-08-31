@@ -231,7 +231,7 @@ const HomePage = async () => {
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon"></div>
 
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon-3 z-30"></div>
-        <div className="mt-8">
+        <div className="mt-8 z-50">
           <Button label="Více příspěvků" href="/blog" />
         </div>
       </Section>

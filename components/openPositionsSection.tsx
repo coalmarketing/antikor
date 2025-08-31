@@ -4,6 +4,7 @@ import type { OpenPosition } from "@/utils/getOpenPositions";
 
 import Card from "./card";
 import Button from "./button";
+import Link from "next/link";
 
 export const OpenPositionCardWrapper = ({
   children,
@@ -23,11 +24,14 @@ export default function OpenPositionsSectionClient({
           <h3 className="text-2xl font-bold">
             Momentálně nemáme vypsané, žádné pozice
           </h3>
-          <p className="text-steel-600 text-sm mt-2 font-semibold">
+          <p className="text-steel-600 text-sm mt-2 mb-8 font-semibold">
             Sledujte nás všude a zkuste to znovu později. Nebo nám rovnou
             napište na <a href="mailto:info@antikor.cz">info@antikor.cz</a>,
             zašlete nám svůj životopis a uvidíme, zda pro vás něco nenajdeme!
-          </p>
+          </p>{" "}
+          <Link href="mailto:info@antikor.cz" target="_blank">
+            <Button label="Napište nám!" transparent />
+          </Link>
         </OpenPositionCardWrapper>
       </Card>
     );
@@ -47,7 +51,9 @@ export default function OpenPositionsSectionClient({
             <div className="text-light/80 text-sm mt-2 mb-8">
               {position.description}
             </div>
-            <Button label="Napište nám!" transparent />
+            <Link href="mailto:info@antikor.cz" target="_blank">
+              <Button label="Napište nám!" transparent />
+            </Link>
           </OpenPositionCardWrapper>
         </Card>
       ))}

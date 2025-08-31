@@ -12,11 +12,17 @@ export default function HiringNowBadgeClient({
   hasOpenPositions: boolean;
 }) {
   const [dismissed, setDismissed] = useState(false);
+  const [focused, setFocused] = useState(false);
   const show = hasOpenPositions && !dismissed;
   if (!show) return null;
 
   return (
-    <div className="fixed bottom-2 right-2 z-50 m-4">
+    <div
+      className="fixed bottom-2 right-2 z-50 m-4 transition-opacity duration-300"
+      style={{ opacity: focused ? 1 : 0.5 }}
+      onMouseEnter={() => setFocused(true)}
+      onMouseLeave={() => setFocused(false)}
+    >
       <div className="relative bg-gradient-to-r from-steel-600 to-steel-700 rounded-xl w-[350px] px-6 pt-6 pb-2 border border-light/20">
         <div className="absolute top-2 right-2">
           <button onClick={() => setDismissed(true)} aria-label="Zavřít">

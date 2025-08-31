@@ -1,5 +1,6 @@
 import Button from "@/components/button";
 import Card from "@/components/card";
+
 import Divider from "@/components/divider";
 import HeroBanner from "@/components/heroBanner";
 import Section from "@/components/section";
@@ -162,33 +163,6 @@ const HomePage = () => {
           </Balancer>
         </p>
         <UspSection uspPoints={uspPoints} columnCount={4} />
-      </Section>
-      <Section anchor="kontakt">
-        <div className="flex items-center gap-1 mb-4">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/img/logos/head-blue.svg"
-            className="h-6 w-auto object-cover"
-            alt=""
-          />
-          <p className="text-lg font-semibold text-steel uppercase tracking-widest">
-            Proč do toho jít s&nbsp;ANTIKOREM?
-          </p>
-        </div>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance uppercase font-heading text-center">
-          Kontaktujte nás
-          <br />
-        </h2>
-        <Divider />
-        <p className="my-4 mx-[5%] md:mx-[10%] lg:mx-[20%] xl:mx-[25%] text-md font-normal text-pretty text-light/80 text-center">
-          <Balancer>
-            Máte dotazy, potřebujete cenovou nabídku nebo chcete prodiskutovat
-            váš projekt v&nbsp;oblasti kovovýroby, CNC obrábění
-            nebo&nbsp;klempířských prací? Neváhejte nás kontaktovat! Jsme
-            připraveni vám pomoci s&nbsp;vašimi nerezovými a&nbsp;ocelovými
-            řešeními.
-          </Balancer>
-        </p>
       </Section>
     </>
   );

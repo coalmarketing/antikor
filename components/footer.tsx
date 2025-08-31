@@ -1,6 +1,6 @@
 const FooterMenu = () => {
   return (
-    <nav className="flex justify-evenly py-8">
+    <nav className="grid grid-cols-3 py-8 text-center container mx-auto">
       <a href="#" className="-m-1.5 p-1.5">
         <span className="sr-only">ANTIKOR</span>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -16,13 +16,13 @@ const FooterMenu = () => {
         <p className="text-sm">561 51 Letohrad</p>
       </div>
       <div className="flex flex-col gap-2">
-        <a href="#" className="text-sm">
+        <a href="#" className="text-sm hover:text-steel transition">
           O nás
         </a>
-        <a href="#" className="text-sm">
+        <a href="#" className="text-sm hover:text-steel transition">
           Služby
         </a>
-        <a href="#" className="text-sm">
+        <a href="#kontakt" className="text-sm hover:text-steel transition">
           Kontakt
         </a>
       </div>
@@ -32,10 +32,10 @@ const FooterMenu = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light border-t border-light/10">
+    <footer className="bg-dark text-light border-t border-light/10 w-full">
       <FooterMenu />
 
-      <div className="container mx-auto text-center">
+      <div className="mx-auto text-center">
         <p className="text-sm py-4 bg-light/10">
           &copy; {new Date().getFullYear()}, coalmarketing & Michal Špitálský
         </p>

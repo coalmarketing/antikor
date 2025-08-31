@@ -40,13 +40,13 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="w-full mx-auto bg-lobster-100 p-8">
-      <h3 className="text-2xl font-bold mb-4 text-dark uppercase">
-        Kontaktní formulář
-      </h3>
+    <div className="w-full mx-auto px-8">
       <form onSubmit={onSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-sm mb-1 opacity-65">
+          <label
+            htmlFor="name"
+            className="block text-sm mb-1 text-light/80 font-bold"
+          >
             Jméno
           </label>
           <input
@@ -55,13 +55,16 @@ const ContactForm: React.FC = () => {
             name="name"
             required
             minLength={2}
-            className="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-steel/50"
+            className="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-steel/50 bg-light/10"
             placeholder="Vaše jméno"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm mb-1 opacity-65">
+          <label
+            htmlFor="email"
+            className="block text-sm mb-1 text-light/80 font-bold"
+          >
             Email
           </label>
           <input
@@ -70,13 +73,16 @@ const ContactForm: React.FC = () => {
             name="email"
             required
             minLength={3}
-            className="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-steel/50"
+            className="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-steel/50 bg-light/10"
             placeholder="vas@email.cz"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm mb-1 opacity-65">
+          <label
+            htmlFor="message"
+            className="block text-sm mb-1 text-light/80 font-bold"
+          >
             Zpráva
           </label>
           <textarea
@@ -84,8 +90,8 @@ const ContactForm: React.FC = () => {
             name="message"
             required
             minLength={2}
-            rows={4}
-            className="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-steel/50"
+            rows={7}
+            className="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-steel/50 bg-light/10"
             placeholder="Vaše zpráva..."
           ></textarea>
         </div>

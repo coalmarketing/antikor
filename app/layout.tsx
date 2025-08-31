@@ -8,6 +8,10 @@ import "./globals.css";
 import NavbarDesktop from "@/components/navbar";
 import { navigationItems } from "@/data/navbarItems";
 import Footer from "@/components/footer";
+import ContactForm from "@/components/contactForm";
+import Divider from "@/components/divider";
+import Section from "@/components/section";
+import Balancer from "react-wrap-balancer";
 
 const saira = Saira({
   variable: "--font-saira",
@@ -37,6 +41,92 @@ export default function RootLayout({
       >
         <NavbarDesktop items={navigationItems} />
         {children}
+        <Section anchor="kontakt">
+          <div className="flex items-center gap-1 mb-4">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/img/logos/head-blue.svg"
+              className="h-6 w-auto object-cover"
+              alt=""
+            />
+            <p className="text-lg font-semibold text-steel uppercase tracking-widest">
+              Proč do toho jít s&nbsp;ANTIKOREM?
+            </p>
+          </div>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance uppercase font-heading text-center">
+            Kontaktujte nás
+            <br />
+          </h2>
+          <Divider />
+          <p className="my-4 mx-[5%] md:mx-[10%] lg:mx-[20%] xl:mx-[25%] text-md font-normal text-pretty text-light/80 text-center">
+            <Balancer>
+              Máte dotazy, potřebujete cenovou nabídku nebo chcete prodiskutovat
+              váš projekt v&nbsp;oblasti kovovýroby, CNC obrábění
+              nebo&nbsp;klempířských prací? Neváhejte nás kontaktovat! Jsme
+              připraveni vám pomoci s&nbsp;vašimi nerezovými a&nbsp;ocelovými
+              řešeními.
+            </Balancer>
+          </p>
+
+          {/* ------ Kontaktní onformace + formulář */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
+            <div className="order-2 md:order-1 flex flex-col gap-6">
+              <div>
+                <p className="font-bold text-lg mb-1">
+                  Zdeněk Maixner - ANTIKOR s.r.o.
+                </p>
+                <p>
+                  Kunčice 26
+                  <br />
+                  561 51 Letohrad
+                </p>
+                <p className="mt-2">
+                  IČO: <span className="font-mono">28800729</span>
+                </p>
+                <p>
+                  DIČ: <span className="font-mono">CZ28800729</span>
+                </p>
+                <p className="mt-2">
+                  E-mail:{" "}
+                  <a
+                    href="mailto:info@antikor.cz"
+                    className="text-steel-600 underline"
+                  >
+                    info@antikor.cz
+                  </a>
+                </p>
+                <p>
+                  Telefon:{" "}
+                  <a
+                    href="tel:+420241932111"
+                    className="text-steel-600 underline"
+                  >
+                    +420 241 932 111
+                  </a>
+                </p>
+              </div>
+
+              {/* -------- Mapa ANTIKOR */}
+              <div className="rounded-lg overflow-hidden shadow-md border border-steel-100">
+                <iframe
+                  title="Mapa ANTIKOR"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.978729807964!2d14.49612331571636!3d49.96903287941437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b8e1e2e1b1b1b%3A0x3e2a5e6e1e1e1e1e!2sU%20Pily%20948%2C%20252%2042%20Jesenice%2C%20%C4%8Cesko!5e0!3m2!1scs!2sus!4v1718030000000!5m2!1scs!2sus"
+                  width="100%"
+                  height="220"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+
+            {/* ------- Kontaktní formulář */}
+            <div className="order-1 md:order-2">
+              <ContactForm />
+            </div>
+          </div>
+        </Section>
         <Footer />
       </body>
     </html>

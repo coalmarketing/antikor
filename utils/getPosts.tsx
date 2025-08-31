@@ -9,6 +9,7 @@ export type BlogPost = {
   title: string;
   date: string;
   body: string;
+  image: string;
 };
 
 export async function getPosts(): Promise<BlogPost[]> {
@@ -25,6 +26,7 @@ export async function getPosts(): Promise<BlogPost[]> {
         title: data.title || "",
         date: data.date || "",
         body: content,
+        image: data.image || "",
       };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));

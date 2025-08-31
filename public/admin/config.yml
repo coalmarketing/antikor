@@ -28,6 +28,7 @@ collections:
       - { label: "Nadpis", name: "title", widget: "string" }
       - { label: "Datum publikace", name: "date", widget: "datetime" }
       - { label: "Obsah", name: "body", widget: "markdown" }
+      - { label: "Náhledový obrázek", name: "image", widget: "image" }
 
   - name: "positions"
     label: "Otevřené pozice"

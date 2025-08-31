@@ -37,8 +37,8 @@ const BlogSection: React.FC = () => {
               {" "}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/img/products/cnc.jpg"
-                alt="CNC výroba"
+                src={post.image}
+                alt={post.title}
                 className="w-full h-full object-cover mix-blend-luminosity opacity-50"
               />
             </div>

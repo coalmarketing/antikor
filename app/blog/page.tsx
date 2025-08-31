@@ -1,20 +1,19 @@
+import BlogSection from "@/components/blogSection";
 import Section from "@/components/section";
 import SubPageHeader from "@/components/subPageHeader";
+import { getPosts } from "@/utils/getPosts";
 
-const SubPage = () => {
+const SubPage = async () => {
+  const posts = await getPosts();
   return (
     <>
       <SubPageHeader
         title="Blog"
-        claim="Toto je claim podstránky."
-        description="Krátký popis nebo úvodní text k této podstránce. Můžete zde stručně představit obsah nebo účel stránky."
+        claim="Co je nového v ANTIKORU"
+        description="Vítejte v našem blogovém archivu. Sledujte, jak naše firma roste a vyvíjí se spolu s námi. Najdete zde novinky, aktuality a zajímavosti z našeho působení."
       />
       <Section adaptiveHeight>
-        <h2 className="text-3xl font-bold mb-4">Sekce s obsahem</h2>
-        <p className="text-lg text-light/80">
-          Toto je ukázková sekce pro další obsah podstránky. Můžete zde přidat
-          libovolné komponenty, texty nebo obrázky dle potřeby.
-        </p>
+        <BlogSection posts={posts} />
       </Section>
     </>
   );

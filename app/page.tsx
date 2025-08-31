@@ -227,7 +227,7 @@ const HomePage = async () => {
           Blog
         </h2>
         <Divider />
-        <BlogSection posts={posts} />
+        <BlogSection posts={posts} limit={2} />
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon"></div>
 
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon-3 pointer-events-none"></div>

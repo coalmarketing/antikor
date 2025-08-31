@@ -10,12 +10,18 @@ export const BlogCardWrapper = ({
   children: React.ReactNode;
 }) => <div className="w-full text-left p-12 pt-4 pr-20">{children}</div>;
 
-export default function BlogSectionClient({ posts }: { posts: BlogPost[] }) {
+export default function BlogSectionClient({
+  posts,
+  limit,
+}: {
+  posts: BlogPost[];
+  limit?: number;
+}) {
   if (!posts?.length) return <p>Žádné příspěvky nebyly nalezeny.</p>;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-3/4 mx-auto">
-      {posts.slice(0, 2).map((post) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto">
+      {posts.slice(0, limit).map((post) => (
         <Link
           href={`/blog/${post.slug}`}
           key={post.slug}

@@ -1,4 +1,3 @@
-import Card from "@/components/card";
 import Divider from "@/components/divider";
 import GallerySection from "@/components/gallerySection";
 
@@ -58,9 +57,7 @@ const AboutPage = async () => {
                   <h3 className="text-lg font-bold text-steel-700 mb-1">
                     {usp.title}
                   </h3>
-                  <p className="text-light/80 text-base text-sm">
-                    {usp.description}
-                  </p>
+                  <p className="text-light/80 text-sm">{usp.description}</p>
                 </div>
               </div>
             ))}

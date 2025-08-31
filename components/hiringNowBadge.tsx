@@ -18,7 +18,7 @@ export default function HiringNowBadgeClient({
 
   return (
     <div
-      className="fixed bottom-2 right-2 z-50 m-4 transition-opacity duration-300"
+      className="fixed bottom-2 right-2 z-60 m-4 transition-opacity duration-300"
       style={{ opacity: focused ? 1 : 0.5 }}
       onMouseEnter={() => setFocused(true)}
       onMouseLeave={() => setFocused(false)}

@@ -27,7 +27,7 @@ const SubPageHeader: React.FC<SubPageHeaderProps> = ({
         </div>
         <p className="text-light text-left text-6xl font-bold mt-5">{claim}</p>
         <Divider alignment="left" marginBottom={0} />
-        <p className="text-light/80 text-left text-xl mt-10">{description}</p>
+        <p className="text-light/80 text-left text-lg mt-10">{description}</p>
       </div>
 
       <div className="bg-steel-500/20 w-screen h-screen absolute top-0 left-20 hero-polygon"></div>

@@ -5,7 +5,7 @@ const SubPage = () => {
   return (
     <>
       <SubPageHeader
-        title="Podstránka"
+        title="Blog"
         claim="Toto je claim podstránky."
         description="Krátký popis nebo úvodní text k této podstránce. Můžete zde stručně představit obsah nebo účel stránky."
       />

@@ -4,7 +4,7 @@ import Section from "@/components/section";
 import SubPageHeader from "@/components/subPageHeader";
 import { getOpenPositions } from "@/utils/getOpenPositions";
 
-const SubPage = async () => {
+const CareerPage = async () => {
   const positions = await getOpenPositions();
   return (
     <>
@@ -17,7 +17,7 @@ const SubPage = async () => {
           vás! "
       />
       <Section adaptiveHeight>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance font-heading text-left mr-auto">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance font-heading text-left mr-auto uppercase">
           Volné pozice
         </h2>
         <Divider alignment="left" />
@@ -34,4 +34,4 @@ const SubPage = async () => {
   );
 };
 
-export default SubPage;
+export default CareerPage;

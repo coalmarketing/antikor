@@ -16,8 +16,12 @@ export default function BlogSectionClient({ posts }: { posts: BlogPost[] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-3/4 mx-auto">
       {posts.slice(0, 2).map((post) => (
-        <Link href={`/blog/${post.slug}`} key={post.slug} className="block">
-          <Card>
+        <Link
+          href={`/blog/${post.slug}`}
+          key={post.slug}
+          className="block hover:scale-101 transition duration-300 z-50"
+        >
+          <Card className="z-50">
             <div className="w-full h-40 bg-steel-700">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

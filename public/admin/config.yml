@@ -39,3 +39,13 @@ collections:
       - { label: "Lokalita", name: "location", widget: "string", required: false }
       - { label: "Typ úvazku", name: "type", widget: "string", required: false }
       - { label: "Zveřejněno", name: "published", widget: "boolean", default: true }
+
+  - name: "gallery"
+    label: "Galerie"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    preview: true
+    fields:
+      - { label: "Název obrázku", name: "title", widget: "string" }
+      - { label: "Obrázek", name: "image", widget: "image" }

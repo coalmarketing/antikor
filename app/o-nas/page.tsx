@@ -1,3 +1,4 @@
+import Card from "@/components/card";
 import Divider from "@/components/divider";
 import GallerySection from "@/components/gallerySection";
 
@@ -6,6 +7,7 @@ import SubPageHeader from "@/components/subPageHeader";
 
 import { uspPoints } from "@/data/uspPoints";
 import { getGalleryImages } from "@/utils/getGalleryImg";
+import Balancer from "react-wrap-balancer";
 
 const AboutPage = async () => {
   const images = await getGalleryImages();
@@ -62,6 +64,32 @@ const AboutPage = async () => {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="w-full mt-10">
+          <Card tip>
+            <div className="w-full text-left p-[10%] pr-[22%] z-10">
+              <p className="text-3xl font-bold">
+                Proč <span className="uppercase text-steel">mantikora</span>?
+              </p>
+              <p className="mt-4 text-lg font-normal text-pretty text-light/80">
+                <Balancer>
+                  <span className="text-steel-600 font-bold">Mantikora</span> je
+                  bájná bytost s lidskou tváří, tělem lva a štířím ocasem.
+                  Představuje spojení síly a rozumu, stejně jako naše práce
+                  spojuje při obrábění oceli robustní výkon se strojovou
+                  přesností a lidským intelektem.
+                </Balancer>
+              </p>
+            </div>
+
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/img/Manticore.svg"
+              className="absolute bottom-0 md:-bottom-80 lg:-bottom-80 xl:-bottom-120 -right-20 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] object-cover z-10 -scale-x-100"
+              alt=""
+            />
+          </Card>
         </div>
       </Section>
 

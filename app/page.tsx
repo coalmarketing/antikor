@@ -1,3 +1,4 @@
+import BlogSection from "@/components/blogSection";
 import Button from "@/components/button";
 import Card from "@/components/card";
 
@@ -20,8 +21,19 @@ const HomePageInfoCardWrapper = ({
 const HomePage = () => {
   return (
     <>
+      {/*
+      ========================================================================
+      HERO BANNER SECTION
+      ========================================================================
+      */}
       <HeroBanner />
-      <Section>
+
+      {/*
+      ========================================================================
+      SERVICES SECTION
+      ========================================================================
+      */}
+      <Section anchor="služby">
         <div className="flex items-center gap-1 mb-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -149,7 +161,13 @@ const HomePage = () => {
           </div>
         </div>
       </Section>
-      <Section anchor="služby">
+
+      {/*
+      ========================================================================
+      USP SECTION
+      ========================================================================
+      */}
+      <Section>
         <div className="flex items-center gap-1 mb-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -184,6 +202,36 @@ const HomePage = () => {
         <div className="flex flex-row justify-center content-center gap-10 mt-8">
           <Button label="Poptat službu" href="#kontakt" />
           <Button label="Zjistit více o nás" href="#onas" transparent />
+        </div>
+      </Section>
+
+      {/*
+      ========================================================================
+      BLOG SECTION
+      ========================================================================
+      */}
+      <Section anchor="blog" adaptiveHeight>
+        <div className="flex items-center gap-1 mb-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/img/logos/head-blue.svg"
+            className="h-6 w-auto object-cover"
+            alt=""
+          />
+          <p className="text-lg font-semibold text-steel uppercase tracking-widest">
+            Co nového v&nbsp;ANTIKORU?
+          </p>
+        </div>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance uppercase font-heading text-center">
+          Blog
+        </h2>
+        <Divider />
+        <BlogSection />
+        <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon"></div>
+
+        <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon-3 z-30"></div>
+        <div className="mt-8">
+          <Button label="Více příspěvků" href="/blog" />
         </div>
       </Section>
     </>

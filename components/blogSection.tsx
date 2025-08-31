@@ -1,0 +1,62 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { BlogPost, getPosts } from "@/utils/getPosts";
+import Link from "next/link";
+import Card from "./card";
+
+export const BlogCardWrapper = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  return <div className="w-full text-left p-12 pt-4 pr-20">{children}</div>;
+};
+
+const BlogSection: React.FC = () => {
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      const data = await getPosts();
+      setPosts(data);
+      setLoading(false);
+    })();
+  }, []);
+
+  if (loading) return <p>Načítání...</p>;
+  if (!posts.length) return <p>Žádné příspěvky nebyly nalezeny.</p>;
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-3/4 mx-auto">
+      {posts.map((post) => (
+        <Link href={`/blog/${post.slug}`} key={post.slug} className="block">
+          <Card>
+            <div className="w-full h-40 bg-steel-700">
+              {" "}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/img/products/cnc.jpg"
+                alt="CNC výroba"
+                className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+              />
+            </div>
+            <BlogCardWrapper>
+              <h3 className="text-2xl font-bold">{post.title}</h3>
+              <p className="text-steel-600 text-sm mt-2 font-semibold">
+                {new Date(post.date).toLocaleDateString("cs-CZ")}
+              </p>
+              <div className="text-light/80 text-sm mt-2 line-clamp-3">
+                {post.body.slice(0, 120)}
+                {post.body.length > 120 ? "..." : ""}
+              </div>
+            </BlogCardWrapper>
+          </Card>
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default BlogSection;

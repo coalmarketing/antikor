@@ -1,0 +1,31 @@
+"use server";
+
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+export type BlogPost = {
+  slug: string;
+  title: string;
+  date: string;
+  body: string;
+};
+
+export async function getPosts(): Promise<BlogPost[]> {
+  const dir = path.join(process.cwd(), "content/blog");
+  const files = fs.readdirSync(dir);
+
+  return files
+    .filter((filename) => filename.endsWith(".md"))
+    .map((filename): BlogPost => {
+      const fileContent = fs.readFileSync(path.join(dir, filename), "utf-8");
+      const { data, content } = matter(fileContent);
+      return {
+        slug: filename.replace(/\.md$/, ""),
+        title: data.title || "",
+        date: data.date || "",
+        body: content,
+      };
+    })
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
+}

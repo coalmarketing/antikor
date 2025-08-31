@@ -7,6 +7,7 @@ import HeroBanner from "@/components/heroBanner";
 import Section from "@/components/section";
 import { UspSection } from "@/components/usp";
 import { uspPoints } from "@/data/uspPoints";
+import { getPosts } from "@/utils/getPosts";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
@@ -18,7 +19,8 @@ const HomePageInfoCardWrapper = ({
   return <div className="w-full text-left p-12 pt-8 pr-20">{children}</div>;
 };
 
-const HomePage = () => {
+const HomePage = async () => {
+  const posts = await getPosts();
   return (
     <>
       {/*
@@ -67,7 +69,6 @@ const HomePage = () => {
           <div className="col-span-8 md:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
-                {" "}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/img/products/cnc.jpg"
@@ -226,7 +227,7 @@ const HomePage = () => {
           Blog
         </h2>
         <Divider />
-        <BlogSection />
+        <BlogSection posts={posts} />
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon"></div>
 
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon-3 z-30"></div>

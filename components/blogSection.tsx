@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { BlogPost, getPosts } from "@/utils/getPosts";
+import type { BlogPost } from "@/utils/getPosts";
 import Link from "next/link";
 import Card from "./card";
 
@@ -9,24 +8,10 @@ export const BlogCardWrapper = ({
   children,
 }: {
   children: React.ReactNode;
-}) => {
-  return <div className="w-full text-left p-12 pt-4 pr-20">{children}</div>;
-};
+}) => <div className="w-full text-left p-12 pt-4 pr-20">{children}</div>;
 
-const BlogSection: React.FC = () => {
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    (async () => {
-      const data = await getPosts();
-      setPosts(data);
-      setLoading(false);
-    })();
-  }, []);
-
-  if (loading) return <p>Načítání...</p>;
-  if (!posts.length) return <p>Žádné příspěvky nebyly nalezeny.</p>;
+export default function BlogSectionClient({ posts }: { posts: BlogPost[] }) {
+  if (!posts?.length) return <p>Žádné příspěvky nebyly nalezeny.</p>;
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-3/4 mx-auto">
@@ -34,10 +19,9 @@ const BlogSection: React.FC = () => {
         <Link href={`/blog/${post.slug}`} key={post.slug} className="block">
           <Card>
             <div className="w-full h-40 bg-steel-700">
-              {" "}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={post.image}
+                src={post.image ?? "/img/Manticore.png"}
                 alt={post.title}
                 className="w-full h-full object-cover mix-blend-luminosity opacity-50"
               />
@@ -57,6 +41,4 @@ const BlogSection: React.FC = () => {
       ))}
     </div>
   );
-};
-
-export default BlogSection;
+}

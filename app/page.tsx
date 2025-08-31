@@ -6,6 +6,7 @@ import HeroBanner from "@/components/heroBanner";
 import Section from "@/components/section";
 import { UspSection } from "@/components/usp";
 import { uspPoints } from "@/data/uspPoints";
+import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
 const HomePageInfoCardWrapper = ({
@@ -38,7 +39,19 @@ const HomePage = () => {
           precziznost stroje
         </h2>
         <Divider />
-        <div className="grid grid-cols-8 w-full gap-5 md:gap-10 mb-10">
+        <p className="my-4 mx-[5%] md:mx-[10%] lg:mx-[20%] xl:mx-[25%] text-md font-normal text-pretty text-light/80 text-center">
+          <Balancer>
+            Specializujeme se na komplexní řešení v&nbsp;oblasti zpracování
+            kovů. Naše moderní technologie a&nbsp;hluboké odborné znalosti nám
+            umožňují nabídnout širokou škálu služeb, které přesně odpovídají
+            potřebám našich zákazníků.{" "}
+            <span className="text-steel-600 font-bold">
+              Síla mýtu, preciznost stroje
+            </span>{" "}
+            &ndash; to je naše krédo.
+          </Balancer>
+        </p>
+        <div className="grid grid-cols-8 w-full gap-5 md:gap-10 my-10">
           <div className="col-span-8 md:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
@@ -54,11 +67,13 @@ const HomePage = () => {
                 <p className="text-3xl font-bold">CNC výroba</p>
                 <p className="my-4 text-md font-normal text-pretty text-light/80">
                   <Balancer>
-                    <span className="text-steel-600 font-bold">Mantikora</span>{" "}
-                    je bájná bytost s lidskou tváří, tělem lva a štířím ocasem.
-                    Představuje spojení síly a rozumu, stejně jako naše práce
-                    spojuje robustní výkon s přesností a promyšleností při
-                    obrábění oceli.
+                    Naše CNC výroba představuje špičku v oblasti precizního
+                    obrábění a tváření kovů. Využíváme nejmodernější CNC stroje,
+                    které nám umožňují dosáhnout maximální přesnosti,
+                    opakovatelnosti a efektivity. Ať už potřebujete složité
+                    nerezové komponenty, prototypy nebo sériovou výrobu
+                    ocelových dílů, naše CNC technologie zajistí prvotřídní
+                    výsledky a antikorozní ochranu.
                   </Balancer>
                 </p>
 
@@ -80,11 +95,12 @@ const HomePage = () => {
                 <p className="text-3xl font-bold">Klempířská výroba</p>
                 <p className="my-4 text-md font-normal text-pretty text-light/80">
                   <Balancer>
-                    <span className="text-steel-600 font-bold">Mantikora</span>{" "}
-                    je bájná bytost s lidskou tváří, tělem lva a štířím ocasem.
-                    Představuje spojení síly a rozumu, stejně jako naše práce
-                    spojuje robustní výkon s přesností a promyšleností při
-                    obrábění oceli.
+                    V oblasti klempířské výroby jsme vaším spolehlivým partnerem
+                    pro zakázkovou výrobu z plechů. Od jednoduchých prvků po
+                    komplexní konstrukce &ndash; s precizností a důrazem na
+                    detail zpracováváme různé druhy plechů, včetně oceli, nerezu
+                    a hliníku. Naše klempířské práce jsou zárukou funkčnosti,
+                    estetiky a dlouhé životnosti, a to i v náročných podmínkách.
                   </Balancer>
                 </p>
 
@@ -105,7 +121,7 @@ const HomePage = () => {
                     je bájná bytost s lidskou tváří, tělem lva a štířím ocasem.
                     Představuje spojení síly a rozumu, stejně jako naše práce
                     spojuje při obrábění oceli robustní výkon se strojovou
-                    přesností a lidským intelektem .
+                    přesností a lidským intelektem.
                   </Balancer>
                 </p>
               </div>
@@ -120,14 +136,16 @@ const HomePage = () => {
           </div>
 
           <div className="col-span-8 sm:col-span-3 md:col-span-2">
-            <Card tip theme="steel">
-              <div className="w-full text-left p-[10%] pr-20">
-                <p className="lg:text-2xl xl:text-3xl font-bold">
-                  Kontaktujte nás! <br />
-                  <span className="text-6xl leading-6">&#8594;</span>
-                </p>
-              </div>
-            </Card>
+            <Link href="#kontakt">
+              <Card tip theme="steel">
+                <div className="w-full text-left p-[10%] pr-20">
+                  <p className="lg:text-2xl xl:text-3xl font-bold">
+                    Kontaktujte nás! <br />
+                    <span className="text-6xl leading-6">&#8594;</span>
+                  </p>
+                </div>
+              </Card>
+            </Link>
           </div>
         </div>
       </Section>
@@ -163,6 +181,10 @@ const HomePage = () => {
           </Balancer>
         </p>
         <UspSection uspPoints={uspPoints} columnCount={4} />
+        <div className="flex flex-row justify-center content-center gap-10 mt-8">
+          <Button label="Poptat službu" href="#kontakt" />
+          <Button label="Zjistit více o nás" href="#onas" transparent />
+        </div>
       </Section>
     </>
   );

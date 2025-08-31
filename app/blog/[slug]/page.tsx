@@ -6,10 +6,6 @@ import ReactMarkdown from "react-markdown";
 import Card from "@/components/card";
 import Link from "next/link";
 
-interface BlogPostPageProps {
-  params: { slug: string };
-}
-
 export async function generateStaticParams() {
   const files = fs.readdirSync("content/blog");
   return files.map((filename) => ({
@@ -17,7 +13,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const filePath = path.join("content/blog", `${params.slug}.md`);
   if (!fs.existsSync(filePath)) {
     notFound();

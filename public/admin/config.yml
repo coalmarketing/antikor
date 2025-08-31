@@ -1,0 +1,26 @@
+backend:
+  name: test-repo
+media_folder: "public/uploads"
+public_folder: "/uploads"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Nadpis", name: "title", widget: "string" }
+      - { label: "Datum publikace", name: "date", widget: "datetime" }
+      - { label: "Obsah", name: "body", widget: "markdown" }
+
+  - name: "positions"
+    label: "Otevřené pozice"
+    folder: "content/positions"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Název pozice", name: "title", widget: "string" }
+      - { label: "Popis", name: "description", widget: "markdown" }
+      - { label: "Lokalita", name: "location", widget: "string", required: false }
+      - { label: "Typ úvazku", name: "type", widget: "string", required: false }
+      - { label: "Zveřejněno", name: "published", widget: "boolean", default: true }

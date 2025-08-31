@@ -2,12 +2,14 @@ interface DividerProps {
   color?: "dark" | "light" | "steel";
   marginTop?: number | string;
   marginBottom?: number | string;
+  alignment?: "left" | "center" | "right";
 }
 
 const Divider: React.FC<DividerProps> = ({
   color = "steel",
   marginTop = "2rem",
   marginBottom = "2rem",
+  alignment = "center",
 }) => {
   return (
     <div
@@ -16,6 +18,8 @@ const Divider: React.FC<DividerProps> = ({
         backgroundColor: `var(--${color})`,
         marginTop,
         marginBottom,
+        marginLeft: alignment === "left" ? "0" : "auto",
+        marginRight: alignment === "right" ? "0" : "auto",
       }}
     ></div>
   );

@@ -32,7 +32,7 @@ const HeroBanner = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight text-balance uppercase font-heading">
                 Mantikoří síla v&nbsp;naší oceli
               </h1>
-              <Divider />
+              <Divider alignment="left" />
               <p className="mt-8 text-lg font-normal text-pretty text-light/80 sm:text-xl/8">
                 Poctivé řemeslo, moderní technologie: zakázková výroba
                 nerezových a ocelových dílů

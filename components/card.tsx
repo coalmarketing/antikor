@@ -1,3 +1,5 @@
+import { twMerge } from "tailwind-merge";
+
 interface CardProps {
   tip?: boolean;
   theme?: "dark" | "steel";
@@ -13,9 +15,12 @@ const Card: React.FC<CardProps> = ({ tip, theme, children, className }) => {
       } `}
     >
       <div
-        className={`card-content ${
-          tip ? "card-tip" : ""
-        } min-h-[200px] h-full relative ${className}`}
+        className={twMerge(
+          `card-content ${
+            tip ? "card-tip" : ""
+          } min-h-[200px] h-full relative `,
+          className
+        )}
       >
         {children}
       </div>

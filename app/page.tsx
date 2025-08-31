@@ -63,7 +63,7 @@ const HomePage = () => {
             &ndash; to je naše krédo.
           </Balancer>
         </p>
-        <div className="grid grid-cols-8 w-full gap-5 md:gap-10 my-10">
+        <div className="grid grid-cols-8 w-full gap-5 md:gap-10 my-10 place-content-start">
           <div className="col-span-8 md:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
@@ -149,7 +149,7 @@ const HomePage = () => {
 
           <div className="col-span-8 sm:col-span-3 md:col-span-2">
             <Link href="#kontakt">
-              <Card tip theme="steel">
+              <Card tip theme="steel" className="justify-center">
                 <div className="w-full text-left p-[10%] pr-20">
                   <p className="lg:text-2xl xl:text-3xl font-bold">
                     Kontaktujte nás! <br />

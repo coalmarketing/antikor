@@ -66,7 +66,7 @@ const HeroBanner = () => {
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/img/products/ANTIKOR hero thumb.png"
+          src="/img/products/ANTIKOR-hero-thumb.png"
           className="absolute top-0 left-0 w-full h-full object-cover"
           alt=""
         />

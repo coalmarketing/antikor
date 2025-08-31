@@ -37,11 +37,11 @@ const ButtonInside = ({
             : "bg-light text-dark hover:bg-light/90 px-3.5 py-2.5 "
           : !inverted
           ? !monochrome
-            ? "bg-transparent text-steel hover:text-light px-0"
-            : "bg-transparent text-light hover:text-light/60 px-0"
+            ? "bg-light/0 text-steel hover:text-light px-0 py-2.5"
+            : "bg-light/0 text-light hover:text-light/60 px-0 py-2.5"
           : !monochrome
-          ? "bg-transparent text-steel hover:text-dark px-0"
-          : "bg-transparent text-dark hover:text-dark/60 px-0"
+          ? "bg-light/0 text-steel hover:text-dark px-0 py-2.5"
+          : "bg-light/0 text-dark hover:text-dark/60 px-0 py-2.5"
       } `}
     >
       {label + " " + webButtonArrow}

@@ -53,8 +53,8 @@ const HomePage = () => {
                 <p className="text-3xl font-bold">CNC výroba</p>
                 <p className="my-4 text-md font-normal text-pretty text-light/80">
                   <Balancer>
-                    <span className="text-steel-700">Mantikora</span> je bájná
-                    bytost s lidskou tváří, tělem lva a štířím ocasem.
+                    <span className="text-steel-600 font-bold">Mantikora</span>{" "}
+                    je bájná bytost s lidskou tváří, tělem lva a štířím ocasem.
                     Představuje spojení síly a rozumu, stejně jako naše práce
                     spojuje robustní výkon s přesností a promyšleností při
                     obrábění oceli.
@@ -79,8 +79,8 @@ const HomePage = () => {
                 <p className="text-3xl font-bold">Klempířská výroba</p>
                 <p className="my-4 text-md font-normal text-pretty text-light/80">
                   <Balancer>
-                    <span className="text-steel-700">Mantikora</span> je bájná
-                    bytost s lidskou tváří, tělem lva a štířím ocasem.
+                    <span className="text-steel-600 font-bold">Mantikora</span>{" "}
+                    je bájná bytost s lidskou tváří, tělem lva a štířím ocasem.
                     Představuje spojení síly a rozumu, stejně jako naše práce
                     spojuje robustní výkon s přesností a promyšleností při
                     obrábění oceli.
@@ -100,8 +100,8 @@ const HomePage = () => {
                 </p>
                 <p className="mt-4 text-md font-normal text-pretty text-light/80">
                   <Balancer>
-                    <span className="text-steel-700">Mantikora</span> je bájná
-                    bytost s lidskou tváří, tělem lva a štířím ocasem.
+                    <span className="text-steel-600 font-bold">Mantikora</span>{" "}
+                    je bájná bytost s lidskou tváří, tělem lva a štířím ocasem.
                     Představuje spojení síly a rozumu, stejně jako naše práce
                     spojuje při obrábění oceli robustní výkon se strojovou
                     přesností a lidským intelektem .
@@ -147,7 +147,48 @@ const HomePage = () => {
           <br />
         </h2>
         <Divider />
+        <p className="my-4 mx-[5%] md:mx-[10%] lg:mx-[20%] xl:mx-[25%] text-md font-normal text-pretty text-light/80 text-center">
+          <Balancer>
+            Věříme, že spolupráce se&nbsp;společností{" "}
+            <span className="text-steel-600 font-bold">
+              Zdeněk Maixner - ANTIKOR s.&nbsp;r.&nbsp;o.
+            </span>{" "}
+            přináší našim klientům jasné výhody. Nejsme pouhou pohádkou &ndash;
+            naše filozofie je postavena na&nbsp;
+            <span className="text-steel-600 font-bold">
+              čtyřech klíčových pilířích
+            </span>
+            , které zaručují vaši spokojenost a&nbsp;úspěch projektu:
+          </Balancer>
+        </p>
         <UspSection uspPoints={uspPoints} columnCount={4} />
+      </Section>
+      <Section anchor="kontakt">
+        <div className="flex items-center gap-1 mb-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/img/logos/head-blue.svg"
+            className="h-6 w-auto object-cover"
+            alt=""
+          />
+          <p className="text-lg font-semibold text-steel uppercase tracking-widest">
+            Proč do toho jít s&nbsp;ANTIKOREM?
+          </p>
+        </div>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance uppercase font-heading text-center">
+          Kontaktujte nás
+          <br />
+        </h2>
+        <Divider />
+        <p className="my-4 mx-[5%] md:mx-[10%] lg:mx-[20%] xl:mx-[25%] text-md font-normal text-pretty text-light/80 text-center">
+          <Balancer>
+            Máte dotazy, potřebujete cenovou nabídku nebo chcete prodiskutovat
+            váš projekt v&nbsp;oblasti kovovýroby, CNC obrábění
+            nebo&nbsp;klempířských prací? Neváhejte nás kontaktovat! Jsme
+            připraveni vám pomoci s&nbsp;vašimi nerezovými a&nbsp;ocelovými
+            řešeními.
+          </Balancer>
+        </p>
       </Section>
     </>
   );

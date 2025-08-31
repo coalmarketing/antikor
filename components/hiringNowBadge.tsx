@@ -4,6 +4,7 @@
 import Button from "./button";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 export default function HiringNowBadgeClient({
   hasOpenPositions,
@@ -26,12 +27,14 @@ export default function HiringNowBadgeClient({
           Hledáme nové kolegy!
         </div>
         <p className="text-sm text-white">Přidej se do našeho týmu!</p>
-        <Button
-          label="Prohlédnout volná místa"
-          transparent
-          monochrome
-          inverted
-        />
+        <Link href="/kariera">
+          <Button
+            label="Prohlédnout volná místa"
+            transparent
+            monochrome
+            inverted
+          />
+        </Link>
       </div>
     </div>
   );

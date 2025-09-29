@@ -8,7 +8,6 @@ import "./globals.css";
 import NavbarDesktop from "@/components/navbar";
 import { navigationItems } from "@/data/navbarItems";
 import Footer from "@/components/footer";
-import ContactForm from "@/components/contactForm";
 import Divider from "@/components/divider";
 import Section from "@/components/section";
 import Balancer from "react-wrap-balancer";
@@ -77,7 +76,7 @@ export default async function RootLayout({
             </p>
 
             {/* ------ Kontaktní onformace + formulář */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
+            <div className="grid grid-cols-1 gap-8 mt-8 w-full place-content-center text-center">
               <div className="order-2 md:order-1 flex flex-col gap-6">
                 <div>
                   <p className="font-bold text-lg mb-1">
@@ -115,7 +114,7 @@ export default async function RootLayout({
                 </div>
 
                 {/* -------- Mapa ANTIKOR */}
-                <div className="rounded-lg overflow-hidden shadow-md border border-steel-100">
+                <div className="rounded-lg overflow-hidden shadow-md border border-steel-100 w-full md:max-w-xl mx-auto">
                   <iframe
                     title="Mapa ANTIKOR"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4405.275863447904!2d16.511194012894748!3d50.025138139401854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dfa58c23cd4f3%3A0x8bf34b850ebd66f0!2sZden%C4%9Bk%20Maixner%20-%20ANTIKOR%20s.%20r.%20o.!5e0!3m2!1scs!2scz!4v1756661103947!5m2!1scs!2scz"
@@ -130,9 +129,9 @@ export default async function RootLayout({
               </div>
 
               {/* ------- Kontaktní formulář */}
-              <div className="order-1 md:order-2">
+              {/* <div className="order-1 md:order-2">
                 <ContactForm />
-              </div>
+              </div> */}
             </div>
           </Section>
         </div>

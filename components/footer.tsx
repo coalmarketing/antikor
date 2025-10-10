@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 const FooterMenu = () => {
   return (
     <nav className="grid grid-cols-3 py-8 text-center container mx-auto">
-      <a href="#" className="-m-1.5 p-1.5 mx-auto">
+      <Link href="/" className="-m-1.5 p-1.5 mx-auto">
         <span className="sr-only">ANTIKOR</span>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -9,7 +11,7 @@ const FooterMenu = () => {
           src="/img/logos/logo-long-mono-light.png"
           className="h-16 w-auto"
         />
-      </a>
+      </Link>
       <div className="flex flex-col gap-2">
         <p className="font-bold text-sm">Zdeněk Maixner - ANTIKOR s.r.o</p>
         <p className="text-sm">Kunčice 26</p>

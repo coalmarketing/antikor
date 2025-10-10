@@ -1,5 +1,4 @@
 import React from "react";
-import Balancer from "react-wrap-balancer";
 
 export type UspPoint = {
   title: string;
@@ -40,9 +39,9 @@ export const UspSection: React.FC<UspSectionProps> = ({
           >
             {point.title}
           </h3>
-          <p className="text-light/80">
+          {/* <p className="text-light/80">
             <Balancer>{point.description}</Balancer>
-          </p>
+          </p> */}
         </div>
       ))}
     </div>

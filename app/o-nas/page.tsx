@@ -29,37 +29,34 @@ const AboutPage = async () => {
             </h2>
             <Divider alignment="left" />
             <p className="text-lg text-light/80 text-left mb-8">
-              ANTIKOR s. r. o. je vaší zárukou poctivého řemesla a moderních
-              technologií v oblasti zakázkové výroby nerezových a ocelových
-              dílů. S dlouholetou tradicí a inovativním přístupem se
-              specializujeme na precizní kovovýrobu a komplexní řešení pro
-              průmysl i stavebnictví. Naše poslání je jasné: dodávat robustní a
-              trvanlivá řešení, která překonávají očekávání našich klientů a
-              odolávají zkoušce času.
+              Jsme společností zabývající se strojírenskou
+              výrobou&mdash;obráběním, především pro společnosti Bosch
+              Powertrain s.r.o. a OEZ s.r.o. Další výrobou je
+              klempířská&mdash;zakázková, a to pro kohokoliv.
             </p>
             <p className="text-lg text-light/80 text-left mb-8">
-              Díky týmu zkušených odborníků a špičkovému technologickému
-              vybavení jsme schopni realizovat i ty nejnáročnější projekty s
-              maximální přesností a spolehlivostí. Věříme v individuální
-              přístup, kvalitu bez kompromisů a budování dlouhodobých
-              partnerství. Zdeněk Maixner – ANTIKOR s.r.o. – síla v naší oceli.
+              Zásadní je dohoda se zákazníkem. Pokud je u nás technologicky
+              zpracovatelná, v kvalitě a v čase, pak nastává čas na jednání o
+              ceně. Pokud se dohodneme, vyrábíme. Na prvním místě je spokojenost
+              zákazníka. Jsme hrdí na to, že jsme trpěliví a vytrvalí, v našich
+              plánech do budoucna.
             </p>
           </div>
-          <div className="flex-2 flex flex-col gap-8 lg:pl-20 pt-10">
+          <div className="flex-2 flex flex-col gap-8 lg:pl-20">
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold tracking-tight text-balance font-heading text-left mr-auto uppercase">
               4 pilíře naší práce
             </h3>
             {uspPoints.map((usp) => (
               <div
                 key={usp.title}
-                className="flex flex-row items-center justify-center gap-6 border-b border-light/20 bg-dark pb-8 last:border-0 last:pb-0"
+                className="flex flex-row items-center justify-start gap-6 border-b border-light/20 bg-dark pb-8 last:border-0 last:pb-0"
               >
                 <div>{usp.icon}</div>
                 <div>
                   <h3 className="text-lg font-bold text-steel-700 mb-1">
                     {usp.title}
                   </h3>
-                  <p className="text-light/80 text-sm">{usp.description}</p>
+                  {/* <p className="text-light/80 text-sm">{usp.description}</p> */}
                 </div>
               </div>
             ))}
@@ -90,6 +87,120 @@ const AboutPage = async () => {
               alt=""
             />
           </Card>
+        </div>
+      </Section>
+
+      <Section adaptiveHeight anchor="sluzby-a-technologie">
+        {/* CNC výroba */}
+        <div
+          className="flex flex-col md:flex-row gap-10 mb-16 items-center"
+          id="cnc-vyroba"
+        >
+          <div className="flex-1">
+            <h2 className="text-3xl font-bold mb-4">CNC výroba</h2>
+            <p className="text-lg text-light/80 mb-4">
+              <Balancer>
+                Naše CNC výroba představuje špičku v oblasti precizního obrábění
+                a tváření kovů. Využíváme nejmodernější CNC stroje, které nám
+                umožňují dosáhnout maximální přesnosti, opakovatelnosti a
+                efektivity. Ať už potřebujete složité nerezové komponenty,
+                prototypy nebo sériovou výrobu ocelových dílů, naše CNC
+                technologie zajistí prvotřídní výsledky a antikorozní ochranu.
+              </Balancer>
+            </p>
+            <ul className="list-disc ml-6 text-light/80 text-lg">
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  CNC frézování:
+                </span>{" "}
+                Pro složité tvary a vysokou přesnost.
+              </li>
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  CNC soustružení:
+                </span>{" "}
+                Pro rotační díly s dokonalou povrchovou úpravou.
+              </li>
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  CNC ohýbání:
+                </span>{" "}
+                Precizní ohýbání plechů pro různé aplikace.
+              </li>
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  Zakázková výroba kovových dílů:
+                </span>{" "}
+                Řešení na míru pro vaše specifické požadavky.
+              </li>
+            </ul>
+          </div>
+          <div className="flex-1 flex justify-center">
+            <Card>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/img/products/cnc.jpg"
+                alt="CNC výroba"
+                className="w-full h-64 object-cover rounded"
+              />
+            </Card>
+          </div>
+        </div>
+        <Divider />
+        {/* Klempířská výroba */}
+        <div
+          className="flex flex-col md:flex-row gap-10 my-16 items-center"
+          id="klempirska-vyroba"
+        >
+          <div className="flex-1">
+            <h2 className="text-3xl font-bold mb-4">Klempířská výroba</h2>
+            <p className="text-lg text-light/80 mb-4">
+              <Balancer>
+                V oblasti klempířské výroby jsme vaším spolehlivým partnerem pro
+                zakázkovou výrobu z plechů. Od jednoduchých prvků po komplexní
+                konstrukce &ndash; s precizností a důrazem na detail
+                zpracováváme různé druhy plechů, včetně oceli, nerezu a hliníku.
+                Naše klempířské práce jsou zárukou funkčnosti, estetiky a dlouhé
+                životnosti, a to i v náročných podmínkách.
+              </Balancer>
+            </p>
+            <ul className="list-disc ml-6 text-light/80 text-lg">
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  Výrobu plechových dílů na míru:
+                </span>{" "}
+                Přesné řešení pro vaše projekty.
+              </li>
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  Ohýbání a stříhání plechů:
+                </span>{" "}
+                Dle vašich specifikací s maximální precizností.
+              </li>
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  Svařování a montáž klempířských prvků:
+                </span>{" "}
+                Kompletní realizace od návrhu po instalaci.
+              </li>
+              <li>
+                <span className="text-steel-500 font-semibold">
+                  Antikorozní úpravy:
+                </span>{" "}
+                Zajištění dlouhé životnosti a odolnosti proti vnějším vlivům.
+              </li>
+            </ul>
+          </div>
+          <div className="flex-1 flex justify-center">
+            <Card>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/img/products/klempir.jpg"
+                alt="Klempířská výroba"
+                className="w-full h-64 object-cover rounded"
+              />
+            </Card>
+          </div>
         </div>
       </Section>
 

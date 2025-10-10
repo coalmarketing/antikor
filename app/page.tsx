@@ -4,8 +4,10 @@ import Card from "@/components/card";
 
 import Divider from "@/components/divider";
 import HeroBanner from "@/components/heroBanner";
+import LogoLoop from "@/components/LogoLoop";
 import Section from "@/components/section";
 import { UspSection } from "@/components/usp";
+import { imageLogos } from "@/data/clientLogos";
 import { uspPoints } from "@/data/uspPoints";
 import { getPosts } from "@/utils/getPosts";
 import Link from "next/link";
@@ -72,23 +74,17 @@ const HomePage = async () => {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/img/products/cnc.jpg"
-                  alt="CNC výroba"
+                  alt="Obrobna"
                   className="w-full h-full object-cover mix-blend-luminosity opacity-50"
                 />
               </div>
               <HomePageInfoCardWrapper>
-                <p className="text-3xl font-bold">CNC výroba</p>
-                <p className="my-4 text-md font-normal text-pretty text-light/80">
-                  <Balancer>
-                    Naše CNC výroba představuje špičku v oblasti precizního
-                    obrábění a tváření kovů. Využíváme nejmodernější CNC stroje,
-                    které nám umožňují dosáhnout maximální přesnosti,
-                    opakovatelnosti a efektivity. Ať už potřebujete složité
-                    nerezové komponenty, prototypy nebo sériovou výrobu
-                    ocelových dílů, naše CNC technologie zajistí prvotřídní
-                    výsledky a antikorozní ochranu.
-                  </Balancer>
-                </p>
+                <p className="text-3xl font-bold">Obrobna</p>
+
+                <ul className="list-disc list-inside marker:text-steel-600 my-4">
+                  <li>CNC soustružení</li>
+                  <li>CNC frézování</li>
+                </ul>
 
                 <Button
                   label="Dozvědět se více"
@@ -104,22 +100,21 @@ const HomePage = async () => {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/img/products/klempir.jpg"
-                  alt="Klempířská výroba"
+                  alt="Klempírna"
                   className="w-full h-full object-cover mix-blend-luminosity opacity-50"
                 />
               </div>
               <HomePageInfoCardWrapper>
-                <p className="text-3xl font-bold">Klempířská výroba</p>
-                <p className="my-4 text-md font-normal text-pretty text-light/80">
-                  <Balancer>
-                    V oblasti klempířské výroby jsme vaším spolehlivým partnerem
-                    pro zakázkovou výrobu z plechů. Od jednoduchých prvků po
-                    komplexní konstrukce &ndash; s precizností a důrazem na
-                    detail zpracováváme různé druhy plechů, včetně oceli, nerezu
-                    a hliníku. Naše klempířské práce jsou zárukou funkčnosti,
-                    estetiky a dlouhé životnosti, a to i v náročných podmínkách.
-                  </Balancer>
-                </p>
+                <p className="text-3xl font-bold">Klempírna</p>
+
+                <ul className="list-disc list-inside marker:text-steel-600 my-4">
+                  <li>CNC ohraňování</li>
+                  <li>sváření MAG A TIG</li>
+                  <li>stáčení plechů</li>
+                  <li>stříhání na nůžkách</li>
+                  <li>broušení a leštění</li>
+                  <li>řezání materiálu</li>
+                </ul>
 
                 <Button
                   label="Dozvědět se více"
@@ -208,7 +203,7 @@ const HomePage = async () => {
           </Balancer>
         </p>
         <UspSection uspPoints={uspPoints} columnCount={4} />
-        <div className="flex flex-row justify-center content-center gap-10 mt-8">
+        <div className="flex flex-row justify-center content-center gap-10 mt-2 mb-12">
           <Button label="Poptat službu" href="#kontakt" />
           <Button
             label="Nahlédněte do výroby"
@@ -216,6 +211,22 @@ const HomePage = async () => {
             transparent
           />
         </div>
+
+        <p className="text-lg font-semibold text-light uppercase tracking-widest my-6">
+          Spolupracujeme
+        </p>
+        <LogoLoop
+          logos={imageLogos}
+          logoHeight={45}
+          speed={25}
+          gap={80}
+          pauseOnHover
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#1e1e1e"
+          className="opacity-60 hover:opacity-100 transition-opacity"
+          ariaLabel="Partneři ANTIKOR s.r.o."
+        />
       </Section>
 
       {/*

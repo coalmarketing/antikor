@@ -97,7 +97,7 @@ const AboutPage = async () => {
           id="cnc-vyroba"
         >
           <div className="flex-1">
-            <h2 className="text-3xl font-bold mb-4">CNC výroba</h2>
+            <h2 className="text-3xl font-bold mb-4">Obrobna</h2>
             <p className="text-lg text-light/80 mb-4">
               <Balancer>
                 Naše CNC výroba představuje špičku v oblasti precizního obrábění
@@ -153,7 +153,7 @@ const AboutPage = async () => {
           id="klempirska-vyroba"
         >
           <div className="flex-1">
-            <h2 className="text-3xl font-bold mb-4">Klempířská výroba</h2>
+            <h2 className="text-3xl font-bold mb-4">Klempírna</h2>
             <p className="text-lg text-light/80 mb-4">
               <Balancer>
                 V oblasti klempířské výroby jsme vaším spolehlivým partnerem pro

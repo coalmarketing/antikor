@@ -76,7 +76,7 @@ export default async function RootLayout({
             </p>
 
             {/* ------ Kontaktní onformace + formulář */}
-            <div className="grid grid-cols-1 gap-8 mt-8 w-full place-content-center text-right md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 mt-8 w-full place-content-center text-right md:grid-cols-3">
               <div className="order-2 md:order-1 flex flex-col gap-6">
                 <div>
                   <p className="font-bold text-lg mb-1">
@@ -128,8 +128,216 @@ export default async function RootLayout({
                 </div>
               </div>
 
-              {/* ------- Kontaktní formulář */}
-              <div className="order-1 md:order-2"></div>
+              {/* ------- Kontakty */}
+              <div className="order-1 md:order-2">
+                <ul className="space-y-6 text-center">
+                  <li>
+                    <strong>
+                      Contact for foreign partners: Markéta Šilarová, M.A.
+                    </strong>{" "}
+                    (communication in English):
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420777646836"
+                        className="underline text-steel-600"
+                      >
+                        +420 777 646 836
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:marketa.silarova@antikor.net"
+                        className="underline text-steel-600"
+                      >
+                        marketa.silarova@antikor.net
+                      </a>
+                    </span>
+                  </li>
+                  <li>
+                    <strong>Jednatel: Ing. Zdeněk Maixner</strong>
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420737423925"
+                        className="underline text-steel-600"
+                      >
+                        +420 737 423 925
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:zdenekmaixner@gmail.com"
+                        className="underline text-steel-600"
+                      >
+                        zdenekmaixner@gmail.com
+                      </a>
+                    </span>
+                  </li>
+                  <li>
+                    <strong>Ekonomka – účetní: Ing. Helena Korolus</strong>
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420732357822"
+                        className="underline text-steel-600"
+                      >
+                        +420 732 357 822
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:helena.korolus@antikor.net"
+                        className="underline text-steel-600"
+                      >
+                        helena.korolus@antikor.net
+                      </a>
+                    </span>
+                  </li>
+                  <li>
+                    <strong>
+                      Technik – finanční oddělení: Ing. Zdeněk Dostál, MBA
+                    </strong>
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420773705387"
+                        className="underline text-steel-600"
+                      >
+                        +420 773 705 387
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:zdenek.dostal@antikor.net"
+                        className="underline text-steel-600"
+                      >
+                        zdenek.dostal@antikor.net
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* ------- Kontakty 2 */}
+              <div className="order-2 md:order-3">
+                <ul className="space-y-6 text-left">
+                  <li>
+                    <strong>OBROBNA</strong>
+                    <br />
+                    <span>Vedoucí obrobny – technolog: </span>
+                    <br />
+                    <span>Zastupuje: Technik výroby Petr Lukeš</span>
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420733315052"
+                        className="underline text-steel-600"
+                      >
+                        +420 733 315 052
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:petr.lukes@antikor.net"
+                        className="underline text-steel-600"
+                      >
+                        petr.lukes@antikor.net
+                      </a>
+                    </span>
+                    <br />
+                    <span>Technik výroby Petr Ziegler</span>
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420737726533"
+                        className="underline text-steel-600"
+                      >
+                        +420 737 726 533
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:petr.ziegler@antikor.net"
+                        className="underline text-steel-600"
+                      >
+                        petr.ziegler@antikor.net
+                      </a>
+                    </span>
+                  </li>
+                  <li>
+                    <strong>Zástupce pro BOSCH DIESEL s.r.o. Jihlava</strong>
+                    <br />
+                    <span>Hlavní kontakt: Vedoucí obrobny – technolog</span>
+                    <br />
+                    <span>Zastupuje: Technik výroby Petr Lukeš</span>
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420733315052"
+                        className="underline text-steel-600"
+                      >
+                        +420 733 315 052
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:petr.lukes@antikor.net"
+                        className="underline text-steel-600"
+                      >
+                        petr.lukes@antikor.net
+                      </a>
+                    </span>
+                  </li>
+
+                  <li>
+                    <strong>KLEMPÍRNA</strong>
+                    <br />
+                    <span>Technik výroby David Melichar</span>
+                    <br />
+                    <span>
+                      tel.:{" "}
+                      <a
+                        href="tel:+420737364894"
+                        className="underline text-steel-600"
+                      >
+                        +420 737 364 894
+                      </a>
+                    </span>
+                    <br />
+                    <span>
+                      e-mail:{" "}
+                      <a
+                        href="mailto:david.melichar@antikor.net"
+                        className="underline text-steel-600"
+                      >
+                        david.melichar@antikor.net
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </Section>
         </div>

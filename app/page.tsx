@@ -67,8 +67,8 @@ const HomePage = async () => {
             &ndash; to je naše krédo.
           </Balancer>
         </p>
-        <div className="grid grid-cols-8 w-full gap-5 md:gap-10 my-10 place-content-start">
-          <div className="col-span-8 md:col-span-4">
+        <div className="grid grid-cols-12 w-full gap-5 md:gap-10 my-10 place-content-start">
+          <div className="col-span-12 lg:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -94,7 +94,7 @@ const HomePage = async () => {
               </HomePageInfoCardWrapper>
             </Card>
           </div>
-          <div className="col-span-8 md:col-span-4">
+          <div className="col-span-12 lg:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -125,7 +125,33 @@ const HomePage = async () => {
             </Card>
           </div>
 
-          <div className="col-span-8 sm:col-span-5 md:col-span-6">
+          <div className="col-span-12 lg:col-span-4">
+            <Card>
+              <div className="w-full h-40 bg-steel-700">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/img/products/klempir.jpg"
+                  alt="Klempírna"
+                  className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+                />
+              </div>
+              <HomePageInfoCardWrapper>
+                <p className="text-3xl font-bold">Naše certifikace</p>
+
+                <ul className="list-disc list-inside marker:text-steel-600 my-4">
+                  <li> IATF 16949:2016</li>
+                </ul>
+
+                <Button
+                  label="Dozvědět se více"
+                  href="/sluzby-a-technologie#klempirska-vyroba"
+                  transparent
+                />
+              </HomePageInfoCardWrapper>
+            </Card>
+          </div>
+
+          <div className="col-span-12 sm:col-span-7 md:col-span-9">
             <Card tip>
               <div className="w-full text-left p-[10%] pr-[22%] z-10">
                 <p className="text-3xl font-bold">
@@ -151,7 +177,7 @@ const HomePage = async () => {
             </Card>
           </div>
 
-          <div className="col-span-8 sm:col-span-3 md:col-span-2">
+          <div className="col-span-12 sm:col-span-5 md:col-span-3">
             <Link href="#kontakt">
               <Card tip theme="steel" className="justify-center">
                 <div className="w-full text-left p-[10%] pr-20">
@@ -164,6 +190,22 @@ const HomePage = async () => {
             </Link>
           </div>
         </div>
+
+        <p className="text-lg font-semibold text-light uppercase tracking-widest mt-32 mb-6">
+          Spolupracujeme
+        </p>
+        <LogoLoop
+          logos={imageLogos}
+          logoHeight={45}
+          speed={25}
+          gap={80}
+          pauseOnHover
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#1e1e1e"
+          className="opacity-60 hover:opacity-100 transition-opacity"
+          ariaLabel="Partneři ANTIKOR s.r.o."
+        />
       </Section>
 
       {/*
@@ -211,22 +253,6 @@ const HomePage = async () => {
             transparent
           />
         </div>
-
-        <p className="text-lg font-semibold text-light uppercase tracking-widest my-6">
-          Spolupracujeme
-        </p>
-        <LogoLoop
-          logos={imageLogos}
-          logoHeight={45}
-          speed={25}
-          gap={80}
-          pauseOnHover
-          scaleOnHover
-          fadeOut
-          fadeOutColor="#1e1e1e"
-          className="opacity-60 hover:opacity-100 transition-opacity"
-          ariaLabel="Partneři ANTIKOR s.r.o."
-        />
       </Section>
 
       {/*

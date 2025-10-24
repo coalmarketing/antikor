@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Card from "@/components/card";
 import Divider from "@/components/divider";
 import GallerySection from "@/components/gallerySection";
@@ -5,9 +7,9 @@ import GallerySection from "@/components/gallerySection";
 import Section from "@/components/section";
 import SubPageHeader from "@/components/subPageHeader";
 
-import { uspPoints } from "@/data/uspPoints";
 import { getGalleryImages } from "@/utils/getGalleryImg";
 import Balancer from "react-wrap-balancer";
+import TechnologieBento from "@/components/bento";
 
 const AboutPage = async () => {
   const images = await getGalleryImages();
@@ -42,24 +44,16 @@ const AboutPage = async () => {
               plánech do budoucna.
             </p>
           </div>
-          <div className="flex-2 flex flex-col gap-8 lg:pl-20">
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold tracking-tight text-balance font-heading text-left mr-auto uppercase">
-              4 pilíře naší práce
-            </h3>
-            {uspPoints.map((usp) => (
-              <div
-                key={usp.title}
-                className="flex flex-row items-center justify-start gap-6 border-b border-light/20 bg-dark pb-8 last:border-0 last:pb-0"
-              >
-                <div>{usp.icon}</div>
-                <div>
-                  <h3 className="text-lg font-bold text-steel-700 mb-1">
-                    {usp.title}
-                  </h3>
-                  {/* <p className="text-light/80 text-sm">{usp.description}</p> */}
-                </div>
-              </div>
-            ))}
+
+          <div className="flex-2 flex flex-col gap-4">
+            <Card>
+              <Image
+                fill
+                src="/uploads/6k5a8057.jpg"
+                alt="Image 1"
+                className="object-cover"
+              />
+            </Card>
           </div>
         </div>
 
@@ -91,6 +85,7 @@ const AboutPage = async () => {
       </Section>
 
       <Section adaptiveHeight anchor="sluzby-a-technologie">
+        <TechnologieBento />
         {/* CNC výroba */}
         <div
           className="flex flex-col md:flex-row gap-10 mb-16 items-center"

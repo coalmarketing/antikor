@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { GalleryImage } from "@/utils/getGalleryImg";
 import Card from "./card";
+import Image from "next/image";
 
 export default function GallerySection({ images }: { images: GalleryImage[] }) {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
@@ -13,7 +14,7 @@ export default function GallerySection({ images }: { images: GalleryImage[] }) {
     <>
       {/* Gallery grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-5 w-full mx-auto">
-        {images.slice(0, 2).map((image) => (
+        {images.map((image) => (
           <button
             key={image.title}
             onClick={() => setSelectedImage(image)}
@@ -21,11 +22,12 @@ export default function GallerySection({ images }: { images: GalleryImage[] }) {
           >
             <Card className="z-10 aspect-square cursor-pointer">
               <div className="w-full h-full">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={image.image ?? ""}
                   alt={image.title}
                   className="w-full h-full object-cover"
+                  fill
+                  loading="lazy"
                 />
               </div>
             </Card>

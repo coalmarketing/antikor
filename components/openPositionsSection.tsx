@@ -24,14 +24,26 @@ export default function OpenPositionsSectionClient({
           <h3 className="text-2xl font-bold">
             Momentálně nemáme vypsané, žádné pozice
           </h3>
-          <p className="text-steel-600 text-sm mt-2 mb-8 font-semibold">
-            Sledujte nás všude a zkuste to znovu později. Nebo nám rovnou
-            napište na <a href="mailto:info@antikor.cz">info@antikor.cz</a>,
-            zašlete nám svůj životopis a uvidíme, zda pro vás něco nenajdeme!
-          </p>{" "}
-          <Link href="mailto:info@antikor.cz" target="_blank">
-            <Button label="Napište nám!" transparent />
-          </Link>
+          <Card>
+            <OpenPositionCardWrapper>
+              <p className="text-base mt-2 mb-8 font-semibold">
+                Sledujte nás všude a zkuste to znovu později. Nebo nám rovnou
+                napište na{" "}
+                <a
+                  href="mailto:info@antikor.cz"
+                  className="underline text-steel"
+                >
+                  info@antikor.cz
+                </a>
+                , zašlete nám svůj životopis!
+              </p>
+              <p>
+                <strong className="text-steel font-bold">
+                  Neustále hledáme nové kolegy a rádi se na něčem domluvíme!
+                </strong>
+              </p>
+            </OpenPositionCardWrapper>
+          </Card>
         </OpenPositionCardWrapper>
       </Card>
     );
@@ -57,6 +69,23 @@ export default function OpenPositionsSectionClient({
           </OpenPositionCardWrapper>
         </Card>
       ))}
+      <Card>
+        <OpenPositionCardWrapper>
+          <p className="text-base mt-2 mb-8 font-semibold">
+            Nenašli jste, co hledáte? Sledujte nás všude a zkuste to znovu
+            později. Nebo nám rovnou napište na{" "}
+            <a href="mailto:info@antikor.cz" className="underline text-steel">
+              info@antikor.cz
+            </a>
+            , zašlete nám svůj životopis!
+          </p>
+          <p>
+            <strong className="text-steel font-bold">
+              Neustále hledáme nové kolegy a rádi se na něčem domluvíme!
+            </strong>
+          </p>
+        </OpenPositionCardWrapper>
+      </Card>
     </div>
   );
 }

@@ -34,8 +34,9 @@ const HeroBanner = () => {
               </h1>
               <Divider alignment="left" />
               <p className="mt-8 text-lg font-normal text-pretty text-light/80 sm:text-xl/8">
-                Poctivé řemeslo, moderní technologie: zakázková výroba
-                nerezových a ocelových dílů
+                Obrábění i klempířská výroba na jednom místě: férový přístup,
+                dlouholeté zkušenosti, jistý výsledek. Chceme růst, zlepšovat se
+                a posouvat to, co umíme, do nové doby.
               </p>
               <div className="mt-10 flex flex-col md:flex-row items-start md:items-center justify-center md:justify-start gap-6">
                 <Button label="Začněme spolupracovat" href="#kontakt" />

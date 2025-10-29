@@ -19,11 +19,11 @@ const CareerPage = async () => {
         </h2>
         <Divider alignment="left" />
         <p className="text-lg text-light/80 text-left mb-8">
-          Nabízíme stabilní a inspirativní pracovní prostředí, kde podporujeme
-          profesní růst a rozvoj každého člena týmu. Věříme, že naši zaměstnanci
-          jsou klíčem k našemu úspěchu, a proto investujeme do jejich vzdělávání
-          a pohody. Přidejte se k nám a pomozte nám tvořit budoucnost precizních
-          ocelových a nerezových řešení!
+          Hledáme posily do výroby i mladé lidi, kteří se chtějí učit řemeslu.
+          Nabízíme práci v prostředí, kde má zkušenost stejnou váhu jako chuť
+          zkoušet nové věci. Dáváme i prostor studentům, kteří chtějí získat
+          praxi ve strojírenství. Přidejte se k nám a pomozte nám posouvat
+          poctivou práci s kovem dál.
         </p>
         <OpenPositionsSectionClient positions={positions} />
       </Section>

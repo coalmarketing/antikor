@@ -86,11 +86,7 @@ const HomePage = async () => {
                   <li>CNC frézování</li>
                 </ul>
 
-                <Button
-                  label="Dozvědět se více"
-                  href="/sluzby-a-technologie#cnc-vyroba"
-                  transparent
-                />
+                <Button label="Dozvědět se více" href="/o-nas" transparent />
               </HomePageInfoCardWrapper>
             </Card>
           </div>
@@ -116,11 +112,7 @@ const HomePage = async () => {
                   <li>řezání materiálu</li>
                 </ul>
 
-                <Button
-                  label="Dozvědět se více"
-                  href="/sluzby-a-technologie#klempirska-vyroba"
-                  transparent
-                />
+                <Button label="Dozvědět se více" href="/o-nas" transparent />
               </HomePageInfoCardWrapper>
             </Card>
           </div>
@@ -141,12 +133,11 @@ const HomePage = async () => {
                 <ul className="list-disc list-inside marker:text-steel-600 my-4">
                   <li> IATF 16949:2016</li>
                 </ul>
+                <ul className="list-disc list-inside marker:text-steel-600 my-4">
+                  <li> ISO 9001:2015 </li>
+                </ul>
 
-                <Button
-                  label="Dozvědět se více"
-                  href="/sluzby-a-technologie#klempirska-vyroba"
-                  transparent
-                />
+                <Button label="Dozvědět se více" href="/o-nas#" transparent />
               </HomePageInfoCardWrapper>
             </Card>
           </div>

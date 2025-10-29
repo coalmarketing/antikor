@@ -2,8 +2,11 @@ import Link from "next/link";
 
 const FooterMenu = () => {
   return (
-    <nav className="grid grid-cols-3 py-8 text-center container mx-auto">
-      <Link href="/" className="-m-1.5 p-1.5 mx-auto">
+    <nav className="grid grid-cols-3 py-8 text-center container mx-auto gap-4">
+      <Link
+        href="/"
+        className="-m-1.5 p-1.5 mx-auto flex flex-col justify-center"
+      >
         <span className="sr-only">ANTIKOR</span>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -12,17 +15,23 @@ const FooterMenu = () => {
           className="h-16 w-auto"
         />
       </Link>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 justify-center">
         <p className="font-bold text-sm">Zdeněk Maixner - ANTIKOR s.r.o</p>
         <p className="text-sm">Kunčice 26</p>
         <p className="text-sm">561 51 Letohrad</p>
       </div>
       <div className="flex flex-col gap-2">
-        <a href="#" className="text-sm hover:text-steel transition">
+        <a href="/o-nas" className="text-sm hover:text-steel transition">
           O nás
         </a>
-        <a href="#" className="text-sm hover:text-steel transition">
-          Služby
+        <a
+          href="/o-nas#sluzby-a-technologie"
+          className="text-sm hover:text-steel transition"
+        >
+          Služby a technologie
+        </a>
+        <a href="/kariera" className="text-sm hover:text-steel transition">
+          Kariéra
         </a>
         <a href="#kontakt" className="text-sm hover:text-steel transition">
           Kontakt

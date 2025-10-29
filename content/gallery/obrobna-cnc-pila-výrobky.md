@@ -1,4 +1,4 @@
 ---
-title: "Obrobna: CNC pila výrobky"
-image: /uploads/6k5a8057.jpg
+title: "Klempírna: Vzorky"
+image: /uploads/6k5a8001.jpg
 ---

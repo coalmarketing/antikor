@@ -4,12 +4,14 @@ interface SubPageHeaderProps {
   title: string;
   claim: string;
   description: string;
+  imageUrl?: string;
 }
 
 const SubPageHeader: React.FC<SubPageHeaderProps> = ({
   title,
   claim,
   description,
+  imageUrl,
 }) => {
   return (
     <section className="w-full h-[600px] px-[10%] flex flex-col items-start justify-between bg-dark/80 overflow-hidden relative">
@@ -35,7 +37,7 @@ const SubPageHeader: React.FC<SubPageHeaderProps> = ({
       <div className="absolute top-0 left-0 w-screen h-screen overflow-hidden -z-10">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/img/products/ANTIKOR-hero-thumb.png"
+          src={imageUrl || "/img/products/ANTIKOR-hero-thumb.png"}
           className="absolute top-0 left-0 w-full h-full object-cover"
           alt=""
         />

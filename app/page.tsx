@@ -73,9 +73,9 @@ const HomePage = async () => {
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/img/products/cnc.jpg"
+                  src="/uploads/6k5a8061.jpg"
                   alt="Obrobna"
-                  className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <HomePageInfoCardWrapper>
@@ -99,9 +99,9 @@ const HomePage = async () => {
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/img/products/klempir.jpg"
+                  src="/uploads/6k5a8001.jpg"
                   alt="Klempírna"
-                  className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <HomePageInfoCardWrapper>
@@ -130,9 +130,9 @@ const HomePage = async () => {
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/img/products/klempir.jpg"
+                  src="/uploads/6k5a8002.jpg"
                   alt="Klempírna"
-                  className="w-full h-full object-cover mix-blend-luminosity opacity-50"
+                  className="w-full h-full object-cover mix-blend-normal"
                 />
               </div>
               <HomePageInfoCardWrapper>

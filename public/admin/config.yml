@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: main
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: 'create (decap): {{collection}} “{{slug}}”'
+    update: 'update (decap): {{collection}} “{{slug}}”'
+    delete: 'delete (decap): {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] upload (decap): “{{path}}”'
+    deleteMedia: '[skip ci] delete (decap): “{{path}}”'
 
 media_folder: "public/uploads"
 public_folder: "/uploads"

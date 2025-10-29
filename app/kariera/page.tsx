@@ -12,6 +12,7 @@ const CareerPage = async () => {
         title="Kariéra"
         claim="Přidejte se pod vlajku mantikory!"
         description="Jsme moderní a stabilní strojírenská firma z Letohradu s jasnou vizí a špičkovými technologiemi. Pokud hledáte smysluplnou práci ve strojírenství, kde vaše nápady a dovednosti najdou uplatnění, jste na správném místě."
+        imageUrl="/uploads/6k5a7977.jpg"
       />
       <Section adaptiveHeight>
         <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance font-heading text-left mr-auto uppercase">

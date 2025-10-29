@@ -21,7 +21,8 @@ const AboutPage = async () => {
         description="Chcete se stát součástí týmu, kde se snoubí síla mýtu s precizností
           stroje? Hledáte smysluplnou práci v dynamickém oboru kovovýroby, CNC
           obrábění nebo klempířské výroby? Pak je ANTIKOR tím pravým místem pro
-          vás! "
+          vás!"
+        imageUrl="/uploads/dji_0071.jpg"
       />
       <Section adaptiveHeight>
         <div className="flex flex-col lg:flex-row gap-12 w-full">
@@ -49,7 +50,7 @@ const AboutPage = async () => {
             <Card>
               <Image
                 fill
-                src="/uploads/6k5a8057.jpg"
+                src="/uploads/6k5a8014.jpg"
                 alt="Image 1"
                 className="object-cover"
               />
@@ -134,8 +135,8 @@ const AboutPage = async () => {
             <Card>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/img/products/cnc.jpg"
-                alt="CNC výroba"
+                src="/uploads/6k5a7986.jpg"
+                alt="Obrobna"
                 className="w-full h-64 object-cover rounded"
               />
             </Card>
@@ -190,8 +191,8 @@ const AboutPage = async () => {
             <Card>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/img/products/klempir.jpg"
-                alt="Klempířská výroba"
+                src="/uploads/6k5a7986.jpg"
+                alt="Klempírna"
                 className="w-full h-64 object-cover rounded"
               />
             </Card>

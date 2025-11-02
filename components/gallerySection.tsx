@@ -63,7 +63,9 @@ function ModalViewer({
   const total = images.length;
   const current = images[index];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const goPrev = () => onChangeIndex((index - 1 + total) % total);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const goNext = () => onChangeIndex((index + 1) % total);
 
   useEffect(() => {

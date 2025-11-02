@@ -10,6 +10,8 @@ import SubPageHeader from "@/components/subPageHeader";
 import { getGalleryImages } from "@/utils/getGalleryImg";
 import Balancer from "react-wrap-balancer";
 import TechnologieBento from "@/components/bento";
+import { LogoLoop } from "@/components/LogoLoop";
+import { imageLogos } from "@/data/clientLogos";
 
 const AboutPage = async () => {
   const images = await getGalleryImages();
@@ -107,6 +109,22 @@ const AboutPage = async () => {
             </Card>
           </div>
         </div>
+
+        <p className="text-lg font-semibold text-light uppercase tracking-widest mt-32 mb-6">
+          Spolupracujeme
+        </p>
+        <LogoLoop
+          logos={imageLogos}
+          logoHeight={45}
+          speed={25}
+          gap={80}
+          pauseOnHover
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#1e1e1e"
+          className="opacity-60 hover:opacity-100 transition-opacity"
+          ariaLabel="Partneři ANTIKOR s.r.o."
+        />
       </Section>
 
       <Section adaptiveHeight anchor="sluzby-a-technologie">

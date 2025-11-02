@@ -16,11 +16,11 @@ export default function TechnologieBento() {
         </h2>
         <div className="mt-6">
           <p className="italic font-bold text-2xl md:text-3xl relative z-20">
-            &quot;Mimo ty nové stroje, máme pár relativně starých, ale jsou to
+            &quot;Kromě nových strojů, máme pár relativně starých, ale jsou to
             držáky a pod správným servisem jedou o sto péro...&quot;
           </p>
           <p className="font-bold text-steel mt-3">
-            – Zdeněk Maixner, ředitel ANTIKOR
+            – Ing. Zdeněk Maixner, jednatel ANTIKOR
           </p>
           <div className="w-108 h-108 bg-steel/10 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 -z-10" />
         </div>
@@ -140,9 +140,10 @@ export default function TechnologieBento() {
             Podpora regionu a společenská odpovědnost
           </h3>
           <p>
-            Společnost <span className="font-medium">ANTIKOR</span> podporuje
-            místní komunitu, sport i dobrovolné aktivity. V letošním roce jsme
-            přispěli na tyto projekty:
+            Společnost <span className="font-medium">ANTIKOR</span> je nejenom
+            českou, ale je tradiční letohradskou společností na Kunčicích.
+            Podporujeme konkrétní potřeby, projekty pro lepší život, sport a
+            dobrovolné aktivity V letošním roce jsme přispěli na tyto projekty:
           </p>
           <ul className="mt-4 list-disc pl-6 marker:text-steel space-y-2">
             <li>

@@ -284,7 +284,9 @@ export default async function RootLayout({
                     </span>
                   </li>
                   <li>
-                    <strong>Zástupce pro BOSCH DIESEL s.r.o. Jihlava</strong>
+                    <strong>
+                      Zástupce pro Bosch Powertrain s.r.o. Jihlava
+                    </strong>
                     <br />
                     <span>Hlavní kontakt: Vedoucí obrobny – technolog</span>
                     <br />

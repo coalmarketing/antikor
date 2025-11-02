@@ -15,7 +15,7 @@ const HeroBanner = () => {
         <div className="bg-steel-900 w-screen h-screen absolute top-0 left-0 hero-polygon-2 z-20"></div>
         <div className="bg-dark w-screen h-screen absolute top-0 left-0 hero-polygon-3 z-30"></div>
 
-        <div className="relative isolate px-6 lg:pt-16 lg:px-20 w-3/4 md:w-1/2 lg:w-2/3 text-left z-50">
+        <div className="relative isolate px-6 lg:pt-16 lg:px-20 w-3/4 md:w-1/2 lg:w-2/3 text-left z-40">
           <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
             <div className="flex items-center gap-1 mb-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}

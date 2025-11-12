@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const FooterMenu = () => {
   return (
-    <nav className="grid grid-cols-3 py-8 text-center container mx-auto gap-4">
+    <nav className="grid grid-cols-1 md:grid-cols-3 py-8 text-center container mx-auto gap-10 md:gap-4">
       <Link
         href="/"
         className="-m-1.5 p-1.5 mx-auto flex flex-col justify-center"

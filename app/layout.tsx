@@ -76,8 +76,8 @@ export default async function RootLayout({
             </p>
 
             {/* ------ Kontaktní onformace + formulář */}
-            <div className="grid grid-cols-1 gap-8 mt-8 w-full place-content-center text-right md:grid-cols-3">
-              <div className="order-2 md:order-1 flex flex-col gap-6">
+            <div className="grid grid-cols-1 gap-8 mt-8 w-full place-content-center text-center md:text-right md:grid-cols-3">
+              <div className="order-1 md:order-1 flex flex-col gap-6">
                 <div>
                   <p className="font-bold text-lg mb-1">
                     Zdeněk Maixner - ANTIKOR s.r.o.
@@ -129,7 +129,7 @@ export default async function RootLayout({
               </div>
 
               {/* ------- Kontakty */}
-              <div className="order-1 md:order-2">
+              <div className="order-2 md:order-2">
                 <ul className="space-y-6 text-center">
                   <li>
                     <strong>
@@ -232,8 +232,8 @@ export default async function RootLayout({
               </div>
 
               {/* ------- Kontakty 2 */}
-              <div className="order-2 md:order-3">
-                <ul className="space-y-6 text-left">
+              <div className="order-3 md:order-3">
+                <ul className="space-y-6 text-center md:text-left">
                   <li>
                     <strong>OBROBNA</strong>
                     <br />

@@ -18,7 +18,7 @@ export const UspSection: React.FC<UspSectionProps> = ({
   return (
     <div
       className={
-        `w-full grid gap-8 py-8` +
+        `w-full grid gap-x-8 py-8` +
         (columnCount === 1
           ? " grid-cols-1"
           : columnCount === 2

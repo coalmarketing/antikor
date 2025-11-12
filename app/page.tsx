@@ -1,4 +1,3 @@
-import BlogSection from "@/components/blogSection";
 import Button from "@/components/button";
 import Card from "@/components/card";
 
@@ -9,7 +8,7 @@ import Section from "@/components/section";
 import { UspSection } from "@/components/usp";
 import { imageLogos } from "@/data/clientLogos";
 import { uspPoints } from "@/data/uspPoints";
-import { getPosts } from "@/utils/getPosts";
+// import { getPosts } from "@/utils/getPosts";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
@@ -22,7 +21,7 @@ const HomePageInfoCardWrapper = ({
 };
 
 const HomePage = async () => {
-  const posts = await getPosts();
+  // const posts = await getPosts();
   return (
     <>
       {/*
@@ -172,7 +171,7 @@ const HomePage = async () => {
             <Link href="#kontakt">
               <Card tip theme="steel" className="justify-center">
                 <div className="w-full text-left p-[10%] pr-20">
-                  <p className="lg:text-2xl xl:text-3xl font-bold">
+                  <p className="text-4xl lg:text-2xl xl:text-3xl font-bold">
                     Kontaktujte nás! <br />
                     <span className="text-6xl leading-6">&#8594;</span>
                   </p>
@@ -251,9 +250,9 @@ const HomePage = async () => {
       BLOG SECTION
       ========================================================================
       */}
-      <Section anchor="blog" adaptiveHeight>
+      {/* <Section anchor="blog" adaptiveHeight>
         <div className="flex items-center gap-1 mb-4">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+
           <img
             src="/img/logos/head-blue.svg"
             className="h-6 w-auto object-cover"
@@ -267,14 +266,14 @@ const HomePage = async () => {
           Blog
         </h2>
         <Divider />
-        <BlogSection posts={posts} limit={2} />
+        <BlogSection posts={posts} limit={2} /> 
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon"></div>
 
         <div className="bg-steel/10 w-screen h-screen absolute top-0 left-0 hero-polygon-3 pointer-events-none"></div>
         <div className="mt-8 z-50">
           <Button label="Více příspěvků" href="/blog" />
         </div>
-      </Section>
+      </Section> */}
     </>
   );
 };

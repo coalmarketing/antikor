@@ -93,15 +93,7 @@ export default async function RootLayout({
                   <p>
                     DIČ: <span className="font-mono">CZ28800729</span>
                   </p>
-                  <p className="mt-2">
-                    E-mail:{" "}
-                    <a
-                      href="mailto:info@antikor.cz"
-                      className="text-steel-600 underline"
-                    >
-                      info@antikor.cz
-                    </a>
-                  </p>
+
                   {/*<p>
                     Telefon:{" "}
                     <a

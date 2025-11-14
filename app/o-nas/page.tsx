@@ -61,7 +61,7 @@ const AboutPage = async () => {
         </div>
 
         <div className="w-full grid grid-cols-3 mt-10 gap-6">
-          <div className="col-span-2">
+          <div className="col-span-3 md:col-span-2">
             <Card tip>
               <div className="w-full text-left p-[10%] pr-[22%] z-10">
                 <p className="text-3xl font-bold">
@@ -86,12 +86,12 @@ const AboutPage = async () => {
               />
             </Card>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-3 md:col-span-1">
             <Card>
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/uploads/6k5a8002.jpg"
+                  src="/img/certificate-mockup.jpg"
                   alt="Klempírna"
                   className="w-full h-full object-cover mix-blend-normal"
                 />
@@ -132,7 +132,7 @@ const AboutPage = async () => {
         {/* CNC výroba */}
         <div
           className="flex flex-col md:flex-row gap-10 mb-16 items-center"
-          id="cnc-vyroba"
+          id="obrobna"
         >
           <div className="flex-1">
             <h2 className="text-3xl font-bold mb-4">Obrobna</h2>
@@ -173,7 +173,7 @@ const AboutPage = async () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center w-full">
             <Card>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -188,7 +188,7 @@ const AboutPage = async () => {
         {/* Klempířská výroba */}
         <div
           className="flex flex-col md:flex-row gap-10 my-16 items-center"
-          id="klempirska-vyroba"
+          id="klempirna"
         >
           <div className="flex-1">
             <h2 className="text-3xl font-bold mb-4">Klempírna</h2>
@@ -229,7 +229,7 @@ const AboutPage = async () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center w-full">
             <Card>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

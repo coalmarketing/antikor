@@ -8,7 +8,7 @@ const HeroBanner = () => {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/img/Manticore.svg"
-          className="absolute -bottom-0 lg:bottom-20 xl:-bottom-20 -right-20 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] object-cover z-10 -scale-x-100"
+          className="absolute top-40 lg:top-20 xl:-top-0 -right-20 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] object-cover z-10 -scale-x-100"
           alt=""
         />
         <div className="bg-dark/80 w-screen h-screen absolute top-0 left-0 hero-polygon"></div>

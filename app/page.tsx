@@ -85,7 +85,11 @@ const HomePage = async () => {
                   <li>CNC frézování</li>
                 </ul>
 
-                <Button label="Dozvědět se více" href="/o-nas" transparent />
+                <Button
+                  label="Dozvědět se více"
+                  href="/o-nas#obrobna"
+                  transparent
+                />
               </HomePageInfoCardWrapper>
             </Card>
           </div>
@@ -111,7 +115,11 @@ const HomePage = async () => {
                   <li>řezání materiálu</li>
                 </ul>
 
-                <Button label="Dozvědět se více" href="/o-nas" transparent />
+                <Button
+                  label="Dozvědět se více"
+                  href="/o-nas#klempirna"
+                  transparent
+                />
               </HomePageInfoCardWrapper>
             </Card>
           </div>
@@ -121,7 +129,7 @@ const HomePage = async () => {
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/uploads/6k5a8002.jpg"
+                  src="/img/certificate-mockup.jpg"
                   alt="Klempírna"
                   className="w-full h-full object-cover mix-blend-normal"
                 />
@@ -187,7 +195,7 @@ const HomePage = async () => {
         <LogoLoop
           logos={imageLogos}
           logoHeight={45}
-          speed={25}
+          speed={60}
           gap={80}
           pauseOnHover
           scaleOnHover

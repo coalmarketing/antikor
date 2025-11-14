@@ -5,6 +5,8 @@ import type { GalleryImage } from "@/utils/getGalleryImg";
 import Card from "./card";
 import Image from "next/image";
 
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+
 export default function GallerySection({ images }: { images: GalleryImage[] }) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
@@ -112,7 +114,7 @@ function ModalViewer({
           className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white font-black rounded-full w-11 h-11 grid place-items-center pb-1/2 z-50"
           aria-label="Předchozí obrázek"
         >
-          &lt;
+          <FaArrowLeft />
         </button>
 
         {/* Next button */}
@@ -121,7 +123,7 @@ function ModalViewer({
           className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white font-black rounded-full w-11 h-11 grid place-items-center pb-1/2 z-50"
           aria-label="Další obrázek"
         >
-          &gt;
+          <FaArrowRight />
         </button>
 
         {/* eslint-disable-next-line @next/next/no-img-element */}

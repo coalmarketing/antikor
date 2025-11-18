@@ -11,7 +11,7 @@ const CareerPage = async () => {
       <SubPageHeader
         title="Kariéra"
         claim="Přidejte se pod vlajku mantikory!"
-        description="Jsme moderní a stabilní strojírenská firma z Letohradu s jasnou vizí a špičkovými technologiemi. Pokud hledáte smysluplnou práci ve strojírenství, kde vaše nápady a dovednosti najdou uplatnění, jste na správném místě."
+        description="Jsme moderní a stabilní strojírenská firma z Letohradu s tradicí a motivací přenášet naše řemeslo do nové doby. Hledáme nové kolegy, kteří chtějí zakotvit v našem týmu a růst společně s námi."
         imageUrl="/uploads/6k5a7977.jpg"
       />
       <Section adaptiveHeight>

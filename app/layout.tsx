@@ -14,6 +14,7 @@ import Balancer from "react-wrap-balancer";
 import HiringNowBadge from "@/components/hiringNowBadge";
 
 import { getOpenPositions } from "@/utils/getOpenPositions";
+import SocialsButtons from "@/components/socialsButtons";
 
 const saira = Saira({
   variable: "--font-saira",
@@ -44,6 +45,7 @@ export default async function RootLayout({
       <body
         className={`${saira.variable} ${specialGothicExtendedBold.variable} antialiased overflow-x-hidden`}
       >
+        <SocialsButtons />
         <NavbarDesktop items={navigationItems} />
         <HiringNowBadge hasOpenPositions={hasOpenPositions} />
         {children}

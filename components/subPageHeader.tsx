@@ -5,6 +5,7 @@ interface SubPageHeaderProps {
   claim: string;
   description: string;
   imageUrl?: string;
+  anchor?: string;
 }
 
 const SubPageHeader: React.FC<SubPageHeaderProps> = ({
@@ -12,9 +13,13 @@ const SubPageHeader: React.FC<SubPageHeaderProps> = ({
   claim,
   description,
   imageUrl,
+  anchor,
 }) => {
   return (
-    <section className="w-full h-[600px] px-[10%] flex flex-col items-start justify-between bg-dark/80 overflow-hidden relative">
+    <section
+      id={anchor}
+      className="w-full h-[600px] px-[10%] flex flex-col items-start justify-between bg-dark/80 overflow-hidden relative"
+    >
       <div className="max-w-[1000px] h-full flex flex-col justify-center">
         <div className="flex items-center gap-1 mb-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}

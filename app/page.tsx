@@ -87,7 +87,7 @@ const HomePage = async () => {
 
                 <Button
                   label="Dozvědět se více"
-                  href="/o-nas#obrobna"
+                  href="/sluzby-a-technologie#obrobna"
                   transparent
                 />
               </HomePageInfoCardWrapper>
@@ -117,7 +117,7 @@ const HomePage = async () => {
 
                 <Button
                   label="Dozvědět se více"
-                  href="/o-nas#klempirna"
+                  href="/sluzby-a-technologie#klempirna"
                   transparent
                 />
               </HomePageInfoCardWrapper>

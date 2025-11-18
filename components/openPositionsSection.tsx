@@ -63,9 +63,15 @@ export default function OpenPositionsSectionClient({
             <div className="text-light/80 text-sm mt-2 mb-8">
               {position.description}
             </div>
-            <Link href="mailto:info@antikor.cz" target="_blank">
+            <Link href="mailto:zdenekmaixner@gmail.com" target="_blank">
               <Button label="Napište nám!" transparent />
             </Link>
+            <div className="text-sm">
+              Nebo nám zavolejte na{" "}
+              <a href="tel:+420737423925" className="underline text-steel">
+                +420 737 423 925
+              </a>
+            </div>
           </OpenPositionCardWrapper>
         </Card>
       ))}
@@ -74,8 +80,11 @@ export default function OpenPositionsSectionClient({
           <p className="text-base mt-2 mb-8 font-semibold">
             Nenašli jste, co hledáte? Sledujte nás všude a zkuste to znovu
             později. Nebo nám rovnou napište na{" "}
-            <a href="mailto:info@antikor.cz" className="underline text-steel">
-              info@antikor.cz
+            <a
+              href="mailto:zdenekmaixner@gmail.com"
+              className="underline text-steel"
+            >
+              zdenekmaixner@gmail.com
             </a>
             , zašlete nám svůj životopis!
           </p>

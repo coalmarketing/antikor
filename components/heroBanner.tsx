@@ -1,15 +1,18 @@
 import Button from "./button";
 import Divider from "./divider";
+import Image from "next/image";
 
 const HeroBanner = () => {
   return (
     <>
       <div className="relative bg-dark/80 text-light min-h-screen max-w-screen overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="/img/Manticore.svg"
           className="absolute top-40 lg:top-20 xl:-top-0 -right-20 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] object-cover z-10 -scale-x-100"
           alt=""
+          fetchPriority="high"
+          width={1000}
+          height={1000}
         />
         <div className="bg-dark/80 w-screen h-screen absolute bottom-0 left-0 hero-polygon"></div>
         <div className="bg-steel-900 w-screen h-screen absolute bottom-0 left-0 hero-polygon-2 z-20"></div>
@@ -18,11 +21,12 @@ const HeroBanner = () => {
         <div className="min-h-screen h-full relative isolate px-6 lg:pt-16 lg:px-20 w-3/4 md:w-1/2 lg:w-2/3 text-left z-40">
           <div className="mx-auto max-w-3xl pt-[20vh] lg:pt-[20vh]">
             <div className="flex items-center gap-1 mb-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/img/logos/head-blue.svg"
                 className="h-6 w-auto object-cover"
                 alt=""
+                width={24}
+                height={24}
               />
               <p className="text-lg font-semibold text-steel uppercase tracking-widest">
                 ANTIKOR
@@ -65,12 +69,12 @@ const HeroBanner = () => {
           <source src="/video/ANTIKOR hero video.mp4" type="video/mp4" />
         </video>
 
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/img/products/ANTIKOR-hero-thumb.png"
+        <Image
+          src="/img/products/ANTIKOR-hero-thumb.webp"
           className="absolute top-0 left-0 w-full h-full object-cover"
           alt=""
-          fetchPriority="high"
+          width={1920}
+          height={1080}
         />
       </div>
     </>

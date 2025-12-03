@@ -8,6 +8,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import Button from "./button";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { socialMediaLinks } from "@/data/webGlobals";
 
 interface NavbarProps {
   items: NavigationItem[];
@@ -109,33 +110,41 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
               </div>
               <div className="py-6">
                 <div className="flex gap-4">
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="grid place-content-center w-10 h-10 bg-steel hover:bg-steel-700 transition-all text-white rounded border border-steel-700 shadow-lg"
-                  >
-                    <span className="sr-only">Facebook</span>
-                    <FaFacebook size={24} />
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="grid place-content-center w-10 h-10 bg-steel hover:bg-steel-700 transition-all text-white rounded border border-steel-700 shadow-lg"
-                  >
-                    <span className="sr-only">LinkedIn</span>
-                    <FaLinkedin size={24} />
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="grid place-content-center w-10 h-10 bg-steel hover:bg-steel-700 transition-all text-white rounded border border-steel-700 shadow-lg"
-                  >
-                    <span className="sr-only">Instagram</span>
-                    <FaInstagram size={24} />
-                  </a>
+                  {socialMediaLinks.facebook !== "" && (
+                    <a
+                      href={socialMediaLinks.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="grid place-content-center w-10 h-10 bg-steel hover:bg-steel-700 transition-all text-white rounded border border-steel-700 shadow-lg"
+                    >
+                      <span className="sr-only">Facebook</span>
+                      <FaFacebook size={24} />
+                    </a>
+                  )}
+
+                  {socialMediaLinks.linkedin !== "" && (
+                    <a
+                      href={socialMediaLinks.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="grid place-content-center w-10 h-10 bg-steel hover:bg-steel-700 transition-all text-white rounded border border-steel-700 shadow-lg"
+                    >
+                      <span className="sr-only">LinkedIn</span>
+                      <FaLinkedin size={24} />
+                    </a>
+                  )}
+
+                  {socialMediaLinks.instagram !== "" && (
+                    <a
+                      href={socialMediaLinks.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="grid place-content-center w-10 h-10 bg-steel hover:bg-steel-700 transition-all text-white rounded border border-steel-700 shadow-lg"
+                    >
+                      <span className="sr-only">Instagram</span>
+                      <FaInstagram size={24} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -30,7 +30,7 @@ const ButtonInside = ({
         !transparent
           ? !inverted
             ? !monochrome
-              ? "bg-steel text-light hover:bg-steel-700 px-3.5 py-2.5 "
+              ? "bg-steel-700 text-light hover:bg-steel-800 px-3.5 py-2.5 "
               : "bg-dark text-light hover:bg-dark/70 px-3.5 py-2.5 "
             : !monochrome
             ? "bg-light text-steel hover:light/90 px-3.5 py-2.5 "

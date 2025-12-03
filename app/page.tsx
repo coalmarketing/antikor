@@ -8,6 +8,7 @@ import Section from "@/components/section";
 import { UspSection } from "@/components/usp";
 import { imageLogos } from "@/data/clientLogos";
 import { uspPoints } from "@/data/uspPoints";
+import Image from "next/image";
 // import { getPosts } from "@/utils/getPosts";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
@@ -166,12 +167,15 @@ const HomePage = async () => {
                 </p>
               </div>
 
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/img/manticore-drawing.jpg"
-                className="absolute right-0 top-[50%] translate-y-[-40%] w-1/4 rotate-15 -scale-x-100 mix-blend-luminosity"
-                alt="Mantikora"
-              />
+              <div className="absolute right-0 top-[50%] translate-y-[-40%] w-1/4 aspect-square rotate-15 -scale-x-100 mix-blend-luminosity">
+                <Image
+                  src="/img/manticore-drawing.webp"
+                  alt="Mantikora"
+                  className="object-contain"
+                  sizes="250px"
+                  fill
+                />
+              </div>
             </Card>
           </div>
 

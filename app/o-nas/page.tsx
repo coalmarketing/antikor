@@ -76,8 +76,8 @@ const AboutPage = async () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/Manticore.svg"
-                className="absolute bottom-0 md:-bottom-80 lg:-bottom-80 xl:-bottom-150 -right-20 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] object-cover z-10 -scale-x-100"
-                alt=""
+                className="absolute bottom-0 md:-bottom-80 lg:-bottom-80 xl:-bottom-150 -right-30 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] z-10 -scale-x-100"
+                alt="Mantikora"
               />
             </Card>
           </div>
@@ -86,7 +86,7 @@ const AboutPage = async () => {
               <div className="w-full h-40 bg-steel-700">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/img/certificate-mockup.jpg"
+                  src="/img/certificate-mockup.webp"
                   alt="Klempírna"
                   className="w-full h-full object-cover mix-blend-normal"
                 />

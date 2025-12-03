@@ -71,11 +71,12 @@ const HomePage = async () => {
           <div className="col-span-12 lg:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/uploads/6k5a8061.jpg"
                   alt="Obrobna"
                   className="w-full h-full object-cover"
+                  width={1280}
+                  height={720}
                 />
               </div>
               <HomePageInfoCardWrapper>
@@ -97,11 +98,12 @@ const HomePage = async () => {
           <div className="col-span-12 lg:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/uploads/6k5a8001.jpg"
                   alt="Klempírna"
                   className="w-full h-full object-cover"
+                  width={1280}
+                  height={720}
                 />
               </div>
               <HomePageInfoCardWrapper>
@@ -128,11 +130,12 @@ const HomePage = async () => {
           <div className="col-span-12 lg:col-span-4">
             <Card>
               <div className="w-full h-40 bg-steel-700">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/img/certificate-mockup.jpg"
+                <Image
+                  src="/img/certificate-mockup.webp"
                   alt="Klempírna"
                   className="w-full h-full object-cover mix-blend-normal"
+                  width={1280}
+                  height={720}
                 />
               </div>
               <HomePageInfoCardWrapper>

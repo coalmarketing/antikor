@@ -13,6 +13,7 @@ const HeroBanner = () => {
           fetchPriority="high"
           width={1000}
           height={1000}
+          loading="eager"
         />
         <div className="bg-dark/80 w-screen h-screen absolute bottom-0 left-0 hero-polygon"></div>
         <div className="bg-steel-900 w-screen h-screen absolute bottom-0 left-0 hero-polygon-2 z-20"></div>

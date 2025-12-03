@@ -76,7 +76,7 @@ const AboutPage = async () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/Manticore.svg"
-                className="absolute bottom-0 md:-bottom-80 lg:-bottom-80 xl:-bottom-150 -right-30 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] z-10 -scale-x-100"
+                className="absolute -bottom-60 md:-bottom-80 lg:-bottom-80 xl:-bottom-130 -right-40 md:-right-60 lg:-right-80 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] z-10 -scale-x-100"
                 alt="Mantikora"
               />
             </Card>

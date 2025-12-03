@@ -7,6 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import Button from "./button";
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { socialMediaLinks } from "@/data/webGlobals";
 
@@ -30,11 +31,12 @@ const NavbarDesktop: React.FC<NavbarProps> = ({ items }) => {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">ANTIKOR</span>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               alt=""
               src="/img/logos/logo-long-mono-light.png"
-              className="h-16 w-auto"
+              className="h-16 w-auto object-contain"
+              width={160}
+              height={100}
             />
           </Link>
         </div>

@@ -70,6 +70,7 @@ const HeroBanner = () => {
           src="/img/products/ANTIKOR-hero-thumb.png"
           className="absolute top-0 left-0 w-full h-full object-cover"
           alt=""
+          fetchPriority="high"
         />
       </div>
     </>

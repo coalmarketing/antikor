@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://antikor-zdenek-maixner.netlify.app/
+
+# Sitemaps
+Sitemap: https://antikor-zdenek-maixner.netlify.app/sitemap.xml

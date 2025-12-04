@@ -1,5 +1,22 @@
-@import "tailwindcss";
+/* ------------------ TAILWIND CONFIG (v4) ------------------ */
+@config {
+  content: [ "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}"];
+}
+
+/* Load Tailwind v4 layers */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Load PostCSS plugin (required) */
+@import "@tailwindcss/postcss";
+
+/* Optional Tailwind plugins */
 @import "tw-animate-css";
+
+/* If you need extra Tailwind plugins, import them AFTER */
+@import "tw-animate-css";
+/* Do NOT import "tailwindcss" again. It duplicates everything */
 
 /* ================================ VARS ================================ */
 

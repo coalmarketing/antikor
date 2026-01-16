@@ -18,9 +18,9 @@ const SubPageHeader: React.FC<SubPageHeaderProps> = ({
   return (
     <section
       id={anchor}
-      className="w-full h-[600px] px-[10%] flex flex-col items-start justify-between bg-dark/80 overflow-hidden relative"
+      className="w-full h-screen md:h-150 px-[10%] pt-20 md:pt-0 flex flex-col items-start justify-between bg-dark/80 overflow-hidden relative"
     >
-      <div className="max-w-[1000px] h-full flex flex-col justify-center">
+      <div className="max-w-250 h-full flex flex-col justify-center">
         <div className="flex items-center gap-1 mb-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

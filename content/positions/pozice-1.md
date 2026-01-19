@@ -57,12 +57,10 @@ description: >-
   **V případě zájmu mě neváhejte kontaktovat**, telefonicky: **737 423 925**, e-mailem: **[zdenekmaixner@gmail.com](mailto:zdenekmaixner@gmail.com)**, případně osobně, Ing. Zdeněk Maixner, jednatel
 
 
-
-
   V Letohradě 19. ledna 2026
 
 
-  Ing. Zdeněk Maixner Jednatel, v.
+  Ing. Zdeněk Maixner Jednatel, v.r.
 location: Letohrad
 type: HPP
 published: true

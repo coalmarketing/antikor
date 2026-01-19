@@ -1,136 +1,57 @@
 ---
 title: Ekonom/ka - účetní
 description: >-
-  <p><strong>Místo pracoviště:</strong> Kunčice 26, Letohrad (areál ANTIKOR)<br>
+  Hledáte místo, kde vaše odbornost nebude jen „papírováním“, ale skutečným
+  základem, o který se firma může opřít? Ve společnosti Zdeněk Maixner - ANTIKOR
+  s.r.o. věříme v poctivé řemeslo i v poctivou administrativu.
 
 
-  <strong>Nástup:</strong> Dle dohody (na dobré lidi si rádi počkáme)</p>
+  Aktuálně hledáme posilu, která se postará o naše finance a personalistiku. Nehledáme administrativní sílu na zakládání šanonů, ale zkušeného kolegu/kolegyni, který/á rozumí mzdám, ovládá podvojné účetnictví a stane se důležitým článkem našeho týmu.
 
 
+  ## CO BUDE VAŠÍ NÁPLNÍ PRÁCE?
 
 
-  <p>Nejsme jen další výrobní hala v řadě. Jsme <strong>Zdeněk Maixner - ANTIKOR s.r.o.</strong> Navazujeme na tradici, která v Letohradu zapustila kořeny už v roce 1938. Dnes ale kladivem do kovadliny nemlátíme – v našich čistých halách vládne přesná CNC technologie, lasery a špičkové sváření pro automotive, potravinářství i farmacii.</p>
+  I když spolupracujeme s externí účetní a daňovou kanceláří, potřebujeme mít „doma“ někoho, kdo má v číslech absolutní pořádek a rozumí souvislostem.
 
 
+  * Srdce naší ekonomiky: Povedete agendu podvojného účetnictví tak, aby vše sedělo do posledního haléře.
 
+  * Mzdová a personální agenda: Budete mít pod palcem zpracování mezd a personalistiku - to je u nás klíčová oblast, která vyžaduje preciznost a znalost aktuální legislativy.
 
-  <p>Hledáme člověka, který se nebojí vzít za práci. Nehledáme "kancelářského manažera", co řídí výrobu přes Excel z tepla domova. Hledáme <strong>Vedoucího výroby</strong>, který cítí rozdíl mezi nerezem a hliníkem, který si získá respekt chlapů na dílně svou odborností a který nám pomůže posouvat firmu dál.</p>
+  * Práce s moderním systémem: Vaším hlavním nástrojem bude Helios Inuvio. Budete pracovat v modulu Ekonomika, který nám pomáhá mít dokonalý přehled o zdraví firmy (víme, že Helios je komplexní systém, a proto oceníme vaši schopnost s ním efektivně pracovat).
 
+  * Komunikace: Budete spojkou mezi naší výrobou a externími poradci.
 
 
+  ## BEZ ČEHO SE U NÁS NEOBEJDETE?
 
-  <h3>CO BUDE VAŠÍ NÁPLNÍ PRÁCE?</h3>
 
+  * Praxe v podvojném účetnictví: Musíte vědět, co děláte, a rozumět logice účtování.
 
-  <p>Vaším úkolem bude zajistit, aby z dílny odcházely perfektní výrobky a včas. Budete "hlavou i srdcem" naší produkce.</p>
+  * Zkušenost se mzdami: Zpracování mezd a související administrativa (odvody, hlášení, smlouvy) pro vás nejsou novinkou.
 
+  * Odvaha pracovat s daty: Práce v informačním systému Helios Inuvio vyžaduje systematičnost a chuť využívat jeho možnosti pro zefektivnění práce.
 
-  <ul>
+  * Zodpovědnost a samostatnost: Pan Maixner na vás bude spoléhat. Potřebujeme někoho, kdo si dokáže práci zorganizovat a ohlídá si důležité termíny.
 
 
-  <li><strong>Řízení orchestru:</strong> Povedete tým našich obráběčů, svářečů a techniků. Vaším úkolem je, aby každý věděl, co má dělat, a měl k tomu podmínky.</li>
+  ## CO VÁM ZA VAŠI DOBŘE ODVEDENOU PRÁCI NABÍZÍME?
 
 
-  <li><strong>Plánování a strategie:</strong> Budete ladit kapacity pro sériovou výrobu (např. pro Bosch) i pro "špeky" v zakázkové výrobě nerezových nádrží či konstrukcí.</li>
+  * Jistotu a stabilitu: Jsme zavedená česká společnost. Výplata u nás chodí včas a férové jednání je pro nás zákonem.
 
+  * Pět týdnů dovolené (25 dní): Protože víme, že poctivá práce vyžaduje i kvalitní odpočinek.
 
-  <li><strong>Technický dohled:</strong> Když se na dílně objeví problém, nebudete volat o pomoc, ale hledat řešení. Výkresová dokumentace je pro Vás denním chlebem.</li>
+  * Příspěvek na stravování a dopravu: Vážíme si toho, že k nám každý den vážíte cestu.
 
+  * Klid na práci: Zázemí stabilní firmy, kde nejste jen „číslo v tabulce“, ale partnerem pro vedení společnosti.
 
-  <li><strong>Komunikace:</strong> Budete pravou rukou majitele a spojkou mezi obchodem a výrobou.</li>
 
+  ## MÁTE POCIT, ŽE HLEDÁME PRÁVĚ VÁS?
 
-  </ul>
 
-
-
-
-  <h3>BEZ ČEHO SE U NÁS NEOBEJDETE?</h3>
-
-
-  <p>Papír snese všechno, ale dílna ne. Proto máme jasné požadavky:</p>
-
-
-  <ul>
-
-
-  <li><strong>Srdce strojaře (a vzdělání k tomu):</strong> Máte SŠ/VŠ technického směru. Musíte rozumět tomu, co vyrábíme.</li>
-
-
-  <li><strong>Praxe, která je vidět:</strong> Už jste ve výrobě něco zažil/a. Víte, jak to chodí u CNC strojů nebo na svařovně.</li>
-
-
-  <li><strong>Schopnost vést lidi:</strong> Umíte pochválit, ale i důrazně vytknout chybu. Hledáme přirozenou autoritu, ne drába s bičem.</li>
-
-
-  <li><strong>Samostatnost a selský rozum:</strong> Nehledáme někoho, koho musíme vodit za ruku. Očekáváme, že si práci zorganizujete a ponesete za ni odpovědnost.</li>
-
-
-  </ul>
-
-
-
-
-  <h3>CO VÁM ZA VAŠI DOBŘE ODVEDENOU PRÁCI NABÍZÍME?</h3>
-
-
-  <p>Víme, že kvalitní vedoucí je poklad, a podle toho se k němu chováme.</p>
-
-
-  <ul>
-
-
-  <li><strong>Důstojné ohodnocení:</strong> Peníze, které odpovídají Vaší odpovědnosti a zkušenostem. Vždy včas na účtu.</li>
-
-
-  <li><strong>Zázemí, které voní novotou:</strong> Zapomeňte na špinavé dílny. Zakládáme si na čistotě a moderním prostředí (máme špičkové stroje Hyundai, měřidla Mitutoyo, software GibbsCAM).</li>
-
-
-  <li><strong>Stabilitu rodinné firmy:</strong> U nás nejste číslo v systému nadnárodní korporace. Jsme rodinná firma s historií, kde platí dané slovo a férové jednání.</li>
-
-
-  <li><strong>Možnost seberealizace:</strong> Máte nápad, jak výrobu zefektivnit? U nás ho nebudete schvalovat přes deset komisí. Máte dveře otevřené k rychlému rozhodování.</li>
-
-
-  </ul>
-
-
-
-
-  <h3>MÁTE POCIT, ŽE HLEDÁME PRÁVĚ VÁS?</h3>
-
-
-  <p>Rádi Vás poznáme osobně. Pokud máte zkušenosti s řízením výroby, technické myšlení a chcete pracovat v prostředí, kde má vaše práce smysl a je za vámi vidět reálný výsledek, dejte nám o sobě vědět.</p>
-
-
-
-
-  <p>V případě zájmu mě neváhejte kontaktovat:<br>
-
-
-  Telefonicky: 737 423 925<br>
-
-
-  E-mailem: zdenekmaixner@gmail.com<br>
-
-
-  Případně osobně: Ing. Zdeněk Maixner, jednatel</p>
-
-
-
-
-  <p>Těším se na setkání s Vámi.</p>
-
-
-
-
-  <p>V Letohradě 19. ledna 2026<br>
-
-
-  <strong>Ing. Zdeněk Maixner</strong><br>
-
-
-  Jednatel, v.r.</p>
+  Rádi Vás poznáme osobně. Pokud máte zkušenosti s účetnictvím a mzdami a chcete pracovat v prostředí, kde má vaše práce smysl, dejte nám o sobě vědět.
 location: Letohrad
 type: HPP
 published: true

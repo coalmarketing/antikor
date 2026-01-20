@@ -1,4 +1,5 @@
 ---
+slug: programator-cnc-frezky
 title: Programátor CNC frézky
 blurb: >-
   **Máte strojařinu v krvi?** Hledáme posily k CNC strojům. Baví Vás, když pod

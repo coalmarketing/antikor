@@ -1,4 +1,5 @@
 ---
+slug: ekonom-ka-ucetni
 title: Ekonom/ka - účetní
 blurb: >-
   Hledáte místo, kde vaše odbornost nebude jen „papírováním“, ale skutečným

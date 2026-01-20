@@ -31,9 +31,16 @@ collections:
     label: "Otevřené pozice"
     folder: "content/positions"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     preview: true
     fields:
+      - label: "Slug (URL)"
+        name: "slug"
+        widget: "string"
+        hint: "Používej pouze malá písmena, bez diakritiky, slova odděluj pomlčkami (např. obsluha-frezky)"
+        pattern:
+          - "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          - "Slug smí obsahovat jen malá písmena, čísla a pomlčky"
       - { label: "Název pozice", name: "title", widget: "string" }
       - { label: "Krátký popisek", name: "blurb", widget: "markdown" }
       - { label: "Popis", name: "description", widget: "markdown" }

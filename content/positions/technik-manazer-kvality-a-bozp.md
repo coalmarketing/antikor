@@ -1,4 +1,5 @@
 ---
+slug: technik-manazer-kvality-a-bozp
 title: Technik - Manažer kvality a BOZP
 blurb: >-
   Máte v malíku ISO normy a bezpečnost práce? **Hledáme klíčového člověka pro

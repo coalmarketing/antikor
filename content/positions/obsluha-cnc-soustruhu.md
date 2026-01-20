@@ -1,4 +1,5 @@
 ---
+slug: obsluha-cnc-soustruhu
 title: Obsluha CNC soustruhu
 blurb: >-
   Do našeho týmu v Letohradě **hledáme spolehlivého kolegu k CNC soustruhu.**

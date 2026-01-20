@@ -1,4 +1,5 @@
 ---
+slug: technik-vyroby
 title: Technik výroby
 blurb: >-
   Máte technické myšlení a rozumíte strojírenské výrobě? **Hledáme Technika

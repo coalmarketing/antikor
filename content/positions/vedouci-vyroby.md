@@ -1,4 +1,5 @@
 ---
+slug: vedouci-vyroby
 title: Vedoucí výroby
 blurb: >-
   Hledáme člověka, který se nebojí vzít za práci. **Nehledáme „kancelářského

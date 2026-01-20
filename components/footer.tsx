@@ -37,13 +37,21 @@ const FooterMenu = () => {
           Kontakt
         </Link>
         <div className="flex flex-row align-middle justify-center gap-5">
-          <Link href="/gdpr" className="text-sm hover:text-steel transition">
+          <a
+            href="/gdpr"
+            className="text-sm hover:text-steel transition"
+            rel="noopener noreferrer"
+          >
             GDPR
-          </Link>
+          </a>
           |
-          <Link href="/cookies" className="text-sm hover:text-steel transition">
+          <a
+            href="/cookies"
+            className="text-sm hover:text-steel transition"
+            rel="noopener noreferrer"
+          >
             Cookies
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

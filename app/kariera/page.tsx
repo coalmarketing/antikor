@@ -4,6 +4,15 @@ import Section from "@/components/section";
 import SubPageHeader from "@/components/subPageHeader";
 import { getOpenPositions } from "@/utils/getOpenPositions";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kariéra v ANTIKOR | Volná místa ve strojírenství Letohrad",
+  description:
+    "Hledáte stabilní práci? Přidejte se do týmu ANTIKOR. Hledáme operátory CNC, zámečníky a technology. Nabízíme zázemí silné rodinné firmy v Kunčicích.",
+  alternates: { canonical: "/kariera" },
+};
+
 const CareerPage = async () => {
   const positions = await getOpenPositions();
   return (

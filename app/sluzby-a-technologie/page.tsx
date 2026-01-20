@@ -9,6 +9,15 @@ import { getGalleryImages } from "@/utils/getGalleryImg";
 import Balancer from "react-wrap-balancer";
 import TechnologieBento from "@/components/bento";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Služby a technologie | CNC frézování, soustružení a klempírna",
+  description:
+    "Nabízíme komplexní zpracování kovů: CNC soustružení a frézování, ohýbání na lisech a svařování TIG/MAG. Sériová i zakázková výroba z oceli, nerezi a hliníku.",
+  alternates: { canonical: "/sluzby-a-technologie" },
+};
+
 const ServicesPage = async () => {
   const images = await getGalleryImages();
   return (

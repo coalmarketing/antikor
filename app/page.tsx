@@ -13,6 +13,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Zdeněk Maixner - ANTIKOR s.r.o. | Zakázková kovovýroba a CNC obrábění z nerezi",
+  description:
+    "Specializujeme se na přesné CNC obrábění, klempířskou výrobu a svařování. Dodáváme díly pro automotive i strojírenství. Kvalita dle IATF 16949 z Letohradu.",
+  alternates: { canonical: "/" },
+};
+
 const HomePageInfoCardWrapper = ({
   children,
 }: {

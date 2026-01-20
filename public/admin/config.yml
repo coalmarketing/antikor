@@ -35,10 +35,12 @@ collections:
     preview: true
     fields:
       - { label: "Název pozice", name: "title", widget: "string" }
+      - { label: "Krátký popisek", name: "blurb", widget: "markdown" }
       - { label: "Popis", name: "description", widget: "markdown" }
       - { label: "Lokalita", name: "location", widget: "string", required: false }
       - { label: "Typ úvazku", name: "type", widget: "string", required: false }
       - { label: "Zveřejněno", name: "published", widget: "boolean", default: true }
+      - { label: "Náhledový obrázek", name: "image", widget: "image", required: false }
 
   - name: "gallery"
     label: "Galerie"

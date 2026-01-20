@@ -6,6 +6,17 @@ import Card from "./card";
 import Button from "./button";
 import Link from "next/link";
 
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+function PositionDescription({ description }: { description: string }) {
+  return (
+    <div className="text-light/80 text-sm mt-2 mb-4 prose prose-invert">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{description}</ReactMarkdown>
+    </div>
+  );
+}
+
 export const OpenPositionCardWrapper = ({
   children,
 }: {
@@ -60,9 +71,17 @@ export default function OpenPositionsSectionClient({
             <p className="text-steel-600 text-sm mt-2 font-semibold">
               {position.location}
             </p>
-            <div className="text-light/80 text-sm mt-2 mb-8">
-              {position.description}
+            <PositionDescription
+              description={
+                position.blurb ? position.blurb : position.description
+              }
+            />
+            <div className="mb-6">
+              <Link href={`/kariera/${position.slug}`}>
+                <Button label="Detaily pozice" />
+              </Link>
             </div>
+
             <Link href="mailto:zdenekmaixner@gmail.com" target="_blank">
               <Button label="Napište nám!" transparent />
             </Link>

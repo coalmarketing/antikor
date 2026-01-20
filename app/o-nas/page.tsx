@@ -11,6 +11,15 @@ import Balancer from "react-wrap-balancer";
 import { LogoLoop } from "@/components/LogoLoop";
 import { imageLogos } from "@/data/clientLogos";
 import Button from "@/components/button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "O firmě Zdeněk Miaxner - ANTIKOR s.r.o. | Tradice strojírenské výroby a kvalita",
+  description:
+    "Jsme rodinná strojírenská firma z Letohradu. Spojujeme dlouholetou tradici s moderními technologiemi. Zakládáme si na preciznosti, stabilitě a férovém přístupu.",
+  alternates: { canonical: "/o-nas" },
+};
 
 const AboutPage = async () => {
   return (

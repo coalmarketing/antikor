@@ -21,21 +21,30 @@ const FooterMenu = () => {
         <p className="text-sm">561 51 Letohrad</p>
       </div>
       <div className="flex flex-col gap-2">
-        <a href="/o-nas" className="text-sm hover:text-steel transition">
+        <Link href="/o-nas" className="text-sm hover:text-steel transition">
           O nás
-        </a>
-        <a
+        </Link>
+        <Link
           href="/o-nas#sluzby-a-technologie"
           className="text-sm hover:text-steel transition"
         >
           Služby a technologie
-        </a>
-        <a href="/kariera" className="text-sm hover:text-steel transition">
+        </Link>
+        <Link href="/kariera" className="text-sm hover:text-steel transition">
           Kariéra
-        </a>
-        <a href="#kontakt" className="text-sm hover:text-steel transition">
+        </Link>
+        <Link href="#kontakt" className="text-sm hover:text-steel transition">
           Kontakt
-        </a>
+        </Link>
+        <div className="flex flex-row align-middle justify-center gap-5">
+          <Link href="/gdpr" className="text-sm hover:text-steel transition">
+            GDPR
+          </Link>
+          |
+          <Link href="/cookies" className="text-sm hover:text-steel transition">
+            Cookies
+          </Link>
+        </div>
       </div>
     </nav>
   );

@@ -1,3 +1,4 @@
+import WaulterSkeleton from "@/components/waulterSkeleton";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,10 +11,9 @@ export const metadata: Metadata = {
 export default function CookiesPage() {
   return (
     <main className="py-36 bg-dark">
-      <div
-        className="mx-auto max-w-4xl prose prose-invert"
-        id="waulterCookies"
-      ></div>
+      <div className="mx-auto max-w-4xl prose prose-invert" id="waulterCookies">
+        <WaulterSkeleton />
+      </div>
     </main>
   );
 }

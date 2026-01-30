@@ -1,17 +1,41 @@
+# Use DecapBridge PKCE auth (required)
 backend:
   name: git-gateway
+  repo: coalmarketing/antikor
   branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/1df57565-7261-4ddf-b03b-0dd8b69aa129/pkce
+  auth_token_endpoint: /sites/1df57565-7261-4ddf-b03b-0dd8b69aa129/token
+  gateway_url: https://gateway.decapbridge.com
+
+  # See who did what (optional)
   commit_messages:
-    create: 'create (decap): {{collection}} “{{slug}}”'
-    update: 'update (decap): {{collection}} “{{slug}}”'
-    delete: 'delete (decap): {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] upload (decap): “{{path}}”'
-    deleteMedia: '[skip ci] delete (decap): “{{path}}”'
+    create: Create {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+# Enable PKCE fields (optional, recommended)
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+# Add site links in Decap CMS (optional)
+site_url: https://antikor.net
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-logo_url: "https://coalmarketing.cz/wp-content/uploads/2024/08/coalmarketing_logo_long_color-black-1024x239.png"
+# Change url to a link to the image you want to use, no file paths, must be a URL
+logo:
+  src: "https://coalmarketing.cz/wp-content/uploads/2024/08/coalmarketing_logo_long_color-black-1024x239.png"
+  show_in_header: false
+
 locale: "cs"
 
 collections:
@@ -44,10 +68,25 @@ collections:
       - { label: "Název pozice", name: "title", widget: "string" }
       - { label: "Krátký popisek", name: "blurb", widget: "markdown" }
       - { label: "Popis", name: "description", widget: "markdown" }
-      - { label: "Lokalita", name: "location", widget: "string", required: false }
+      - {
+          label: "Lokalita",
+          name: "location",
+          widget: "string",
+          required: false,
+        }
       - { label: "Typ úvazku", name: "type", widget: "string", required: false }
-      - { label: "Zveřejněno", name: "published", widget: "boolean", default: true }
-      - { label: "Náhledový obrázek", name: "image", widget: "image", required: false }
+      - {
+          label: "Zveřejněno",
+          name: "published",
+          widget: "boolean",
+          default: true,
+        }
+      - {
+          label: "Náhledový obrázek",
+          name: "image",
+          widget: "image",
+          required: false,
+        }
 
   - name: "gallery"
     label: "Galerie"

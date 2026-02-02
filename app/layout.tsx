@@ -17,6 +17,9 @@ import { getOpenPositions } from "@/utils/getOpenPositions";
 import SocialsButtons from "@/components/socialsButtons";
 import Script from "next/script";
 
+// ✅ NEW: Decap settings loader
+import { getGeneralSettings, type Contact } from "@/utils/getContacts";
+
 const saira = Saira({
   variable: "--font-saira",
   subsets: ["latin"],
@@ -34,15 +37,7 @@ const siteName = "Zdeněk Maixner - ANTIKOR s.r.o.";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: siteName,
-
-  // Helps with language in search snippets etc.
-  // (HTML lang attribute is set in the component below)
-  alternates: {
-    canonical: "/",
-  },
-
-  // NOTE: Google ignores meta keywords, but Next supports it.
-  // If you still want it, keep it here globally.
+  alternates: { canonical: "/" },
   keywords: [
     "Strojírenská výroba",
     "CNC obrábění kovů",
@@ -59,7 +54,6 @@ export const metadata: Metadata = {
     "ANTIKOR Kunčice",
     "Zdeněk Maixner – ANTIKOR s.r.o. Letohrad",
   ],
-
   robots: {
     index: true,
     follow: true,
@@ -71,8 +65,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-
-  // Optional but recommended
   openGraph: {
     images: [
       {
@@ -91,12 +83,48 @@ export const metadata: Metadata = {
 
 export const runtime = "nodejs";
 
+// ✅ NEW helpers
+function normalizeTelHref(phone: string) {
+  // Keep + and digits; remove spaces
+  return phone.replace(/\s+/g, "");
+}
+
+function sortByOrderThenName(a: Contact, b: Contact) {
+  const ao = a.order ?? 9999;
+  const bo = b.order ?? 9999;
+  if (ao !== bo) return ao - bo;
+  return a.name.localeCompare(b.name, "cs");
+}
+
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   const hasOpenPositions = (await getOpenPositions()).length > 0;
+
+  // ✅ NEW: Load contacts from Decap-managed markdown
+  const settings = await getGeneralSettings();
+  const contacts = [...(settings.contacts ?? [])].sort(sortByOrderThenName);
+
+  // Left column: no department
+  const leftContacts = contacts.filter((c) => !c.department);
+
+  // Right column: grouped by department
+  const rightContacts = contacts.filter((c) => Boolean(c.department));
+  const grouped = rightContacts.reduce<Record<string, Contact[]>>((acc, c) => {
+    const key = c.department;
+    if (!key) return acc;
+    acc[key] ??= [];
+    acc[key].push(c);
+    return acc;
+  }, {});
+
+  // Keep group order stable: sort by department name (or change to custom order later)
+  const rightGroups = Object.entries(grouped).sort(([a], [b]) =>
+    a.localeCompare(b, "cs"),
+  );
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -164,7 +192,7 @@ export default async function RootLayout({
               </Balancer>
             </p>
 
-            {/* ------ Kontaktní onformace + formulář */}
+            {/* ------ Kontaktní informace + formulář */}
             <div className="grid grid-cols-1 gap-8 mt-8 w-full place-content-center text-center md:text-right md:grid-cols-3">
               <div className="order-1 md:order-1 flex flex-col gap-6">
                 <div>
@@ -182,16 +210,6 @@ export default async function RootLayout({
                   <p>
                     DIČ: <span className="font-mono">CZ28800729</span>
                   </p>
-
-                  {/*<p>
-                    Telefon:{" "}
-                    <a
-                      href="tel:+420241932111"
-                      className="text-steel-600 underline"
-                    >
-                      +420 241 932 111
-                    </a>
-                  </p>*/}
                 </div>
 
                 {/* -------- Mapa ANTIKOR */}
@@ -209,216 +227,103 @@ export default async function RootLayout({
                 </div>
               </div>
 
-              {/* ------- Kontakty */}
+              {/* ------- Kontakty (left column from Decap) */}
               <div className="order-2 md:order-2">
                 <ul className="space-y-6 text-center">
-                  <li>
-                    <strong>
-                      Contact for foreign partners: Markéta Šilarová, M.A.
-                    </strong>{" "}
-                    (communication in English):
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420777646836"
-                        className="underline text-steel-600"
-                      >
-                        +420 777 646 836
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:marketa.silarova@antikor.net"
-                        className="underline text-steel-600"
-                      >
-                        marketa.silarova@antikor.net
-                      </a>
-                    </span>
-                  </li>
-                  <li>
-                    <strong>Jednatel: Ing. Zdeněk Maixner</strong>
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420737423925"
-                        className="underline text-steel-600"
-                      >
-                        +420 737 423 925
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:zdenekmaixner@gmail.com"
-                        className="underline text-steel-600"
-                      >
-                        zdenekmaixner@gmail.com
-                      </a>
-                    </span>
-                  </li>
-                  <li>
-                    <strong>Ekonomka – účetní: Ing. Helena Korolus</strong>
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420732357822"
-                        className="underline text-steel-600"
-                      >
-                        +420 732 357 822
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:helena.korolus@antikor.net"
-                        className="underline text-steel-600"
-                      >
-                        helena.korolus@antikor.net
-                      </a>
-                    </span>
-                  </li>
-                  <li>
-                    <strong>
-                      Technik – finanční oddělení: Ing. Zdeněk Dostál, MBA
-                    </strong>
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420773705387"
-                        className="underline text-steel-600"
-                      >
-                        +420 773 705 387
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:zdenek.dostal@antikor.net"
-                        className="underline text-steel-600"
-                      >
-                        zdenek.dostal@antikor.net
-                      </a>
-                    </span>
-                  </li>
+                  {leftContacts.map((c, idx) => (
+                    <li key={`${c.email || c.name}-${idx}`}>
+                      <strong>
+                        {c.role ? `${c.role}: ` : ""}
+                        {c.name}
+                      </strong>{" "}
+                      {c.note ? <span>{c.note}</span> : null}
+                      <br />
+                      {c.phone ? (
+                        <>
+                          <span>
+                            tel.:{" "}
+                            <a
+                              href={`tel:${normalizeTelHref(c.phone)}`}
+                              className="underline text-steel-600"
+                            >
+                              {c.phone}
+                            </a>
+                          </span>
+                          <br />
+                        </>
+                      ) : null}
+                      {c.email ? (
+                        <span>
+                          e-mail:{" "}
+                          <a
+                            href={`mailto:${c.email}`}
+                            className="underline text-steel-600"
+                          >
+                            {c.email}
+                          </a>
+                        </span>
+                      ) : null}
+                    </li>
+                  ))}
                 </ul>
               </div>
 
-              {/* ------- Kontakty 2 */}
+              {/* ------- Kontakty 2 (right column grouped by department from Decap) */}
               <div className="order-3 md:order-3">
                 <ul className="space-y-6 text-center md:text-left">
-                  <li>
-                    <strong>OBROBNA</strong>
-                    <br />
-                    <span>Vedoucí obrobny – technolog: </span>
-                    <br />
-                    <span>Zastupuje: Technik výroby Petr Lukeš</span>
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420733315052"
-                        className="underline text-steel-600"
-                      >
-                        +420 733 315 052
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:petr.lukes@antikor.net"
-                        className="underline text-steel-600"
-                      >
-                        petr.lukes@antikor.net
-                      </a>
-                    </span>
-                    <br />
-                    <span>Technik výroby Petr Ziegler</span>
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420737726533"
-                        className="underline text-steel-600"
-                      >
-                        +420 737 726 533
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:petr.ziegler@antikor.net"
-                        className="underline text-steel-600"
-                      >
-                        petr.ziegler@antikor.net
-                      </a>
-                    </span>
-                  </li>
-                  <li>
-                    <strong>
-                      Zástupce pro Bosch Powertrain s.r.o. Jihlava
-                    </strong>
-                    <br />
-                    <span>Hlavní kontakt: Vedoucí obrobny – technolog</span>
-                    <br />
-                    <span>Zastupuje: Technik výroby Petr Lukeš</span>
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420733315052"
-                        className="underline text-steel-600"
-                      >
-                        +420 733 315 052
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:petr.lukes@antikor.net"
-                        className="underline text-steel-600"
-                      >
-                        petr.lukes@antikor.net
-                      </a>
-                    </span>
-                  </li>
+                  {rightGroups.map(([department, items]) => (
+                    <li key={department}>
+                      <strong>{department}</strong>
+                      <br />
 
-                  <li>
-                    <strong>KLEMPÍRNA</strong>
-                    <br />
-                    <span>Technik výroby David Melichar</span>
-                    <br />
-                    <span>
-                      tel.:{" "}
-                      <a
-                        href="tel:+420737364894"
-                        className="underline text-steel-600"
-                      >
-                        +420 737 364 894
-                      </a>
-                    </span>
-                    <br />
-                    <span>
-                      e-mail:{" "}
-                      <a
-                        href="mailto:david.melichar@antikor.net"
-                        className="underline text-steel-600"
-                      >
-                        david.melichar@antikor.net
-                      </a>
-                    </span>
-                  </li>
+                      {items.sort(sortByOrderThenName).map((c, idx) => (
+                        <div
+                          key={`${c.email || c.name}-${idx}`}
+                          className="mt-3"
+                        >
+                          <strong>
+                            {c.role ? `${c.role}: ` : ""}
+                            {c.name}
+                          </strong>
+
+                          {c.note ? (
+                            <>
+                              <br />
+                              <span>{c.note}</span>
+                            </>
+                          ) : null}
+                          <br />
+
+                          {c.phone ? (
+                            <>
+                              <span>
+                                tel.:{" "}
+                                <a
+                                  href={`tel:${normalizeTelHref(c.phone)}`}
+                                  className="underline text-steel-600"
+                                >
+                                  {c.phone}
+                                </a>
+                              </span>
+                              <br />
+                            </>
+                          ) : null}
+
+                          {c.email ? (
+                            <span>
+                              e-mail:{" "}
+                              <a
+                                href={`mailto:${c.email}`}
+                                className="underline text-steel-600"
+                              >
+                                {c.email}
+                              </a>
+                            </span>
+                          ) : null}
+                        </div>
+                      ))}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

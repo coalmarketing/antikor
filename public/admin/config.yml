@@ -39,6 +39,36 @@ logo:
 locale: "cs"
 
 collections:
+
+collections:
+  - name: "general_settings"
+    label: "Obecná nastavení"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Obecná nastavení"
+        file: "content/settings/general-settings.md"
+        fields:
+          - { label: "Nadpis", name: "title", widget: "string", default: "Obecná nastavení" }
+
+          - label: "Kontakty"
+            name: "contacts"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: "Jméno", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string", required: false }
+              - { label: "Úsek výroby", name: "department", widget: "string", required: false, hint: "Např. OBROBNA, KLEMPÍRNA" }
+
+              - { label: "Telefon", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
+
+              - { label: "Poznámky", name: "notes", widget: "text", required: false, hint: "Další informace, např. náhradníci, odpovědnosti apod." }
+
+              - { label: "Pořadí", name: "order", widget: "number", required: false, value_type: "int", min: 1 }
+
   - name: "blog"
     label: "Blog"
     folder: "content/blog"

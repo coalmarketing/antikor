@@ -63,10 +63,23 @@ const Footer = () => {
     <footer className="bg-dark text-light border-t border-light/10 w-full">
       <FooterMenu />
 
-      <div className="mx-auto text-center">
-        <p className="text-sm py-4 bg-light/10">
-          &copy; {new Date().getFullYear()}, coalmarketing & Michal Špitálský
-        </p>
+      <div className="mx-auto text-center bg-light/10">
+        <div className="w-full flex flex-row flex-nowrap justify-around">
+          <p className="text-sm py-4 ">
+            © {new Date().getFullYear()} Všechna práva vyhrazena - Vytvořeno s
+            💜 od{" "}
+            <Link
+              href="https://coalmarketing.cz"
+              target="_blank"
+              className="underline text-steel"
+            >
+              coalmarketing.cz
+            </Link>
+          </p>
+          <p className="text-sm py-4 ">
+            Pro coalmarketing vyvinul Michal Špitálský.
+          </p>
+        </div>
       </div>
     </footer>
   );

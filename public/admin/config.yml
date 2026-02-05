@@ -39,8 +39,6 @@ logo:
 locale: "cs"
 
 collections:
-
-collections:
   - name: "general_settings"
     label: "Obecná nastavení"
     delete: false

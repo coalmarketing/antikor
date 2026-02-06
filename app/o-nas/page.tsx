@@ -12,6 +12,7 @@ import { LogoLoop } from "@/components/LogoLoop";
 import { imageLogos } from "@/data/clientLogos";
 import Button from "@/components/button";
 import { Metadata } from "next";
+import YouTubeEmbed from "@/components/youtubeEmbed";
 
 export const metadata: Metadata = {
   title:
@@ -54,12 +55,7 @@ const AboutPage = async () => {
 
           <div className="flex-2 flex flex-col gap-4">
             <Card>
-              <Image
-                fill
-                src="/uploads/6k5a8014.jpg"
-                alt="Image 1"
-                className="object-cover"
-              />
+              <YouTubeEmbed id="x1ONFbObTbE" title="ANTIKOR - O nás" />
             </Card>
           </div>
         </div>
@@ -85,7 +81,7 @@ const AboutPage = async () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/Manticore.svg"
-                className="absolute -bottom-60 md:-bottom-80 lg:-bottom-80 xl:-bottom-130 -right-40 md:-right-60 lg:-right-80 h-auto w-[500px] md:w-[600px] lg:w-[600px] xl:w-[850px] z-10 -scale-x-100"
+                className="absolute -bottom-60 md:-bottom-80 lg:-bottom-80 xl:-bottom-130 -right-40 md:-right-60 lg:-right-80 h-auto w-125 md:w-150 lg:w-150 xl:w-212.5 z-10 -scale-x-100"
                 alt="Mantikora"
               />
             </Card>

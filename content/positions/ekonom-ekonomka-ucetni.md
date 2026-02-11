@@ -42,16 +42,16 @@ description: >-
   ## CO VÁM ZA VAŠI DOBŘE ODVEDENOU PRÁCI NABÍZÍME?
 
 
-  ✔️ **Jistotu a stabilitu:** Jsme zavedená česká společnost. Výplata u nás chodí včas a férové jednání je pro nás zákonem.
+  **☑️ Jistotu a stabilitu:** Jsme zavedená česká společnost. Výplata u nás chodí včas a férové jednání je pro nás zákonem.
 
 
-  ✔️ **Pět týdnů dovolené (25 dní):** Protože víme, že poctivá práce vyžaduje i kvalitní odpočinek.
+  **☑️ Pět týdnů dovolené (25 dní):** Protože víme, že poctivá práce vyžaduje i kvalitní odpočinek.
 
 
-  ✔️ **Příspěvek na stravování a dopravu:** Vážíme si toho, že k nám každý den vážíte cestu.
+  **☑️ Příspěvek na stravování a dopravu:** Vážíme si toho, že k nám každý den vážíte cestu.
 
 
-  ✔️ **Klid na práci:** Zázemí stabilní firmy, kde nejste jen „číslo v tabulce“, ale partnerem pro vedení společnosti.
+  **☑️ Klid na práci:** Zázemí stabilní firmy, kde nejste jen „číslo v tabulce“, ale partnerem pro vedení společnosti.
 
 
   ## MÁTE POCIT, ŽE HLEDÁME PRÁVĚ VÁS?

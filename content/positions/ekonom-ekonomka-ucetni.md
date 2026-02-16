@@ -28,6 +28,18 @@ description: >-
   * **Příspěvek na stravování a dopravu:** Vážíme si toho, že k nám každý den vážíte cestu.
 
   * **Klid na práci:** Zázemí stabilní firmy, kde nejste jen „číslo v tabulce“, ale partnerem pro vedení společnosti.
+
+
+  ## Zaujala Vás tato nabídka? Ozvěte se nám nebo se zastavte osobně.
+
+
+  * **Telefon:** +420 737 423 925
+
+  * **E-mail:** zdenekmaixner@gmail.com
+
+  * **Kontaktní osoba:** Ing. Zdeněk Maixner, jednatel
+
+  * **Adresa:** Kunčice 26, 561 51 Letohrad
 location: Letohrad
 type: HPP
 published: true

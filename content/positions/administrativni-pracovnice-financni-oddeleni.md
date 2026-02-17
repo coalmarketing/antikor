@@ -42,5 +42,5 @@ description: >-
   * **Adresa:** Kunčice 26, 561 51 Letohrad
 location: Letohrad
 type: HPP
-published: false
+published: true
 ---

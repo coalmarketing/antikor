@@ -1,6 +1,6 @@
 ---
-slug: administrativni-pracovnik-pracovnice-financni-oddeleni
-title: Administrativní pracovník/pracovnice - Finanční oddělení
+slug: administrativni-pracovnice-pracovnik-financni-oddeleni
+title: Administrativní pracovnice - pracovník - Finanční oddělení
 blurb: Hledáte místo, kde Vaše práce nebude jen „papírováním“? Ve
   společnosti **Zdeněk Maixner - ANTIKOR s.r.o.** věříme v poctivé řemeslo i v
   poctivou administrativu.

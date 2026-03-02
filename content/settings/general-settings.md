@@ -22,11 +22,11 @@ contacts:
     email: helena.korolus@antikor.net
     note: ""
     order: 3
-  - name: Petr Lukeš
+  - name: Petr Nožka
     role: Technik výroby
     department: OBROBNA
     phone: +420 733 315 052
-    email: petr.lukes@antikor.net
+    email: petr.nožka@antikor.net
     note: ""
     order: 5
   - name: Petr Ziegler

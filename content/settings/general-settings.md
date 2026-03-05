@@ -22,13 +22,6 @@ contacts:
     email: helena.korolus@antikor.net
     note: ""
     order: 3
-  - name: Petr Nožka
-    role: Technik výroby
-    department: OBROBNA
-    phone: +420 733 315 052
-    email: petr.nožka@antikor.net
-    note: ""
-    order: 1
   - name: Petr Ziegler
     role: Technik výroby
     department: OBROBNA
@@ -37,6 +30,13 @@ contacts:
     note: "Zástupce pro Bosch Powertrain s.r.o. Jihlava — kontaktní telefon: 733 315
       052"
     order: 3
+  - name: Petr Nožka
+    role: Technik výroby
+    department: OBROBNA
+    phone: +420 733 315 052
+    email: petr.nožka@antikor.net
+    note: ""
+    order: 1
   - name: David Melichar
     role: Technik výroby
     department: KLEMPÍRNA

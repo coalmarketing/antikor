@@ -44,10 +44,4 @@ contacts:
     email: david.melichar@antikor.net
     note: ""
     order: 7
-  - name: Petr Lukeš
-    role: Technik výroby
-    department: OBROBNA
-    phone: +420 733 315 052
-    email: petr.lukes@antikor.net
-    order: 6
 ---

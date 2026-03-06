@@ -15,11 +15,11 @@ contacts:
     email: zdenekmaixner@gmail.com
     note: ""
     order: 2
-  - name: Ing. Helena Korolus
+  - name: Hana Mačejovská
     role: Ekonomka – účetní
-    department: ""
+    department: Administrativní pracovnice - Finanční oddělení
     phone: +420 732 357 822
-    email: helena.korolus@antikor.net
+    email: hana.macejovska@antikor.net
     note: ""
     order: 3
   - name: Petr Ziegler

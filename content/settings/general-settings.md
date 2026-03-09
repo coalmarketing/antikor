@@ -17,7 +17,7 @@ contacts:
     order: 2
   - name: Hana Mačejovská
     role: Administrativní pracovnice - Finanční oddělení
-    department: "Finanční oddělení:"
+    department: FINANČNÍ ODDĚLENÍ
     phone: +420 732 357 822
     email: hana.macejovska@antikor.net
     note: ""

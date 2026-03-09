@@ -29,19 +29,19 @@ contacts:
     email: petr.ziegler@antikor.net
     note: "Zástupce pro Bosch Powertrain s.r.o. Jihlava — kontaktní telefon: 733 315
       052"
-    order: 1
+    order: 2
   - name: Petr Nožka
     role: Technik výroby
     department: OBROBNA
     phone: +420 733 315 052
     email: petr.nožka@antikor.net
     note: ""
-    order: 3
+    order: 6
   - name: David Melichar
     role: Technik výroby
     department: KLEMPÍRNA
     phone: +420 737 364 894
     email: david.melichar@antikor.net
     note: ""
-    order: 7
+    order: 6
 ---

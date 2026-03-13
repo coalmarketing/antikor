@@ -1,5 +1,5 @@
 ---
-title: General Settings
+title: Obecná nastavení
 contacts:
   - name: Markéta Šilarová, M.A.
     role: Contact for foreign partners (communication in English)

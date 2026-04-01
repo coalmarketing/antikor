@@ -50,7 +50,7 @@ contacts:
     email: tereza.gelova@antikor.net
     order: 8
   - name: Lenka Adamcová
-    department: VÝROBA
+    department: ""
     role: Vedoucí  výroby 
     phone: 602 602 151
     email: lenka.adamcova@antikor.net

@@ -44,4 +44,9 @@ contacts:
     email: david.melichar@antikor.net
     note: ""
     order: 6
+  - name: Tereza Gelová, DiS.
+    role: Technik - Manažer kvality a BOZP
+    phone: 736 776 897
+    email: tereza.gelova@antikor.net
+    order: 7
 ---

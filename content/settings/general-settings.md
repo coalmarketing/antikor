@@ -51,7 +51,7 @@ contacts:
     order: 8
   - name: Lenka Adamcová
     department: ""
-    role: Vedoucí  výroby 
+    role: Vedoucí  výroby
     phone: +420 602 602 151
     email: lenka.adamcova@antikor.net
     order: 7

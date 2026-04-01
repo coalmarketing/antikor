@@ -46,13 +46,13 @@ contacts:
     order: 6
   - name: Tereza Gelová, DiS.
     role: Technik - Manažer kvality a BOZP
-    phone: 736 776 897
+    phone: +420 736 776 897
     email: tereza.gelova@antikor.net
     order: 8
   - name: Lenka Adamcová
     department: ""
     role: Vedoucí  výroby 
-    phone: 602 602 151
+    phone: +420 602 602 151
     email: lenka.adamcova@antikor.net
     order: 7
 ---

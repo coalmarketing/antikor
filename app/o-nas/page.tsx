@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Card from "@/components/card";
 import Divider from "@/components/divider";
 
@@ -10,9 +8,10 @@ import Balancer from "react-wrap-balancer";
 
 import { LogoLoop } from "@/components/LogoLoop";
 import { imageLogos } from "@/data/clientLogos";
-import Button from "@/components/button";
 import { Metadata } from "next";
 import YouTubeEmbed from "@/components/youtubeEmbed";
+import { getRegionalSupport } from "@/utils/getRegionalSupport";
+import RegionalSupportCard from "@/components/regionalSupportCard";
 
 export const metadata: Metadata = {
   title:
@@ -23,6 +22,8 @@ export const metadata: Metadata = {
 };
 
 const AboutPage = async () => {
+  const regionalSupport = await getRegionalSupport();
+
   return (
     <>
       <SubPageHeader
@@ -131,74 +132,19 @@ const AboutPage = async () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight text-balance font-heading mx-auto uppercase">
           Podpora regionu
         </h2>
-        <Divider />
-        {/* CSR Section */}
+        <Divider />{" "}
+        <p className="mt-4 text-lg font-normal text-pretty text-light/80 text-center mb-12">
+          <Balancer>
+            <span className="text-steel-600 font-bold">Mantikora</span> je bájná
+            bytost s lidskou tváří, tělem lva a štířím ocasem. Představuje
+            spojení síly a rozumu, stejně jako naše práce spojuje při obrábění
+            oceli robustní výkon se strojovou přesností a lidským intelektem.
+          </Balancer>
+        </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <Card tip>
-            <div className="p-6 md:p-10">
-              <h3 className="text-lg md:text-xl font-semibold mb-3 flex items-center gap-2">
-                Podpora regionu a společenská odpovědnost
-              </h3>
-              <p>
-                Společnost <span className="font-medium">ANTIKOR</span> je
-                nejenom českou, ale je tradiční letohradskou společností na
-                Kunčicích. Podporujeme konkrétní potřeby, projekty pro lepší
-                život, sport a dobrovolné aktivity V letošním roce jsme přispěli
-                na tyto projekty:
-              </p>
-              <ul className="mt-4 list-disc pl-6 marker:text-steel space-y-2">
-                <li>
-                  <span className="font-medium">
-                    Vodácký klub RAFT KLUB gymnázium Letohrad, p. s.
-                  </span>{" "}
-                  – účast na{" "}
-                  <span className="font-medium">
-                    Mistrovství světa juniorů 2025 ve Slovinsku
-                  </span>
-                </li>
-                <li>
-                  <span className="font-medium">
-                    Sbor dobrovolných hasičů Letohrad
-                  </span>{" "}
-                  – oslava{" "}
-                  <span className="font-medium">150 let od založení sboru</span>
-                </li>
-                <li>
-                  <span className="font-medium">Šárka Jansová</span> – podpora v
-                  rámci <span className="font-medium">BENEFICE OD SRDCE</span>
-                </li>
-              </ul>
-            </div>
-          </Card>
-          <div className="bg-steel/5 rounded-3xl shadow-sm border border-steel/10 overflow-hidden">
-            <div className="p-6 md:p-10">
-              <Image
-                width={150}
-                height={200}
-                src="/img/konsorcium.png"
-                alt="Konsorcium zaměstnavatelů Orlicka"
-                className="mb-3 brightness-200"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-3 flex items-center gap-2">
-                ANTIKOR podporuje Konsorcium zaměstnavatelů Orlicka
-              </h3>
-              <p>
-                Jsme dlouholetým členem{" "}
-                <strong>Konsorcia zaměstnavatelů Orlicka</strong>, které od roku
-                2016 propojuje progresivní firmy a střední školy v regionu za
-                podpory města Letohrad. Společně s PSŠ Letohrad a Střední školou
-                gastronomickou a technickou Žamberk se podílíme na rozvoji
-                odborného vzdělávání, zapojení žáků do praxe a posilování
-                spolupráce mezi průmyslem a vzdělávacími institucemi. Projekt je
-                realizován také s podporou EU.
-              </p>
-              <Button
-                label="Více o Konsorciu"
-                href="https://konsorcium.eu/"
-                transparent
-              />
-            </div>
-          </div>
+          {regionalSupport.map((entry) => (
+            <RegionalSupportCard key={entry.slug} entry={entry} />
+          ))}
         </div>
       </Section>
     </>

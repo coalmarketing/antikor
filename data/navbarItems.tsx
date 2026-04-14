@@ -9,6 +9,6 @@ export const navigationItems: NavigationItem[] = [
   { name: "Služby a technologie", href: "/sluzby-a-technologie" },
   { name: "Kariéra", href: "/kariera" },
   { name: "Galerie", href: "/sluzby-a-technologie#galerie" },
-  // { name: "Blog", href: "/blog" },
+  { name: "Aktuality", href: "/blog" },
   { name: "Kontakt", href: "#kontakt" },
 ];

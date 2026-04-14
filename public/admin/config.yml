@@ -125,3 +125,19 @@ collections:
     fields:
       - { label: "Název obrázku", name: "title", widget: "string" }
       - { label: "Obrázek", name: "image", widget: "image" }
+
+  - name: "regional_support"
+    label: "Podpora regionu"
+    folder: "content/regional-support"
+    create: true
+    slug: "{{slug}}"
+    preview: false
+    fields:
+      - { label: "Název", name: "title", widget: "string" }
+      - { label: "Obsah", name: "body", widget: "markdown" }
+      - { label: "Logo", name: "logo", widget: "image", required: false }
+      - { label: "Popis loga (alt)", name: "logo_alt", widget: "string", required: false }
+      - { label: "Odkaz – popisek tlačítka", name: "link_label", widget: "string", required: false }
+      - { label: "Odkaz – URL", name: "link_url", widget: "string", required: false }
+      - { label: "Pořadí", name: "order", widget: "number", required: false, value_type: "int", min: 1 }
+      - { label: "Zveřejněno", name: "published", widget: "boolean", default: true }

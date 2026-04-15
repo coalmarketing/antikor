@@ -30,7 +30,7 @@ export default async function BlogPostPage({
 
   return (
     <main className="max-w-screen overflow-x-hidden bg-dark pt-20">
-      <section className="w-4xl mx-auto px-[5%] py-12 pt-20 pb-54 mb-16 overflow-x-hidden flex flex-col items-center rounded-xl">
+      <section className="max-w-4xl mx-auto px-[5%] py-12 pt-20 pb-54 mb-16 overflow-x-hidden flex flex-col items-center rounded-xl">
         <Link
           href="/blog"
           className="text-steel-600 text-base mt-12 mb-6 hover:underline"

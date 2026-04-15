@@ -15,5 +15,51 @@
     <script>
       CMS.registerPreviewStyle("/admin/preview.css");
     </script>
+
+    <script>
+      (function () {
+        function sanitize(name) {
+          var dot = name.lastIndexOf('.');
+          var base = dot !== -1 ? name.slice(0, dot) : name;
+          var ext  = dot !== -1 ? name.slice(dot).toLowerCase() : '';
+          return base
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-zA-Z0-9_-]/g, '_')
+            .replace(/_+/g, '_')
+            .replace(/^_|_$/g, '')
+            + ext;
+        }
+
+        function patchInput(input) {
+          if (input._sanitized) return;
+          input._sanitized = true;
+          input.addEventListener('change', function () {
+            if (!input.files || !input.files.length) return;
+            var dt = new DataTransfer();
+            var changed = false;
+            for (var i = 0; i < input.files.length; i++) {
+              var file = input.files[i];
+              var clean = sanitize(file.name);
+              if (clean !== file.name) changed = true;
+              dt.items.add(new File([file], clean, { type: file.type }));
+            }
+            if (changed) input.files = dt.files;
+          });
+        }
+
+        new MutationObserver(function (mutations) {
+          for (var i = 0; i < mutations.length; i++) {
+            var added = mutations[i].addedNodes;
+            for (var j = 0; j < added.length; j++) {
+              var node = added[j];
+              if (node.nodeType !== 1) continue;
+              if (node.matches && node.matches('input[type="file"]')) patchInput(node);
+              if (node.querySelectorAll) node.querySelectorAll('input[type="file"]').forEach(patchInput);
+            }
+          }
+        }).observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
   </body>
 </html>

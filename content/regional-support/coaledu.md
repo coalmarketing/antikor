@@ -1,6 +1,6 @@
 ---
 title: coaledu, z.ú.
-logo: /uploads/návrh-bez-názvu.png
+logo: ""
 order: 2
 published: true
 ---

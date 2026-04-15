@@ -1,8 +1,9 @@
 "use client";
 
 import type { BlogPost } from "@/utils/getPosts";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Card from "./card";
+import Button from "./button";
 
 function stripMarkdown(text: string): string {
   return text
@@ -33,15 +34,17 @@ export default function BlogSectionClient({
   posts: BlogPost[];
   limit?: number;
 }) {
+  const router = useRouter();
+
   if (!posts?.length) return <p>Žádné příspěvky nebyly nalezeny.</p>;
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 w-full mx-auto">
       {posts.slice(0, limit).map((post) => (
-        <Link
-          href={`/blog/${post.slug}`}
+        <div
+          onClick={() => router.push(`/blog/${post.slug}`)}
           key={post.slug}
-          className="block hover:scale-101 transition duration-300 z-50 grayscale-100 hover:grayscale-0"
+          className="block hover:scale-101 transition duration-300 z-50 grayscale-100 hover:grayscale-0 hover:cursor-pointer"
         >
           <Card className="z-50">
             <div className="w-full h-40 bg-steel-700">
@@ -67,9 +70,14 @@ export default function BlogSectionClient({
                     : plain;
                 })()}
               </div>
+              <Button
+                label="Číst více"
+                href={`/blog/${post.slug}`}
+                transparent
+              />
             </BlogCardWrapper>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>
   );

@@ -1,6 +1,6 @@
 ---
 title: coaledu, z.ú.
-logo: /uploads/coaledu_long_color-white.jpg
+logo: /uploads/coaledu_long_color-white.png
 order: 2
 published: true
 ---

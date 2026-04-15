@@ -38,7 +38,7 @@ export default async function BlogPostPage({
           ← Zpět na blog
         </Link>
 
-        {data.image && (
+        {data.image.trim() !== "" && (
           <Card className="w-full h-40">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img

@@ -135,10 +135,10 @@ const AboutPage = async () => {
         <Divider />{" "}
         <p className="mt-4 text-lg font-normal text-pretty text-light/80 text-center mb-12">
           <Balancer>
-            <span className="text-steel-600 font-bold">Mantikora</span> je bájná
-            bytost s lidskou tváří, tělem lva a štířím ocasem. Představuje
-            spojení síly a rozumu, stejně jako naše práce spojuje při obrábění
-            oceli robustní výkon se strojovou přesností a lidským intelektem.
+            Společnost ANTIKOR je nejenom českou, ale je tradiční letohradskou
+            společností na Kunčicích. Podporujeme konkrétní potřeby, projekty
+            pro lepší život, sport a dobrovolné aktivity V letošním roce jsme
+            přispěli na tyto projekty:
           </Balancer>
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

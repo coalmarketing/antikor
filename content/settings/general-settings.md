@@ -34,7 +34,7 @@ contacts:
     role: Technik výroby
     department: OBROBNA
     phone: +420 733 315 052
-    email: petr.nožka@antikor.net
+    email: petr.nozka@antikor.net
     note: ""
     order: 6
   - name: David Melichar

@@ -25,8 +25,6 @@ Podpora letohradských závodnic pro nás tedy nebyla charitou. Byla to přiroze
 * **Slalom:** 6. místo
 * **Celkově:** 11. místo v kategorii juniorky U19
 
- 
-
 ![](/uploads/11_05_2026_foto_komplet.jpg)
 
 Šestá příčka ve slalomu je výsledek, který mluví sám za sebe. Slalom vyžaduje techniku, přesnost a schopnost celé posádky jednat jako jeden celek - žádná z dívek nemohla zaostávat. To, že se jim to v Pau povedlo a dostaly se do nejlepší šestky světa, je důvod k poctivé radosti.
@@ -43,6 +41,6 @@ A dodaly, že 6. místo ve slalomu považují za skvělý výsledek a motivaci k
 
 Naše společnost sídlí v Letohradě a jeho zázemí jsou lidé z tohoto kraje. Podporovat místní sportovce, kteří se dostanou až na světový šampionát, je pro nás přirozené. Letohrad a Orlickoústecký region mají silnou vodáckou tradici a závodnice, které ho dokážou reprezentovat na světové úrovni, si zaslouží zázemí, které jim umožní soustředit se výhradně na výkon.
 
-Naše firma umí pracovat s tvrdými materiály - nerez, hliník, ocel. Víme, že kvalitní výsledek nevzniká sám od sebe, ale vyžaduje přípravu, správné nástroje a tým, který táhne za jeden provaz. Točí se to na raftingu i v naší výrobní hale v Kunčicích. 
+Naše firma umí pracovat s tvrdými materiály - nerez, hliník, ocel. Víme, že kvalitní výsledek nevzniká sám od sebe, ale vyžaduje přípravu, správné nástroje a tým, který táhne za jeden provaz. Točí se to na raftingu i v naší výrobní hale na Kunčicích.
 
 Letgirls, gratulujeme. Byl to pro nás čest vás podpořit.

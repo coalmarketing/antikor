@@ -2,8 +2,8 @@
 title: Podpořili jsme raftařky z Letohradu, které obsadily na mistrovství světa
   6. místo!
 date: 2026-05-11T09:09:00.000+02:00
-image: /uploads/15_04_2026_uvodka.jpg
-slug: raftarky-6-misto
+image: /uploads/11_05_2026_uvodni_foto.jpg
+slug: raftarky-letohrad-podpora
 ---
 **Letos na jaře jsme se rozhodli udělat něco trochu jiného, než je u nás v dílně zvykem. Místo abychom investovali pouze do strojů a materiálu, vložili jsme část prostředků do lidí - konkrétně do čtveřice mladých závodnic z Letohradu, které se chystaly reprezentovat Českou republiku na Mistrovství světa juniorů v raftingu ve francouzském Pau. Dnes víme, že to byla dobrá sázka.**
 

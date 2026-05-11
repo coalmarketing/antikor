@@ -26,6 +26,8 @@ Podpora letohradských závodnic pro nás tedy nebyla charitou. Byla to přiroze
 * **Slalom:** 6. místo
 * **Celkově:** 11. místo v kategorii juniorky U19
 
+![](/uploads/11_05_2026_foto_komplet.jpg)
+
 Šestá příčka ve slalomu je výsledek, který mluví sám za sebe. Slalom vyžaduje techniku, přesnost a schopnost celé posádky jednat jako jeden celek - žádná z dívek nemohla zaostávat. To, že se jim to v Pau povedlo a dostaly se do nejlepší šestky světa, je důvod k poctivé radosti.
 
 ## Zpráva, která nás mile překvapila

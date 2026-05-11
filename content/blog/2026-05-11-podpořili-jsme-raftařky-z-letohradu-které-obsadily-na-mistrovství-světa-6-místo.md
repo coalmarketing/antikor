@@ -2,7 +2,7 @@
 title: Podpořili jsme raftařky z Letohradu, které obsadily na mistrovství světa
   6. místo!
 date: 2026-05-11T09:09:00.000+02:00
-image: /uploads/11_05_2026_uvodni_foto.jpg
+image: /uploads/15_04_2026_uvodka.jpg
 ---
 **Letos na jaře jsme se rozhodli udělat něco trochu jiného, než je u nás v dílně zvykem. Místo abychom investovali pouze do strojů a materiálu, vložili jsme část prostředků do lidí - konkrétně do čtveřice mladých závodnic z Letohradu, které se chystaly reprezentovat Českou republiku na Mistrovství světa juniorů v raftingu ve francouzském Pau. Dnes víme, že to byla dobrá sázka.**
 
@@ -24,8 +24,6 @@ Podpora letohradských závodnic pro nás tedy nebyla charitou. Byla to přiroze
 * **RX (Extreme):** 12. místo
 * **Slalom:** 6. místo
 * **Celkově:** 11. místo v kategorii juniorky U19
-
-![](/uploads/11_05_2026_foto_komplet.jpg)
 
 Šestá příčka ve slalomu je výsledek, který mluví sám za sebe. Slalom vyžaduje techniku, přesnost a schopnost celé posádky jednat jako jeden celek - žádná z dívek nemohla zaostávat. To, že se jim to v Pau povedlo a dostaly se do nejlepší šestky světa, je důvod k poctivé radosti.
 

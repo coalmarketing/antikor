@@ -1,13 +1,6 @@
 ---
 title: Obecné nastavení
 contacts:
-  - name: Markéta Šilarová, M.A.
-    role: Contact for foreign partners (communication in English)
-    department: ""
-    phone: +420 777 646 836
-    email: marketa.silarova@antikor.net
-    note: ""
-    order: 1
   - name: Ing. Zdeněk Maixner
     role: Jednatel
     department: ""

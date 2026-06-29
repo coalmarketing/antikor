@@ -30,11 +30,11 @@ contacts:
     email: petr.nozka@antikor.net
     note: ""
     order: 6
-  - name: David Melichar
+  - name: Jiří Kopecký
     role: Technik výroby
     department: KLEMPÍRNA
-    phone: +420 737 364 894
-    email: david.melichar@antikor.net
+    phone: +420 776 805 578
+    email: jiri.kopecky@antikor.net
     note: ""
     order: 6
   - name: Tereza Gelová, DiS.

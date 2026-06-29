@@ -48,4 +48,10 @@ contacts:
     phone: +420 602 602 151
     email: lenka.adamcova@antikor.net
     order: 7
+  - name: Jakub Maixner
+    role: Obchodní zástupce
+    department: FINANČNÍ ODDĚLENÍ
+    phone: +420 734 718 238
+    email: jakubmaixner@outlook.com
+    order: 1
 ---

@@ -24,7 +24,7 @@ V ANTIKORu věříme, že firma je zdravá tehdy, když se o ní mluví doma. Ne
 
 Šimonův obrázek je přesně takovým signálem. Spontánní, neobjednaný a o to cennější.
 
-> ***„Takový obrázek je za mě větší kompliment než jakákoliv cena nebo certifikát,"*** říká bez okolků náš jednatel, Ing. Zdeněk Maixner.
+> ***„Takový obrázek je za mě větší kompliment než jakákoliv cena nebo certifikát," říká bez okolků náš jednatel, Ing. Zdeněk Maixner.***
 
 ## Hledáme lidi, o jejichž práci se bude mluvit i doma
 

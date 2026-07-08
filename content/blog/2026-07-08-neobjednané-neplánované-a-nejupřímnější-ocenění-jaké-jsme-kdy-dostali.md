@@ -34,13 +34,15 @@ V ANTIKORu stavíme tým z lidí, pro které práce není jen povinnost, ale kou
 
 Směnný provoz v Letohradě. Zkušenosti vítáme, ale nejsou podmínkou - **záleží na chuti učit se a na zodpovědnosti. Nabízíme příplatky za směny, výkonnostní odměny, 25 dní dovolené** a příspěvky na stravu i dopravu.
 
+**[\-> VÍCE INFORMACÍ O POZICI](https://antikor.net/kariera/obsluha-cnc-soustruhu)**
+
 ### Programátor CNC frézky
 
 Hledáme samostatného odborníka, který ovládá programování CNC strojů a čte výkresovou dokumentaci. Moderní zázemí, odpovídající mzda, výkonnostní odměny a 25 dní dovolené.
+
+**[\-> VÍCE INFORMACÍ O POZICI](https://antikor.net/kariera/programator-cnc-frezky)**
 
 Máte zájem? **Zavolejte**, **napište** nebo se prostě stavte. Jsme na Kunčicích v Letohradě a dveře máme otevřené.
 
 * +420 737 423 925
 * [zdenekmaixner@gmail.com](mailto:zdenekmaixner@gmail.com)
-
-![Hledáme posily do výroby i mladé lidi, kteří se chtějí učit řemeslu. Nabízíme práci v prostředí, kde má zkušenost stejnou váhu jako chuť zkoušet nové věci. Dáváme i prostor studentům, kteří chtějí získat praxi ve strojírenství. Přidejte se k nám a pomozte nám posouvat poctivou práci s kovem dál.](/uploads/08_07_2026.png)

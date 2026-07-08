@@ -1,7 +1,7 @@
 ---
 title: Neobjednané, neplánované a nejupřímnější ocenění, jaké jsme kdy dostali.
 date: 2026-07-08T08:11:00.000+02:00
-image: /uploads/08_07_2026_uvodka_alt.jpg
+image: /uploads/08_07_2026_uvodni_fotka.png
 slug: antikor-letohrad-kde-prace-ma-smysl
 ---
 **Pastelky, papír a dětský pohled na svět a najednou víte, že děláte něco dobře.**

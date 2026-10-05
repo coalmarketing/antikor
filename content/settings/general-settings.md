@@ -54,4 +54,9 @@ contacts:
     phone: +420 734 718 238
     email: jakubmaixner@outlook.com
     order: 1
+  - name: Lucie Krejčová
+    phone: +420 733 315 052
+    email: lucie.krejcova@antikor.net
+    role: Technik výroby
+    order: 6
 ---

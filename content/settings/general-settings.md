@@ -59,4 +59,5 @@ contacts:
     email: lucie.krejcova@antikor.net
     role: Technik výroby
     order: 9
+    department: OBROBNA
 ---

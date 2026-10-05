@@ -58,5 +58,5 @@ contacts:
     phone: +420 733 315 052
     email: lucie.krejcova@antikor.net
     role: Technik výroby
-    order: 6
+    order: 9
 ---

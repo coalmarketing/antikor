@@ -52,7 +52,7 @@ Naší prací jsou kovové díly. Ale za každým hotovým výrobkem stojí pře
 
 A právě takové kolegy chceme mít v týmu.
 
-![Zájem o pozici obsluhy CNC soustruhu.](/uploads/zajem_o_pozici_obsluhy_cnc_soustruhu.png "Obsluha CNC soustruhu")
+![Zájem o pozici obsluhy CNC soustruhu.](/uploads/nabor_cnc_obsluhy_net.jpg "Obsluha CNC soustruhu")
 
 ## 3. Umíte programovat CNC frézku? Máme příležitost i pro vás.
 
@@ -76,8 +76,6 @@ Nebo nám rovnou zavolejte na **+420 737 423 925**. Můžete se také zastavit o
 Kontakt: Ing. Zdeněk Maixner, jednatel společnosti.
 
 **Možná nehledáme jen dalšího zaměstnance. Možná hledáme právě vás.**
-
-
 
 ## Často se ptáte
 

@@ -1,7 +1,7 @@
 ---
 title: Práce na CNC soustruhu v Letohradě. Hledáme člověka, na kterého je spoleh.
 date: 2026-10-09T10:19:00.000+02:00
-image: /uploads/nabor_cnc_obsluhy.png
+image: /uploads/nabor_cnc_obsluhy_net.jpg
 slug: prace-cnc-soustruh-letohrad
 ---
 **Baví vás práce, u které je vidět výsledek? Máte zkušenosti se strojírenskou výrobou, nebo byste se rádi naučili něco nového? V ANTIKORU v Letohradě hledáme posilu k CNC soustruhu. Možná právě pro vás máme místo.**
@@ -52,7 +52,7 @@ Naší prací jsou kovové díly. Ale za každým hotovým výrobkem stojí pře
 
 A právě takové kolegy chceme mít v týmu.
 
-![Zájem o pozici obsluhy CNC soustruhu.](/uploads/nabor_cnc_obsluhy_net.jpg "Obsluha CNC soustruhu")
+![Zájem o pozici obsluhy CNC soustruhu.](/uploads/zajem_o_pozici_obsluhy_cnc_soustruhu_net.jpg "Obsluha CNC soustruhu")
 
 ## 3. Umíte programovat CNC frézku? Máme příležitost i pro vás.
 

@@ -6,7 +6,7 @@ import HeroBanner from "@/components/heroBanner";
 import LogoLoop from "@/components/LogoLoop";
 import Section from "@/components/section";
 import { UspSection } from "@/components/usp";
-import { imageLogos } from "@/data/clientLogos";
+import { getClients } from "@/utils/getClients";
 import { uspPoints } from "@/data/uspPoints";
 import Image from "next/image";
 // import { getPosts } from "@/utils/getPosts";
@@ -35,6 +35,7 @@ const HomePageInfoCardWrapper = ({
 
 const HomePage = async () => {
   const posts = await getPosts();
+  const clientLogos = await getClients();
   return (
     <>
       {/*
@@ -212,7 +213,7 @@ const HomePage = async () => {
           Spolupracujeme
         </p>
         <LogoLoop
-          logos={imageLogos}
+          logos={clientLogos}
           logoHeight={45}
           speed={60}
           gap={80}

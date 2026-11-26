@@ -38,6 +38,12 @@ logo:
 
 locale: "cs"
 
+# ASCII-only slugs & upload filenames (Cloudflare 404s on paths with diacritics/spaces)
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 collections:
   - name: "general_settings"
     label: "Obecná nastavení"
@@ -147,5 +153,24 @@ collections:
       - { label: "Popis loga (alt)", name: "logo_alt", widget: "string", required: false }
       - { label: "Odkaz – popisek tlačítka", name: "link_label", widget: "string", required: false }
       - { label: "Odkaz – URL", name: "link_url", widget: "string", required: false }
+      - { label: "Pořadí", name: "order", widget: "number", required: false, value_type: "int", min: 1 }
+      - { label: "Zveřejněno", name: "published", widget: "boolean", default: true }
+
+  - name: "clients"
+    label: "Klienti (loga)"
+    label_singular: "Klient"
+    folder: "content/clients"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    media_folder: "/public/uploads/clients"
+    public_folder: "/uploads/clients"
+    preview: false
+    summary: "{{order}}. {{title}}"
+    sortable_fields: ["order", "title"]
+    fields:
+      - { label: "Název firmy", name: "title", widget: "string", hint: "Zobrazuje se jako popisek (alt) loga." }
+      - { label: "Logo", name: "logo", widget: "image", hint: "Ideálně SVG nebo PNG s průhledným pozadím, světlé/bílé logo (zobrazuje se na tmavém pozadí)." }
+      - { label: "Web klienta (URL)", name: "url", widget: "string", required: false, hint: "Např. https://www.firma.cz/ – nepovinné", pattern: ["^(https?://.+)?$", "URL musí začínat http:// nebo https://"] }
       - { label: "Pořadí", name: "order", widget: "number", required: false, value_type: "int", min: 1 }
       - { label: "Zveřejněno", name: "published", widget: "boolean", default: true }

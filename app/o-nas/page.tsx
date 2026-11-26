@@ -7,7 +7,7 @@ import SubPageHeader from "@/components/subPageHeader";
 import Balancer from "react-wrap-balancer";
 
 import { LogoLoop } from "@/components/LogoLoop";
-import { imageLogos } from "@/data/clientLogos";
+import { getClients } from "@/utils/getClients";
 import { Metadata } from "next";
 import YouTubeEmbed from "@/components/youtubeEmbed";
 import { getRegionalSupport } from "@/utils/getRegionalSupport";
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 
 const AboutPage = async () => {
   const regionalSupport = await getRegionalSupport();
+  const clientLogos = await getClients();
 
   return (
     <>
@@ -115,7 +116,7 @@ const AboutPage = async () => {
           Spolupracujeme
         </p>
         <LogoLoop
-          logos={imageLogos}
+          logos={clientLogos}
           logoHeight={45}
           speed={25}
           gap={80}
